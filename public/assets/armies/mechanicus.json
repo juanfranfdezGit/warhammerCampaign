@@ -1,0 +1,110 @@
+[
+  {
+    "id": "admech-01",
+    "name": "Skitarii Rangers 01",
+    "movement": 6,
+    "resist": 4,
+    "salvation": 5,
+    "wound": 1,
+    "leadership": 6,
+    "control": 1,
+    "abilities": [
+      {
+        "id": "mechanicus-ability-01",
+        "name": "Doctrina Rangers",
+        "description": "+1 tirada de daño al no moverse."
+      },
+      {
+        "id": "mechanicus-ability-02",
+        "name": "Tecnología del Omnissiah",
+        "description": "+1 tirada de daño al ir acompañado por un líder."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 2,
+        "name": "Galvanic Rifle",
+        "range": 30,
+        "strength": 4,
+        "ap": -1,
+        "damage": 1,
+        "shots": 2,
+        "abilities": [
+          "Rapid Fire: 2 disparos a media distancia o corta distancia."
+        ]
+      },
+      {
+        "number": 1,
+        "name": "Transuranic Arquebus",
+        "range": 60,
+        "strength": 7,
+        "ap": -2,
+        "damage": "D3",
+        "shots": 1,
+        "abilities": [
+          "Precisión: Puedes seleccionar quien recibe la herida. No puede disparar si se mueve."
+        ]
+      },
+      {
+        "number": 1,
+        "name": "Arc Rifle",
+        "range": 30,
+        "strength": 6,
+        "ap": -2,
+        "damage": "D3",
+        "shots": 1,
+        "abilities": [
+          "Antitanque: Las heridas contra vehículos siempre son críticas."
+        ]
+      },
+      {
+        "number": 1,
+        "name": "Radium Carbine",
+        "range": 18,
+        "strength": 3,
+        "ap": 0,
+        "damage": 1,
+        "shots": 3,
+        "abilities": [
+          "Radiación: Cada vez que sacas un 6 para herir, el objetivo sufre una herida mortal adicional."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "admech-02",
+    "name": "Skitarii Rangers Alpha",
+    "movement": 6,
+    "resist": 4,
+    "salvation": 5,
+    "wound": 1,
+    "leadership": 7,
+    "control": 2,
+    "abilities": [
+      {
+        "id": "mechanicus-ability-01",
+        "name": "Doctrina Rangers",
+        "description": "+1 tirada de daño al no moverse."
+      },
+      {
+        "id": "mechanicus-ability-02",
+        "name": "Tecnología del Omnissiah",
+        "description": "+1 tirada de daño al ir acompañado por un líder."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "name": "Radium Carbine",
+        "range": 18,
+        "strength": 3,
+        "ap": 0,
+        "damage": 1,
+        "shots": 3,
+        "abilities": [
+          "Radiación: Cada vez que sacas un 6 para herir, el objetivo sufre una herida mortal adicional."
+        ]
+      }
+    ]
+  }
+]
