@@ -5,7 +5,7 @@
     "faction": "Mechanicus",
     "movement": 6,
     "resist": 4,
-    "salvation": 5,
+    "salvation": 4,
     "wound": 1,
     "leadership": 7,
     "control": 2,
@@ -24,7 +24,7 @@
     "weapons": [
       {
         "number": 1,
-        "name": "Radium Carbine",
+        "name": "Carabina de radio",
         "range": 18,
         "strength": 3,
         "ap": 0,
@@ -42,7 +42,7 @@
     "faction": "Mechanicus",
     "movement": 6,
     "resist": 4,
-    "salvation": 5,
+    "salvation": 4,
     "wound": 1,
     "leadership": 6,
     "control": 1,
@@ -61,7 +61,7 @@
     "weapons": [
       {
         "number": 2,
-        "name": "Galvanic Rifle",
+        "name": "Jezzail de Radio",
         "range": 30,
         "strength": 4,
         "ap": -1,
@@ -73,7 +73,7 @@
       },
       {
         "number": 1,
-        "name": "Transuranic Arquebus",
+        "name": "Arcabuz Transuránico",
         "range": 60,
         "strength": 7,
         "ap": -2,
@@ -85,7 +85,7 @@
       },
       {
         "number": 1,
-        "name": "Arc Rifle",
+        "name": "Rifle de Arco",
         "range": 30,
         "strength": 6,
         "ap": -2,
@@ -94,17 +94,103 @@
         "abilities": [
           "Antitanque: Las heridas contra vehículos siempre son críticas."
         ]
+      }
+    ]
+  },
+  {
+    "id": "admech-03",
+    "name": "Magos-Alpha Ferrum-27Σ",
+    "faction": "Mechanicus",
+    "movement": 7,
+    "resist": 4,
+    "salvation": 4,
+    "wound": 2,
+    "leadership": 9,
+    "control": 3,
+    "abilities": [
+      {
+        "id": "mechanicus-ability-01",
+        "name": "Doctrina Vanguard",
+        "description": "Imperativo Protector: +1 daño largo alcance este turno / Imperativo Conquistador: +1 daño corto alcance este turno."
+      },
+      {
+        "id": "mechanicus-ability-02",
+        "name": "Tecnología del Omnissiah",
+        "description": "+1 tirada de daño al ir acompañado por un líder."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "name": "Maza voltaica",
+        "range": 0,
+        "strength": 7,
+        "ap": -2,
+        "damage": 1,
+        "shots": 1,
+        "abilities": [
+          "Descarga una energía que mata o paraliza con electricidad al enemigo al impactar."
+        ]
       },
       {
         "number": 1,
-        "name": "Radium Carbine",
-        "range": 18,
-        "strength": 3,
-        "ap": 0,
+        "name": "Pistola de ráfagas de fósforo",
+        "range": 12,
+        "strength": 5,
+        "ap": -1,
         "damage": 1,
-        "shots": 3,
+        "shots": "D3",
         "abilities": [
-          "Radiación: Cada vez que sacas un 6 para herir, el objetivo sufre una herida mortal adicional."
+          "Ignora Cobertura: no importa si el objetivo está en cobertura"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "admech-04",
+    "name": "Skitarii Vanguards",
+    "faction": "Mechanicus",
+    "movement": 6,
+    "resist": 4,
+    "salvation": 4,
+    "wound": 1,
+    "leadership": 6,
+    "control": 1,
+    "abilities": [
+      {
+        "id": "mechanicus-ability-01",
+        "name": "Doctrina Vanguard",
+        "description": "Imperativo Protector: +1 daño largo alcance este turno / Imperativo Conquistador: +1 daño corto alcance este turno."
+      },
+      {
+        "id": "mechanicus-ability-02",
+        "name": "Tecnología del Omnissiah",
+        "description": "+1 tirada de daño al ir acompañado por un líder."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "name": "Maza voltaica",
+        "range": 0,
+        "strength": 7,
+        "ap": -2,
+        "damage": 1,
+        "shots": 1,
+        "abilities": [
+          "Descarga una energía que mata o paraliza con electricidad al enemigo al impactar."
+        ]
+      },
+      {
+        "number": 1,
+        "name": "Pistola de ráfagas de fósforo",
+        "range": 12,
+        "strength": 5,
+        "ap": -1,
+        "damage": 1,
+        "shots": "D3",
+        "abilities": [
+          "Ignora Cobertura: no importa si el objetivo está en cobertura"
         ]
       }
     ]
