@@ -1,0 +1,24 @@
+.home {
+    background: url(/public/assets/backs/back01.jpg) no-repeat center center fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.logo {
+    width: 300px;
+    filter: drop-shadow(0 0 20px #111);
+    position: absolute;
+    top: 20vh;
+}
+
+.campaignsLinks {
+    background: #111111bb;
+    color: #fcfcfc;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+}
+
+.campaignsLinks li{
+    font-size: 1.2rem;
+}
