@@ -1,3 +1,5 @@
+import "./lore.css"
+
 export default function LatidoLore() {
   return (
     <>

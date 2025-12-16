@@ -3,4 +3,5 @@
   position: absolute;
   left: 1rem;
   top: 0;
+  z-index: 3;
 }

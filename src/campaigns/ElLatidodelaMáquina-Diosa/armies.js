@@ -1,4 +1,5 @@
 import armiesData from "../../datas/armies/mechanicus.json";
+import "./armies.css";
 
 export default function LatidoArmies() {
   return (

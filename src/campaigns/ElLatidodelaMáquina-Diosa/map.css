@@ -1,0 +1,27 @@
+.mapSection {
+    width: 100vw;
+    height: 100vh;
+}
+
+.actsLinks {
+    position: absolute;
+    top: 18vh;
+}
+
+.actsLinks ul {
+    gap: 1rem;
+}
+
+.actsLinks ul li {
+    font-size: 1.4rem;
+    color: #fcfcfc;
+    filter: drop-shadow(0 0 4px #111);
+    z-index: 2;
+}
+
+.mapImage {
+    position: absolute;
+    bottom: 18vh;
+    height: 58vh;
+    filter: drop-shadow(0 0 20px #111);
+}
