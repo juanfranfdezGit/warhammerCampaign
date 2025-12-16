@@ -34,7 +34,7 @@
   background: #11111193;
   color: #fcfcfc;
   width: 100vw;
-  height: 60vh;
+  height: 64vh;
   padding: 1rem 2rem;
   justify-content: start;
   overflow: scroll;
@@ -107,4 +107,36 @@
 .weaponItem h4 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+}
+
+.loreSection {
+  overflow: scroll;
+  width: 100vw;
+  height: 64vh;
+  color: #fcfcfc;
+  background: #11111193;
+  padding: 1rem;
+}
+
+.loreSection h2 {
+  margin-bottom: 1rem;
+  color: goldenrod;
+  margin-top: 2rem;
+}
+
+.loreSection p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 1.7rem;
+}
+
+.loreSection ul {
+  margin: 1rem;
+}
+
+.loreSection li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  list-style: disc;
+  margin-left: 1rem;
 }
