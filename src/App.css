@@ -9,16 +9,24 @@
     width: 300px;
     filter: drop-shadow(0 0 20px #111);
     position: absolute;
-    top: 20vh;
+    top: 10vh;
 }
 
-.campaignsLinks {
+.linkContainer {
     background: #111111bb;
     color: #fcfcfc;
     padding: 2rem 3rem;
     border-radius: 8px;
+    margin-bottom: 2rem;
 }
 
-.campaignsLinks li{
+.campaignTitle {
     font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.campaignFaction {
+    width: 40px;
+    margin-right: 1rem;
+    filter: drop-shadow(0 0 2px #fcfcfc);
 }
