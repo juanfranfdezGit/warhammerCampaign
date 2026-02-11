@@ -1,0 +1,52 @@
+[
+  {
+    "id": "imperial-fist-01",
+    "name": "Tor Garadon",
+    "faction": "Imperium",
+    "movimiento": 5,
+    "resistencia": 6,
+    "salvacion": 3,
+    "salvacion invulnerable": 4,
+    "herida": 6,
+    "leadership": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Personaje", "Heroe Epico", "Gravis", "Capitan"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Matriz Signum",
+        "description": "Mientras este modelo lidera una unidad, las armas a distancia equipadas por los modelos en esa unidad tienen la habilidad [IGNORA LA COBERTURA]."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "Capitán de Asedio",
+        "description": "Cada vez que este modelo realiza un ataque que tiene como objetivo un monstruo, vehiculo o fortificacion mejora la fuerza, penetracion de armadura y daño en 2"
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Cañon de gravedad artesanal",
+        "range": 18,
+        "impacto": 2,
+        "fuerza": 5,
+        "penetración": 1,
+        "daño": 2,
+        "abilities": ["Antivehiculo +2"]
+      },
+      {
+        "number": 1,
+        "ataques": 5,
+        "name": "Mano del Desafio",
+        "range": "melee",
+        "impacto": 2,
+        "fuerza": 12,
+        "penetración": -2,
+        "daño": 2,
+        "abilities": []
+      }
+    ]
+  },
+  {}
+]

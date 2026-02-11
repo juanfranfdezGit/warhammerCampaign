@@ -1,153 +1,55 @@
 [
   {
-    "id": "admech-02",
-    "name": "Skitarii Rangers Alpha",
-    "faction": "Mechanicus",
-    "movement": 6,
-    "resist": 4,
-    "salvation": 4,
-    "wound": 1,
-    "leadership": 7,
-    "control": 2,
-    "abilities": [
-      {
-        "id": "mechanicus-ability-01",
-        "name": "Doctrina Rangers",
-        "description": "+1 tirada de daño al no moverse."
-      },
-      {
-        "id": "mechanicus-ability-02",
-        "name": "Tecnología del Omnissiah",
-        "description": "+1 tirada de daño al ir acompañado por un líder."
-      }
-    ],
-    "weapons": [
-      {
-        "number": 1,
-        "name": "Carabina de radio",
-        "range": 18,
-        "strength": 3,
-        "ap": 0,
-        "damage": 1,
-        "shots": 3,
-        "abilities": [
-          "Radiación: Cada vez que sacas un 6 para herir, el objetivo sufre una herida mortal adicional."
-        ]
-      }
-    ]
-  },
-  {
     "id": "admech-01",
-    "name": "Skitarii Rangers",
-    "faction": "Mechanicus",
-    "movement": 6,
-    "resist": 4,
-    "salvation": 4,
-    "wound": 1,
-    "leadership": 6,
-    "control": 1,
-    "abilities": [
-      {
-        "id": "mechanicus-ability-01",
-        "name": "Doctrina Rangers",
-        "description": "+1 tirada de daño al no moverse."
-      },
-      {
-        "id": "mechanicus-ability-02",
-        "name": "Tecnología del Omnissiah",
-        "description": "+1 tirada de daño al ir acompañado por un líder."
-      }
-    ],
-    "weapons": [
-      {
-        "number": 2,
-        "name": "Jezzail de Radio",
-        "range": 30,
-        "strength": 4,
-        "ap": -1,
-        "damage": 1,
-        "shots": 2,
-        "abilities": [
-          "Rapid Fire: 2 disparos a media distancia o corta distancia."
-        ]
-      },
-      {
-        "number": 1,
-        "name": "Arcabuz Transuránico",
-        "range": 60,
-        "strength": 7,
-        "ap": -2,
-        "damage": "D3",
-        "shots": 1,
-        "abilities": [
-          "Precisión: Puedes seleccionar quien recibe la herida. No puede disparar si se mueve."
-        ]
-      },
-      {
-        "number": 1,
-        "name": "Rifle de Arco",
-        "range": 30,
-        "strength": 6,
-        "ap": -2,
-        "damage": "D3",
-        "shots": 1,
-        "abilities": [
-          "Antitanque: Las heridas contra vehículos siempre son críticas."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "admech-03",
     "name": "Magos-Alpha Ferrum-27Σ",
     "faction": "Mechanicus",
-    "movement": 7,
-    "resist": 4,
-    "salvation": 4,
-    "wound": 2,
-    "leadership": 9,
-    "control": 3,
+    "movimiento": 6,
+    "resistencia": 3,
+    "salvacion": 4,
+    "salvacion invulnerable": 5,
+    "herida": 1,
+    "leadership": 7,
+    "control": 2,
+    "keywords": ["Infantería", "Vanguard", "Skitarii"],
     "abilities": [
       {
         "id": "mechanicus-ability-01",
-        "name": "Doctrina Vanguard",
-        "description": "Imperativo Protector: +1 daño largo alcance este turno / Imperativo Conquistador: +1 daño corto alcance este turno."
+        "name": "Conexión de datos mejorada",
+        "description": "Cada vez que selecciones la unidad del portador como objetivo de una Estratagema, tira un D6: con un 5+, ganas 1 PC."
       },
       {
         "id": "mechanicus-ability-02",
-        "name": "Tecnología del Omnissiah",
-        "description": "+1 tirada de daño al ir acompañado por un líder."
+        "name": "Omnispex",
+        "description": "Las armas a distancia equipadas por los modelos en la unidad del portador tienen la habilidad [IGNORA LA COBERTURA]."
       }
     ],
     "weapons": [
       {
         "number": 1,
-        "name": "Maza voltaica",
-        "range": 0,
-        "strength": 7,
-        "ap": -2,
-        "damage": 1,
-        "shots": 1,
-        "abilities": [
-          "Descarga una energía que mata o paraliza con electricidad al enemigo al impactar."
-        ]
+        "ataques": 1,
+        "name": "Pistola Mechanicus",
+        "range": 12,
+        "impacto": 4,
+        "fuerza": 6,
+        "penetración": 1,
+        "daño": 1,
+        "abilities": ["heridas devastadoras", "pistola"]
       },
       {
         "number": 1,
-        "name": "Pistola de ráfagas de fósforo",
-        "range": 12,
-        "strength": 5,
-        "ap": -1,
-        "damage": 1,
-        "shots": "D3",
-        "abilities": [
-          "Ignora Cobertura: no importa si el objetivo está en cobertura"
-        ]
+        "ataques": 2,
+        "name": "Cuerpo a cuerpo Alpha",
+        "range": "melee",
+        "impacto": 4,
+        "fuerza": 5,
+        "penetración": -1,
+        "daño": 1,
+        "abilities": []
       }
     ]
   },
   {
-    "id": "admech-04",
+    "id": "admech-02",
     "name": "Skitarii Vanguards",
     "faction": "Mechanicus",
     "movement": 6,
@@ -159,39 +61,81 @@
     "abilities": [
       {
         "id": "mechanicus-ability-01",
-        "name": "Doctrina Vanguard",
-        "description": "Imperativo Protector: +1 daño largo alcance este turno / Imperativo Conquistador: +1 daño corto alcance este turno."
+        "name": "Conexión de datos mejorada",
+        "description": "Cada vez que selecciones la unidad del portador como objetivo de una Estratagema, tira un D6: con un 5+, ganas 1 PC."
       },
       {
         "id": "mechanicus-ability-02",
-        "name": "Tecnología del Omnissiah",
-        "description": "+1 tirada de daño al ir acompañado por un líder."
+        "name": "Omnispex",
+        "description": "Las armas a distancia equipadas por los modelos en la unidad del portador tienen la habilidad [IGNORA LA COBERTURA]."
       }
     ],
     "weapons": [
       {
-        "number": 1,
-        "name": "Maza voltaica",
-        "range": 0,
-        "strength": 7,
-        "ap": -2,
-        "damage": 1,
-        "shots": 1,
-        "abilities": [
-          "Descarga una energía que mata o paraliza con electricidad al enemigo al impactar."
-        ]
+        "number": 5,
+        "ataques": 3,
+        "name": "Carabina de radio",
+        "range": 18,
+        "impacto": 4,
+        "fuerza": 3,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Anti infantería 4+"]
       },
       {
         "number": 1,
-        "name": "Pistola de ráfagas de fósforo",
-        "range": 12,
-        "strength": 5,
-        "ap": -1,
-        "damage": 1,
-        "shots": "D3",
-        "abilities": [
-          "Ignora Cobertura: no importa si el objetivo está en cobertura"
-        ]
+        "ataques": 3,
+        "name": "Rife de Arco",
+        "range": 30,
+        "impacto": 4,
+        "fuerza": 8,
+        "penetración": -1,
+        "daño": "D3",
+        "abilities": ["Anti Vehículo 4+", "Heridas Devastadoras", "Fuego Rápido 1"]
+      },
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Calibrador de Plasma",
+        "range": 30,
+        "impacto": 4,
+        "fuerza": 7,
+        "penetración": 2,
+        "daño": 1,
+        "abilities": []
+      },
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Calibrador de Plasma - Supercargado",
+        "range": 30,
+        "impacto": 4,
+        "fuerza": 8,
+        "penetración": 3,
+        "daño": 2,
+        "abilities": ["Peligro"]
+      },
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Arcabuz Transuranico",
+        "range": 36,
+        "impacto": 4,
+        "fuerza": 7,
+        "penetración": 2,
+        "daño": "D3",
+        "abilities": ["Pesada", "Precisión"]
+      },
+      {
+        "number": 9,
+        "ataques": 1,
+        "name": "Cuerpo a cuerpo",
+        "range": "melee",
+        "impacto": 4,
+        "fuerza": 3,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": []
       }
     ]
   }
