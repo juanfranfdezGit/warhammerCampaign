@@ -1,9 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./home";
 import LatidoCampaign from "./campaigns/ElLatidodelaMáquina-Diosa";
-import LatidoArmies from "./campaigns/ElLatidodelaMáquina-Diosa/armies";
 import LatidoLore from "./campaigns/ElLatidodelaMáquina-Diosa/lore";
 import LatidoMap from "./campaigns/ElLatidodelaMáquina-Diosa/map";
+import ArmiesList from "./armies/armiesList";
+import Mechanicus from "./armies/factions/mechanicus";
+import Marines from "./armies/factions/marines";
+import Sororitas from "./armies/factions/sororitas";
 
 function App() {
   return (
@@ -12,9 +15,14 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/campaigns/latido" element={<LatidoCampaign />}>
-          <Route path="armies" element={<LatidoArmies />} />
           <Route path="history" element={<LatidoLore />} />
           <Route path="map" element={<LatidoMap />} />
+        </Route>
+
+        <Route path="/armies" element={<ArmiesList />}>
+          <Route path="mechanicus" element={<Mechanicus />} />
+          <Route path="marines" element={<Marines />} />
+          <Route path="sororitas" element={<Sororitas />} />
         </Route>
       </Routes>
     </>

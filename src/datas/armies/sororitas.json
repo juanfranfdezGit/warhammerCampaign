@@ -2,6 +2,7 @@
   {
     "id": "adsor-01",
     "name": "Batallon de Hermanas de Batalla - Hermana Superiora",
+    "image": "/assets/units/battlesistersSup.webp",
     "faction": "Adepta Sororitas",
     "movimiento": 6,
     "resistencia": 3,
@@ -33,7 +34,12 @@
         "fuerza": 4,
         "penetración": 0,
         "daño": 1,
-        "abilities": ["Anti Psiquico 2+", "Heridas Devastadoras", "Precision", "Fuego Rapido 1"]
+        "abilities": [
+          "Anti Psiquico 2+",
+          "Heridas Devastadoras",
+          "Precision",
+          "Fuego Rapido 1"
+        ]
       },
       {
         "number": 1,
@@ -51,6 +57,7 @@
   {
     "id": "adsor-01",
     "name": "Batallon de Hermanas de Batalla",
+    "image": "/assets/units/battlesisters.jpg",
     "faction": "Adepta Sororitas",
     "movimiento": 6,
     "resistencia": 3,

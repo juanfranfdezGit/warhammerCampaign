@@ -11,9 +11,48 @@ function Home() {
             <div className="linkContainer flex column">
               <h2 className="campaignTitle">El Latido de la Maquina-Diosa</h2>
               <div className="flex">
-                <img className="campaignFaction" alt="mechanicus logo" src="/assets/icos/mechanicus.png" />
-                <img className="campaignFaction" alt="imperial fist logo" src="/assets/icos/imperialFist.png" />
-                <img className="campaignFaction" alt="tyranid logo" src="/assets/icos/tyranid.png" />
+                <img
+                  className="campaignFaction"
+                  alt="mechanicus logo"
+                  src="/assets/icos/mechanicus.png"
+                />
+                <img
+                  className="campaignFaction"
+                  alt="imperial fist logo"
+                  src="/assets/icos/imperialFist.png"
+                />
+                <img
+                  className="campaignFaction"
+                  alt="tyranid logo"
+                  src="/assets/icos/tyranid.png"
+                />
+              </div>
+            </div>
+          </Link>
+          <Link to="/armies">
+            <div className="linkContainer flex column">
+              <h2 className="campaignTitle">Ejercitos</h2>
+              <div className="flex">
+                <img
+                  className="campaignFaction"
+                  alt="mechanicus logo"
+                  src="/assets/icos/mechanicus.png"
+                />
+                <img
+                  className="campaignFaction"
+                  alt="sororitas logo"
+                  src="/assets/icos/sororitas.png"
+                />
+                <img
+                  className="campaignFaction"
+                  alt="imperial fist logo"
+                  src="/assets/icos/imperialFist.png"
+                />
+                <img
+                  className="campaignFaction"
+                  alt="tyranid logo"
+                  src="/assets/icos/tyranid.png"
+                />
               </div>
             </div>
           </Link>

@@ -2,6 +2,7 @@
   {
     "id": "admech-01",
     "name": "Magos-Alpha Ferrum-27Σ",
+    "image": "/assets/units/skitariiCapt.jpg",
     "faction": "Mechanicus",
     "movimiento": 6,
     "resistencia": 3,
@@ -51,11 +52,12 @@
   {
     "id": "admech-02",
     "name": "Skitarii Vanguards",
+    "image": "/assets/units/skitarii.webp",
     "faction": "Mechanicus",
-    "movement": 6,
-    "resist": 4,
-    "salvation": 4,
-    "wound": 1,
+    "movimiento": 6,
+    "resistencia": 4,
+    "salvacion": 4,
+    "herida": 1,
     "leadership": 6,
     "control": 1,
     "abilities": [
@@ -146,6 +148,7 @@
   {
     "id": "admech-03",
     "name": "Tech Priest Dominus",
+    "image": "/assets/units/priestD.jpg",
     "faction": "Mechanicus",
     "movimiento": 6,
     "resistencia": 4,
@@ -206,6 +209,7 @@
   {
     "id": "admech-04",
     "name": "Belisarius Cawl",
+    "image": "/assets/units/belisarius.jpg",
     "faction": "Mechanicus",
     "movimiento": 8,
     "resistencia": 8,

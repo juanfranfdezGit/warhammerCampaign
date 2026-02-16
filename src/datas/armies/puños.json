@@ -2,6 +2,7 @@
   {
     "id": "imperial-fist-01",
     "name": "Tor Garadon",
+    "image": "/assets/units/garadon.jpg",
     "faction": "Imperium",
     "movimiento": 5,
     "resistencia": 6,
@@ -48,5 +49,114 @@
       }
     ]
   },
-  {}
+  {
+    "id": "imperial-fist-02",
+    "name": "Escuadra Infernus",
+    "image": "/assets/units/infernus.webp",
+    "faction": "Imperium",
+    "movimiento": 6,
+    "resistencia": 4,
+    "salvacion": 3,
+    "herida": 2,
+    "leadership": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Granadas", "Tacticas"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Terror Incendiario",
+        "description": "En tu fase de Disparo, después de que esta unidad haya disparado, puedes seleccionar una unidad de INFANTERÍA enemiga alcanzada por uno o más de esos ataques realizados con un piroblaster. Esa unidad enemiga debe realizar una prueba de Choque de Batalla, restando 1 a dicha prueba."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 5,
+        "ataques": "D6",
+        "name": "Cañon de gravedad artesanal",
+        "range": 12,
+        "impacto": 0,
+        "fuerza": 5,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Ignora Cobertura", "Rafaga"]
+      },
+      {
+        "number": 5,
+        "ataques": 1,
+        "name": "Pistola Bolter",
+        "range": 12,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Pistola"]
+      },
+      {
+        "number": 5,
+        "ataques": 3,
+        "name": "Arma Cuerpo a Cuerpo",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-03",
+    "name": "Sargento Infernus",
+    "image": "/assets/units/infernusSgt.jpg",
+    "faction": "Imperium",
+    "movimiento": 6,
+    "resistencia": 4,
+    "salvacion": 3,
+    "herida": 2,
+    "leadership": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Granadas", "Tacticas"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Terror Incendiario",
+        "description": "En tu fase de Disparo, después de que esta unidad haya disparado, puedes seleccionar una unidad de INFANTERÍA enemiga alcanzada por uno o más de esos ataques realizados con un piroblaster. Esa unidad enemiga debe realizar una prueba de Choque de Batalla, restando 1 a dicha prueba."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "ataques": "D6",
+        "name": "Cañon de gravedad artesanal",
+        "range": 12,
+        "impacto": 0,
+        "fuerza": 5,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Ignora Cobertura", "Rafaga"]
+      },
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Pistola Bolter",
+        "range": 12,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Pistola"]
+      },
+      {
+        "number": 1,
+        "ataques": 3,
+        "name": "Arma Cuerpo a Cuerpo",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": []
+      }
+    ]
+  }
 ]
