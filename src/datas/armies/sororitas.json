@@ -1,0 +1,133 @@
+[
+  {
+    "id": "adsor-01",
+    "name": "Batallon de Hermanas de Batalla - Hermana Superiora",
+    "faction": "Adepta Sororitas",
+    "movimiento": 6,
+    "resistencia": 3,
+    "salvacion": 3,
+    "salvacion invulnerable": 6,
+    "herida": 1,
+    "leadership": 7,
+    "control": 2,
+    "keywords": ["Infantería", "Granadas", "Linea de Batalla"],
+    "abilities": [
+      {
+        "id": "sororita-ability-01",
+        "name": "Querubin",
+        "description": "Una vez por batalla, después de que esta unidad realice un Acto de Fe, obtienes 1 dado de Milagro. Nota: Coloca una ficha de Querubín junto a la unidad y retírala una vez que se haya usado esta habilidad."
+      },
+      {
+        "id": "sororita-ability-02",
+        "name": "Defensoras de la Fe",
+        "description": "Al final de tu fase de Mando, si esta unidad está dentro del alcance de un marcador de objetivo que controlas, ese marcador de objetivo permanece bajo tu control, incluso si no tienes modelos dentro de su alcance, hasta que tu adversario lo controle al comienzo o al final de cualquier turno."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Bolter Condenador",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Anti Psiquico 2+", "Heridas Devastadoras", "Precision", "Fuego Rapido 1"]
+      },
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Arma de Poder",
+        "range": "melee",
+        "impacto": 4,
+        "fuerza": 4,
+        "penetración": -2,
+        "daño": 1,
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "adsor-01",
+    "name": "Batallon de Hermanas de Batalla",
+    "faction": "Adepta Sororitas",
+    "movimiento": 6,
+    "resistencia": 3,
+    "salvacion": 3,
+    "salvacion invulnerable": 6,
+    "herida": 1,
+    "leadership": 7,
+    "control": 2,
+    "keywords": ["Infantería", "Granadas", "Linea de Batalla"],
+    "abilities": [
+      {
+        "id": "sororita-ability-01",
+        "name": "Querubin",
+        "description": "Una vez por batalla, después de que esta unidad realice un Acto de Fe, obtienes 1 dado de Milagro. Nota: Coloca una ficha de Querubín junto a la unidad y retírala una vez que se haya usado esta habilidad."
+      },
+      {
+        "id": "sororita-ability-02",
+        "name": "Defensoras de la Fe",
+        "description": "Al final de tu fase de Mando, si esta unidad está dentro del alcance de un marcador de objetivo que controlas, ese marcador de objetivo permanece bajo tu control, incluso si no tienes modelos dentro de su alcance, hasta que tu adversario lo controle al comienzo o al final de cualquier turno."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 7,
+        "ataques": 1,
+        "name": "Bolter",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Fuego Rapido 1"]
+      },
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Multi-Melta",
+        "range": 18,
+        "impacto": 4,
+        "fuerza": 9,
+        "penetración": -4,
+        "daño": "D6",
+        "abilities": ["Pesada", "Melta 2"]
+      },
+      {
+        "number": 1,
+        "ataques": 3,
+        "name": "Bolter Pesado",
+        "range": 36,
+        "impacto": 4,
+        "fuerza": 5,
+        "penetración": -1,
+        "daño": 2,
+        "abilities": ["Fuego Sostenido 1"]
+      },
+      {
+        "number": 9,
+        "ataques": 1,
+        "name": "Pistola Bolter",
+        "range": 12,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["pistola"]
+      },
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Cuerpo a cuerpo",
+        "range": "melee",
+        "impacto": 4,
+        "fuerza": 3,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": []
+      }
+    ]
+  }
+]
