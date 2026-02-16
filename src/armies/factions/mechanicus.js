@@ -1,9 +1,20 @@
 import mecha from "../../datas/armies/mechanicus.json";
+import { Link } from "react-router-dom";
 import "../armies.css";
 
 export default function Mechanicus() {
   return (
     <section className="armiesSection">
+      <Link to="/armies">
+        <div className="backArmieBtn">
+          <img src="/assets/icos/back.png" alt="back btn"></img>
+        </div>
+      </Link>
+
+      <div className="armiesHeader">
+        <h1>{mecha[0].faction}</h1>
+      </div>
+
       {mecha.map((army) => (
         <table key={army.id} className="datasheetTable">
           <thead>

@@ -1,9 +1,20 @@
 import imperial from "../../datas/armies/puños.json";
+import { Link } from "react-router-dom";
 import "../armies.css";
 
 export default function Marines() {
   return (
     <section className="armiesSection">
+      <Link to="/armies">
+        <div className="backArmieBtn">
+          <img src="/assets/icos/back.png" alt="back btn"></img>
+        </div>
+      </Link>
+
+      <div className="armiesHeader">
+        <h1>{imperial[0].faction}</h1>
+      </div>
+
       {imperial.map((army) => (
         <table key={army.id} className="datasheetTable">
           <thead>

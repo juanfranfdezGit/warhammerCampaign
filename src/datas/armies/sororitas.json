@@ -43,6 +43,17 @@
       },
       {
         "number": 1,
+        "ataques": 1,
+        "name": "Pistola Bolter",
+        "range": 12,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["pistola"]
+      },
+      {
+        "number": 1,
         "ataques": 2,
         "name": "Arma de Poder",
         "range": "melee",
@@ -112,6 +123,67 @@
         "penetración": -1,
         "daño": 2,
         "abilities": ["Fuego Sostenido 1"]
+      },
+      {
+        "number": 9,
+        "ataques": 1,
+        "name": "Pistola Bolter",
+        "range": 12,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["pistola"]
+      },
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Cuerpo a cuerpo",
+        "range": "melee",
+        "impacto": 4,
+        "fuerza": 3,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "adsor-03",
+    "name": "Imagifier",
+    "image": "/assets/units/imagifier.webp",
+    "faction": "Adepta Sororitas",
+    "movimiento": 6,
+    "resistencia": 3,
+    "salvacion": 3,
+    "salvacion invulnerable": 4,
+    "herida": 3,
+    "leadership": 7,
+    "control": 2,
+    "keywords": ["Infantería", "Granadas", "Linea de Batalla"],
+    "abilities": [
+      {
+        "id": "sororita-ability-01",
+        "name": "Letanía de Hazañas",
+        "description": "Cada vez que ganes un dado de Milagro como resultado de la destrucción de una unidad o miniatura de ADEPTA SORORITAS de tu ejército, si dicha unidad o miniatura fue destruida a 12 o menos de esta miniatura, puedes repetir el resultado de ese dado de Milagro antes de añadirlo a tu reserva "
+      },
+      {
+        "id": "sororita-ability-02",
+        "name": "Puente de los Mártires Santos",
+        "description": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen una Tirada de Salvación de 2+ y una Tirada de Salvación Invulnerable de 4+."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Bolter",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Fuego Rapido 1"]
       },
       {
         "number": 9,

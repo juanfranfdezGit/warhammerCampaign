@@ -19,11 +19,10 @@ function App() {
           <Route path="map" element={<LatidoMap />} />
         </Route>
 
-        <Route path="/armies" element={<ArmiesList />}>
-          <Route path="mechanicus" element={<Mechanicus />} />
-          <Route path="marines" element={<Marines />} />
-          <Route path="sororitas" element={<Sororitas />} />
-        </Route>
+        <Route path="/armies" element={<ArmiesList />} />
+        <Route path="/armies/mechanicus" element={<Mechanicus />} />
+        <Route path="/armies/marines" element={<Marines />} />
+        <Route path="/armies/sororitas" element={<Sororitas />} />
       </Routes>
     </>
   );

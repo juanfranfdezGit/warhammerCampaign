@@ -1,9 +1,20 @@
 import sororitas from "../../datas/armies/sororitas.json";
+import { Link } from "react-router-dom";
 import "../armies.css";
 
 export default function Sororitas() {
   return (
     <section className="armiesSection">
+      <Link to="/armies">
+        <div className="backArmieBtn">
+          <img src="/assets/icos/back.png" alt="back btn"></img>
+        </div>
+      </Link>
+
+      <div className="armiesHeader">
+        <h1>{sororitas[0].faction}</h1>
+      </div>
+
       {sororitas.map((army) => (
         <table key={army.id} className="datasheetTable">
           <thead>

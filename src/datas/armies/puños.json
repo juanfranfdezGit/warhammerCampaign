@@ -3,7 +3,7 @@
     "id": "imperial-fist-01",
     "name": "Tor Garadon",
     "image": "/assets/units/garadon.jpg",
-    "faction": "Imperium",
+    "faction": "Puños Imperiales",
     "movimiento": 5,
     "resistencia": 6,
     "salvacion": 3,
@@ -154,6 +154,200 @@
         "impacto": 3,
         "fuerza": 4,
         "penetración": 0,
+        "daño": 1,
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-04",
+    "name": "Capitán Templario Negro",
+    "image": "/assets/units/capitanTemp.jfif",
+    "faction": "Imperium",
+    "movimiento": 5,
+    "resistencia": 5,
+    "salvacion": 2,
+    "salvacion invulnerable": 4,
+    "herida": 6,
+    "leadership": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Personaje", "Exterminador"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Ritos de Batalla",
+        "description": "Una vez por ronda de batalla, una unidad de tu ejército con esta habilidad puede usarla cuando su unidad es objetivo de una Estratagema. Si lo es, reduce el coste de PC de ese uso de la Estratagema en 1 PC."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "La Espada del Imperio",
+        "description": "Puedes repetir las tiradas de Carga realizadas para la unidad de esta miniatura."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Bolter Tormenta",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Fuego Rapido 2"]
+      },
+      {
+        "number": 1,
+        "ataques": 6,
+        "name": "Arma Reliquia",
+        "range": "melee",
+        "impacto": 2,
+        "fuerza": 5,
+        "penetración": -2,
+        "daño": 2,
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-05",
+    "name": "Bibliotecario",
+    "image": "/assets/units/bibli.png",
+    "faction": "Imperium",
+    "movimiento": 5,
+    "resistencia": 5,
+    "salvacion": 2,
+    "salvacion invulnerable": 4,
+    "herida": 5,
+    "leadership": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Personaje", "Exterminador", "Psiquico"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Capucha Psíquica",
+        "description": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen la habilidad Sin Dolor 4+ contra Ataques Psíquicos."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "Velo del Tiempo",
+        "description": "Mientras esta miniatura lidera una unidad, las armas equipadas por las miniaturas de esa unidad tienen la habilidad [GOLPE SOSTENIDO 1]."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Bolter Tormenta",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Fuego Rapido 2"]
+      },
+      {
+        "number": 1,
+        "ataques": "D6",
+        "name": "Fuego Brujo",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 5,
+        "penetración": -1,
+        "daño": "D3",
+        "abilities": []
+      },
+      {
+        "number": 1,
+        "ataques": "D6",
+        "name": "Fuego Brujo Sobrecarga",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 6,
+        "penetración": -2,
+        "daño": "D3",
+        "abilities": ["Heridas devastadoras", "Riesgo"]
+      },
+      {
+        "number": 1,
+        "ataques": 4,
+        "name": "Arma de Fuerza",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 6,
+        "penetración": -1,
+        "daño": "D3",
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-06",
+    "name": "Escuadra de Exterminadores",
+    "image": "/assets/units/exterminadores.jpg",
+    "faction": "Imperium",
+    "movimiento": 5,
+    "resistencia": 5,
+    "salvacion": 2,
+    "salvacion invulnerable": 4,
+    "herida": 3,
+    "leadership": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Exterminador", "Psiquico"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Teletransporte a Homer",
+        "description": "Al comienzo de la batalla, puedes colocar una ficha de Teletransporte a Homer para esta unidad en cualquier lugar del campo de batalla que no esté en la zona de despliegue de tu oponente. Si lo haces, una vez por batalla, puedes seleccionar esta unidad como objetivo con la Estratagema de Incursión Rápida por 0 PC, pero al resolverla, debes colocar esta unidad a 3 o menos de esa ficha y no a 9 o menos de ninguna miniatura enemiga. Esa ficha se retira entonces."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "Furia del Primero",
+        "description": "Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo tu Juramento del Momento, suma 1 a la tirada para Impactar."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 4,
+        "ataques": 2,
+        "name": "Bolter Tormenta",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Fuego Rapido 2"]
+      },
+      {
+        "number": 1,
+        "ataques": 6,
+        "name": "Cañon de Asalto",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 6,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Heridas Devastadoras"]
+      },
+      {
+        "number": 4,
+        "ataques": 3,
+        "name": "Puño de energía",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 8,
+        "penetración": -2,
+        "daño": 2,
+        "abilities": []
+      },
+      {
+        "number": 1,
+        "ataques": 4,
+        "name": "Arma de Energia",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 5,
+        "penetración": -2,
         "daño": 1,
         "abilities": []
       }
