@@ -52,6 +52,18 @@ export default function ArmiesList() {
               </div>
             </div>
           </Link>
+          <Link to="tyranids">
+            <div className="linkContainer flex column armiesListDiv">
+              <div className="flex">
+                <img
+                  className="campaignFaction armiesListDiv"
+                  alt="mechanicus logo"
+                  src="/assets/icos/tyranid.png"
+                />
+                <h3>Tyranidos</h3>
+              </div>
+            </div>
+          </Link>
         </ul>
       </div>
     </>

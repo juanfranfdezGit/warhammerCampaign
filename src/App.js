@@ -7,6 +7,7 @@ import ArmiesList from "./armies/armiesList";
 import Mechanicus from "./armies/factions/mechanicus";
 import Marines from "./armies/factions/marines";
 import Sororitas from "./armies/factions/sororitas";
+import Tyran from "./armies/factions/tyranid";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/armies/mechanicus" element={<Mechanicus />} />
         <Route path="/armies/marines" element={<Marines />} />
         <Route path="/armies/sororitas" element={<Sororitas />} />
+        <Route path="/armies/tyranids" element={<Tyran />} />
       </Routes>
     </>
   );

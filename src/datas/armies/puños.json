@@ -352,5 +352,66 @@
         "abilities": []
       }
     ]
+  },
+  {
+    "id": "imperial-fist-07",
+    "name": "Capellan en moto",
+    "image": "/assets/units/capellan.jpg",
+    "faction": "Imperium",
+    "movimiento": 12,
+    "resistencia": 5,
+    "salvacion": 3,
+    "salvacion invulnerable": 4,
+    "herida": 5,
+    "leadership": 5,
+    "control": 1,
+    "keywords": ["Montada", "Personaje", "Capellan"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Letania de Odio",
+        "description": "Mientras este modelo esté liderando una unidad, cada vez que un modelo de esa unidad realice un ataque cuerpo a cuerpo, suma 1 a la tirada de Heridas."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "Cataclismo de Fuego",
+        "description": "Cada vez que se selecciona la unidad de esta miniatura para disparar, puedes seleccionar una unidad enemiga a 30 cm o menos de ella y visible para ella. Hasta el final de la fase, las armas a distancia equipadas por las miniaturas de la unidad de esta miniatura tienen la habilidad [HERIDAS DEVASTADORAS] al apuntar a esa unidad enemiga."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Pistola Bolter Absoltor",
+        "range": 18,
+        "impacto": 3,
+        "fuerza": 5,
+        "penetración": -1,
+        "daño": 2,
+        "abilities": ["Pistola"]
+      },
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Rifle Bolter Doble",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": -1,
+        "daño": 1,
+        "abilities": ["Acoplada"]
+      },
+      {
+        "number": 1,
+        "ataques": 5,
+        "name": "Crozius Arcanum",
+        "range": "melee",
+        "impacto": 2,
+        "fuerza": 6,
+        "penetración": -1,
+        "daño": 2,
+        "abilities": []
+      }
+    ]
   }
 ]

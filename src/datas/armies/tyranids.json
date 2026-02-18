@@ -1,0 +1,52 @@
+[
+  {
+    "id": "tyran-01",
+    "name": "Terror de Colmena",
+    "image": "/assets/units/señor.jpg",
+    "faction": "Tyranidos",
+    "movimiento": 6,
+    "resistencia": 3,
+    "salvacion": 4,
+    "salvacion invulnerable": 5,
+    "herida": 1,
+    "leadership": 7,
+    "control": 2,
+    "keywords": ["Infantería", "Vanguard", "Skitarii"],
+    "abilities": [
+      {
+        "id": "mechanicus-ability-01",
+        "name": "Conexión de datos mejorada",
+        "description": "Cada vez que selecciones la unidad del portador como objetivo de una Estratagema, tira un D6: con un 5+, ganas 1 PC."
+      },
+      {
+        "id": "mechanicus-ability-02",
+        "name": "Omnispex",
+        "description": "Las armas a distancia equipadas por los modelos en la unidad del portador tienen la habilidad [IGNORA LA COBERTURA]."
+      }
+    ],
+    "weapons": [
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Pistola Mechanicus",
+        "range": 12,
+        "impacto": 4,
+        "fuerza": 6,
+        "penetración": 1,
+        "daño": 1,
+        "abilities": ["heridas devastadoras", "pistola"]
+      },
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Cuerpo a cuerpo Alpha",
+        "range": "melee",
+        "impacto": 4,
+        "fuerza": 5,
+        "penetración": -1,
+        "daño": 1,
+        "abilities": []
+      }
+    ]
+  }
+]
