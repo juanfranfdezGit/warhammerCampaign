@@ -81,15 +81,22 @@ export default function Tyran() {
                   <td colSpan="6">
                     <ul className="weaponsList">
                       {army.weapons.map((weapon, index) => (
-                        <li key={index} className="weaponItem flex column">
-                          <h4>{weapon.name}:</h4>
-                          <p>Rango: {weapon.range}</p>
-                          <p>Utilizando: {weapon.number}</p>
-                          <p>Fuerza: {weapon.fuerza}</p>
-                          <p>Penetración: {weapon.penetración}</p>
-                          <p>Daño: {weapon.daño}</p>
-                          <p>Disparos: {weapon.ataques}</p>
-                          <p>{weapon.abilities}</p>
+                        <li key={index} className="weaponItem flex">
+                          <div className="weaponStats">
+                            <h4>{weapon.name}:</h4>
+                            <p>Rango: {weapon.range}</p>
+                            <p>Utilizando: {weapon.number}</p>
+                            <p>Fuerza: {weapon.fuerza}</p>
+                            <p>Penetración: {weapon.penetración}</p>
+                            <p>Daño: {weapon.daño}</p>
+                            <p>Disparos: {weapon.ataques}</p>
+                            <p>{weapon.abilities}</p>
+                          </div>
+                          <img
+                            src={weapon.image || army.image}
+                            className="weaponImg flex"
+                            alt={weapon.name}
+                          />
                         </li>
                       ))}
                     </ul>

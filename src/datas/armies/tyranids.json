@@ -4,48 +4,55 @@
     "name": "Terror de Colmena",
     "image": "/assets/units/señor.jpg",
     "faction": "Tyranidos",
-    "movimiento": 6,
-    "resistencia": 3,
-    "salvacion": 4,
-    "salvacion invulnerable": 5,
-    "herida": 1,
+    "movimiento": 8,
+    "resistencia": 10,
+    "salvacion": 2,
+    "salvacion invulnerable": 4,
+    "herida": 10,
     "leadership": 7,
-    "control": 2,
-    "keywords": ["Infantería", "Vanguard", "Skitarii"],
+    "control": 3,
+    "keywords": ["Monstruo", "Heroe Epico", "Psiquico"],
     "abilities": [
       {
-        "id": "mechanicus-ability-01",
-        "name": "Conexión de datos mejorada",
-        "description": "Cada vez que selecciones la unidad del portador como objetivo de una Estratagema, tira un D6: con un 5+, ganas 1 PC."
+        "id": "tyr-ability-01",
+        "name": "Comandante de la Colmena",
+        "description": "Al comienzo de tu fase de Mando, si esta miniatura está en el campo de batalla, obtienes 1 PC."
       },
       {
-        "id": "mechanicus-ability-02",
-        "name": "Omnispex",
-        "description": "Las armas a distancia equipadas por los modelos en la unidad del portador tienen la habilidad [IGNORA LA COBERTURA]."
+        "id": "tyr-ability-02",
+        "name": "Presencia Maligna (Aura)",
+        "description": "Si esta miniatura es tu SEÑOR DE LA GUERRA, cada vez que tu oponente seleccione una unidad de su ejército con una Estratagema, si dicha unidad está a 30 cm o menos de esta miniatura, aumenta el coste de usar esa Estratagema en 1 PC."
+      },
+      {
+        "id": "tyr-ability-03",
+        "name": "Dominación de la Mente Colmena (Aura)",
+        "description": "Mientras una unidad TIRÁNIDA amiga esté a 23 cm o menos de esta miniatura, esa unidad estará dentro del Alcance de Sinapsis de tu ejército."
       }
     ],
     "weapons": [
       {
         "number": 1,
-        "ataques": 1,
-        "name": "Pistola Mechanicus",
-        "range": 12,
-        "impacto": 4,
-        "fuerza": 6,
-        "penetración": 1,
-        "daño": 1,
-        "abilities": ["heridas devastadoras", "pistola"]
+        "ataques": "D6+3",
+        "name": "Pulso Sinaptico",
+        "range": 18,
+        "impacto": 0,
+        "fuerza": 5,
+        "penetración": -1,
+        "daño": 2,
+        "abilities": ["Psiquico", "Rafaga"],
+        "image": "/assets/weapons/pulso.png"
       },
       {
         "number": 1,
-        "ataques": 2,
-        "name": "Cuerpo a cuerpo Alpha",
+        "ataques": 8,
+        "name": "Sables de Hueso",
         "range": "melee",
-        "impacto": 4,
-        "fuerza": 5,
-        "penetración": -1,
-        "daño": 1,
-        "abilities": []
+        "impacto": 2,
+        "fuerza": 9,
+        "penetración": -2,
+        "daño": 3,
+        "abilities": ["Gemela"],
+        "image": "/assets/weapons/espadaHueso.png"
       }
     ]
   }

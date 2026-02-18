@@ -117,3 +117,15 @@
   object-fit: cover;
   object-position: top;
 }
+
+.weaponStats {
+  width: 40vw;
+  margin-top: 1rem;
+  margin-right: .5rem;
+}
+
+.weaponImg {
+  margin-top: 2rem;
+  width: 50vw;
+  height: 150px;
+}
