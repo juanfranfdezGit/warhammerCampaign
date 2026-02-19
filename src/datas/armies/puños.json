@@ -34,6 +34,7 @@
         "fuerza": 5,
         "penetración": 1,
         "daño": 2,
+        "image": "/assets/weapons/gravedadArt.png",
         "abilities": ["Antivehiculo +2"]
       },
       {
@@ -45,6 +46,7 @@
         "fuerza": 12,
         "penetración": -2,
         "daño": 2,
+        "image": "/assets/weapons/puñoGaradon.png",
         "abilities": []
       }
     ]
@@ -72,12 +74,13 @@
       {
         "number": 5,
         "ataques": "D6",
-        "name": "Cañon de gravedad artesanal",
+        "name": "Lanzallamas",
         "range": 12,
         "impacto": 0,
         "fuerza": 5,
         "penetración": 0,
         "daño": 1,
+        "image": "/assets/weapons/lanzallamas.png",
         "abilities": ["Ignora Cobertura", "Rafaga"]
       },
       {
@@ -89,6 +92,7 @@
         "fuerza": 4,
         "penetración": 0,
         "daño": 1,
+        "image": "/assets/weapons/pistolaBolt.webp",
         "abilities": ["Pistola"]
       },
       {
@@ -100,6 +104,7 @@
         "fuerza": 4,
         "penetración": 0,
         "daño": 1,
+        "image": "/assets/weapons/navajas.png",
         "abilities": []
       }
     ]
@@ -127,12 +132,13 @@
       {
         "number": 1,
         "ataques": "D6",
-        "name": "Cañon de gravedad artesanal",
+        "name": "Lanzallamas",
         "range": 12,
         "impacto": 0,
         "fuerza": 5,
         "penetración": 0,
         "daño": 1,
+        "image": "/assets/weapons/lanzallamas.png",
         "abilities": ["Ignora Cobertura", "Rafaga"]
       },
       {
@@ -144,6 +150,7 @@
         "fuerza": 4,
         "penetración": 0,
         "daño": 1,
+        "image": "/assets/weapons/pistolaBolt.webp",
         "abilities": ["Pistola"]
       },
       {
@@ -155,6 +162,7 @@
         "fuerza": 4,
         "penetración": 0,
         "daño": 1,
+        "image": "/assets/weapons/navajas.png",
         "abilities": []
       }
     ]
@@ -194,6 +202,7 @@
         "fuerza": 4,
         "penetración": 0,
         "daño": 1,
+        "image": "/assets/weapons/bolterTormenta.webp",
         "abilities": ["Fuego Rapido 2"]
       },
       {
@@ -205,6 +214,7 @@
         "fuerza": 5,
         "penetración": -2,
         "daño": 2,
+        "image": "/assets/weapons/reliquia.jpg",
         "abilities": []
       }
     ]

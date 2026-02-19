@@ -11,41 +11,36 @@
     "herida": 10,
     "leadership": 7,
     "control": 3,
-    "keywords": ["Monstruo", "Heroe Epico", "Psiquico"],
+    "keywords": ["Monstruo", "Heroe", "Psiquico", "Sinapsis"],
     "abilities": [
       {
         "id": "tyr-ability-01",
-        "name": "Comandante de la Colmena",
-        "description": "Al comienzo de tu fase de Mando, si esta miniatura está en el campo de batalla, obtienes 1 PC."
+        "name": "Voluntad de la Mente Colmena",
+        "description": "Una vez por ronda de batalla, una miniatura de tu ejército con esta habilidad puede usarla cuando una unidad TIRÁNIDOS amiga a 30 cm o menos de ella es objetivo de una Estratagema. Si lo es, reduce el coste de PC de ese uso de la Estratagema en 1 PC."
       },
       {
         "id": "tyr-ability-02",
-        "name": "Presencia Maligna (Aura)",
-        "description": "Si esta miniatura es tu SEÑOR DE LA GUERRA, cada vez que tu oponente seleccione una unidad de su ejército con una Estratagema, si dicha unidad está a 30 cm o menos de esta miniatura, aumenta el coste de usar esa Estratagema en 1 PC."
-      },
-      {
-        "id": "tyr-ability-03",
-        "name": "Dominación de la Mente Colmena (Aura)",
-        "description": "Mientras una unidad TIRÁNIDA amiga esté a 23 cm o menos de esta miniatura, esa unidad estará dentro del Alcance de Sinapsis de tu ejército."
+        "name": "Embestida (Aura, Psíquica)",
+        "description": "Mientras una unidad TIRÁNIDOS amiga esté a 15 cm o menos de esta miniatura, las armas a distancia equipadas por las miniaturas de esa unidad tienen las habilidades [ASALTO] y [GOLPE LETAL]."
       }
     ],
     "weapons": [
       {
         "number": 1,
-        "ataques": "D6+3",
-        "name": "Pulso Sinaptico",
-        "range": 18,
-        "impacto": 0,
-        "fuerza": 5,
-        "penetración": -1,
-        "daño": 2,
-        "abilities": ["Psiquico", "Rafaga"],
+        "ataques": "D3",
+        "name": "Cañon Pesado Venenoso",
+        "range": 36,
+        "impacto": 2,
+        "fuerza": 9,
+        "penetración": -2,
+        "daño": 3,
+        "abilities": ["Rafaga"],
         "image": "/assets/weapons/pulso.png"
       },
       {
         "number": 1,
-        "ataques": 8,
-        "name": "Sables de Hueso",
+        "ataques": 6,
+        "name": "Espada y Latigo de Hueso",
         "range": "melee",
         "impacto": 2,
         "fuerza": 9,
@@ -53,6 +48,18 @@
         "daño": 3,
         "abilities": ["Gemela"],
         "image": "/assets/weapons/espadaHueso.png"
+      },
+      {
+        "number": 1,
+        "ataques": 4,
+        "name": "Garras Guadañas",
+        "range": "melee",
+        "impacto": 2,
+        "fuerza": 7,
+        "penetración": -2,
+        "daño": 2,
+        "abilities": ["Extra Ataques"],
+        "image": "/assets/weapons/garras.png"
       }
     ]
   }
