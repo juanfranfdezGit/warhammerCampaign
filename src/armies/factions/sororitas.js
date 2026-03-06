@@ -89,6 +89,7 @@ export default function Sororitas() {
                           <p>Penetración: {weapon.penetración}</p>
                           <p>Daño: {weapon.daño}</p>
                           <p>Disparos: {weapon.ataques}</p>
+                          <p>Impacto: {weapon.impacto}</p>
                           <p>{weapon.abilities}</p>
                         </li>
                       ))}
