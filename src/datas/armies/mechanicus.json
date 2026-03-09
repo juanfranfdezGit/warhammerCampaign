@@ -57,6 +57,7 @@
     "movimiento": 6,
     "resistencia": 4,
     "salvacion": 4,
+    "salvacion invulnerable": "-",
     "herida": 1,
     "leadership": 6,
     "control": 1,
