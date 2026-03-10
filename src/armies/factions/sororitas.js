@@ -32,12 +32,12 @@ export default function Sororitas() {
 
             {/* Stats */}
             <tr className="statsHeader">
-              <th>M</th>
-              <th>T</th>
-              <th>Sv</th>
-              <th>W</th>
-              <th>Ld</th>
-              <th>OC</th>
+              <th>Mov.</th>
+              <th>Res.</th>
+              <th>Salv.</th>
+              <th>Her.</th>
+              <th>Lid.</th>
+              <th>Cont.</th>
             </tr>
           </thead>
 
@@ -45,7 +45,10 @@ export default function Sororitas() {
             <tr className="statsRow">
               <td>{army.movimiento}</td>
               <td>{army.resistencia}</td>
-              <td>{army.salvacion}</td>
+              <td>
+                {army.salvacion}{" "}
+                <span className="inv">{army["salvacion invulnerable"]}</span>
+              </td>
               <td>{army.herida}</td>
               <td>{army.leadership}</td>
               <td>{army.control}</td>
@@ -83,13 +86,13 @@ export default function Sororitas() {
                       {army.weapons.map((weapon, index) => (
                         <li key={index} className="weaponItem flex column">
                           <h4>{weapon.name}:</h4>
-                          <p>Rango: {weapon.range}</p>
                           <p>Utilizando: {weapon.number}</p>
+                          <p>Alcance: {weapon.range}</p>
+                          <p>Ataques: {weapon.ataques}</p>
+                          <p>Impacto: {weapon.impacto}</p>
                           <p>Fuerza: {weapon.fuerza}</p>
                           <p>Penetración: {weapon.penetración}</p>
                           <p>Daño: {weapon.daño}</p>
-                          <p>Disparos: {weapon.ataques}</p>
-                          <p>Impacto: {weapon.impacto}</p>
                           <p>{weapon.abilities}</p>
                         </li>
                       ))}
