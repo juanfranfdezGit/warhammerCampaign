@@ -260,6 +260,13 @@
         "description": "Al comienzo de tu fase de Mando, este modelo recupera hasta D3 heridas perdidas."
       }
     ],
+    "destacemento": [
+      {
+        "id": "mechanicus-destacamento-01",
+        "name": "Bombardeo Radiactivo",
+        "description": "Al comienzo de la primera ronda de batalla, por cada unidad enemiga dentro de la zona de despliegue de tu oponente, este debe decidir si dicha unidad se cubrirá o se mantendrá firme. Luego, tira un dado de seis caras (D6) por cada una de esas unidades enemigas y aplica el resultado correspondiente: Unidad Firme: Con un resultado de 3 o más, esa unidad sufre D3 heridas mortales. Unidad Cubriendo: Hasta el final de la ronda de batalla, esa unidad queda desmoralizada y, con un resultado de 5 o más, sufre D3 heridas mortales. Al comienzo de tu fase de mando durante la segunda, tercera, cuarta y quinta ronda de batalla, tira un dado de seis caras (D6) por cada unidad enemiga dentro de la zona de despliegue de tu oponente. Con un resultado de 3 o más, esa unidad sufre 1 herida mortal y debe realizar una prueba de Desmoralización."
+      }
+    ],
     "weapons": [
       {
         "number": 1,
