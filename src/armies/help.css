@@ -18,7 +18,7 @@
   background: darkred;
   font-size: 2.3rem;
   padding: 4px 8px;
-  margin-bottom: 1rem;
+  margin-bottom: -1rem;
 }
 
 .helpSection ul {
@@ -63,4 +63,11 @@
   background: #fcfcfc;
   color: #111;
   padding: 0.5rem 1rem;
+}
+
+.fase h4 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  background: rgb(255, 36, 36);
+  padding: 4px 8px;
 }

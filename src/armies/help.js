@@ -14,13 +14,23 @@ export default function Help() {
 
       <h1>Ayudas</h1>
 
-       <ul>
+      <ul>
         <h2>Fases del Juego</h2>
         {Fases.map((fase) => (
-          <li key={fase.id}>
+          <li key={fase.id} className="fase">
             <h3>{fase.name}</h3>
             <p>{fase.description}</p>
-            <p className="ejs">{fase.description2}</p>
+            {fase.description2title && <h4>{fase.description2title}</h4>}
+            <p>{fase.description2}</p>
+            {fase.description3title && <h4>{fase.description3title}</h4>}
+            <p>{fase.description3}</p>
+            <br />
+            <p>{fase.description4}</p>
+            <br />
+            <p>{fase.description5}</p>
+            <br />
+            <p>{fase.description6}</p>
+            <br />
           </li>
         ))}
       </ul>
