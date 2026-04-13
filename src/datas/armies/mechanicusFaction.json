@@ -5,7 +5,7 @@
             {
                 "id": 1,
                 "name": "Imperativo Protector",
-                "description1": "* Las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad [PESADA].",
+                "description1": "* Las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad <a href='/rules/pesada'>[PESADA]</a>.",
                 "description2": "* Mejora la característica de Habilidad Balística de las armas a distancia equipadas por las miniaturas de esta unidad en 1.",
                 "description3": "* Cada vez que un ataque cuerpo a cuerpo tenga como objetivo a esta unidad, si esta unidad tiene la palabra clave LÍNEA DE BATALLA y/o se encuentra a 6'' o menos de una o más unidades amigas de LÍNEA DE BATALLA del ADEPTUS MECHANICUS, resta 1 a la tirada para impactar."
             },
@@ -27,7 +27,16 @@
                 "description1": "Al comienzo de la primera ronda de batalla, por cada unidad enemiga dentro de la zona de despliegue de tu oponente, este debe decidir si dicha unidad se cubrirá o se mantendrá firme. Luego, tira un dado de seis caras (D6) por cada una de esas unidades enemigas y aplica el resultado correspondiente:",
                 "description2": "* Unidad Firme: Con un resultado de 3 o más, esa unidad sufre D3 heridas mortales.",
                 "description3": "* Unidad Cubriendo: Hasta el final de la ronda de batalla, esa unidad queda desmoralizada y, con un resultado de 5 o más, sufre D3 heridas mortales.",
-                "description4": "Al comienzo de tu fase de mando durante la segunda, tercera, cuarta y quinta ronda de batalla, tira un dado de seis caras (D6) por cada unidad enemiga dentro de la zona de despliegue de tu oponente. Con un resultado de 3 o más, esa unidad sufre 1 herida mortal y debe realizar una prueba de Desmoralización."
+                "description4": "Al comienzo de tu fase de mando durante la segunda, tercera, cuarta y quinta ronda de batalla, tira un dado de seis caras (D6) por cada unidad enemiga dentro de la zona de despliegue de tu oponente. Con un resultado de 3 o más, esa unidad sufre 1 herida mortal y debe realizar una prueba de Desmoralización.",
+                "mejoratitle": "Mejoras",
+                "mejoratitle1": "Saturación Radial <span>25pts</span>",
+                "mejoradescription1": "Solo para miniaturas del ADEPTUS MECHANICUS. A partir de la segunda ronda de batalla, al resolver el efecto de Lluvia Radiactiva de la regla Destacamento de Bombardeo Radiactivo, si el portador está en el campo de batalla, tira un D6 por cada unidad enemiga a 6'' de la zona de despliegue de tu oponente, además de las que estén dentro de su zona de despliegue.",
+                "mejoratitle2": "Susurro Malfónico <span>20pts</span>",
+                "mejoradescription2": "Solo para miniaturas del ADEPTUS MECHANICUS. Mientras el portador lidera una unidad, las miniaturas de esa unidad tienen la habilidad Sigilo.",
+                "mejoratitle3": "Erradicador Inigualable <span>20pts</span>",
+                "mejoradescription3": "Solo para miniaturas del ADEPTUS MECHANICUS. Mientras el portador lidera una unidad, las armas de largo alcance equipadas por las miniaturas de esa unidad tienen [IMPACTOS SOSTENIDOS] 1].",
+                "mejoratitle4": "Denuncia Autoclava <span>15pts</span>",
+                "mejoradescription4": "Solo para miniaturas del ADEPTUS MECHANICUS. Las armas a distancia equipadas por el portador tienen las habilidades [ANTI-INFANTERÍA 2+] y [ANTI-MONSTRUO 4+]."
             }
         ]
 
