@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "name": "Fase de Movimiento",
+        "description": "En esta fase, las unidades pueden moverse por el campo de batalla.",
+        "description2": "Durante esta fase, las unidades pueden realizar acciones de movimiento, como avanzar o retirarse. El movimiento se calcular usando 2D6"
+    }
+]

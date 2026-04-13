@@ -24,7 +24,8 @@
 .helpSection ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 3rem;
+  margin-bottom: 6rem;
 }
 
 .helpSection ul h3 {

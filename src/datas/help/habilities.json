@@ -13,7 +13,7 @@
   },
   {
     "id": 3,
-    "name": "Heridas Mortales",
+    "name": "Heridas Mortales / Heridas Devastadoras",
     "description": "Tras aplicar el daño normal de los ataques ya sean salvados o no, 1 a 1 vamos repartiendo las heridas mortales que no podran ser salvadas. Las heridas mortales se aplican según se indique.",
     "ejemplo": "Un ataque inflige 2 heridas mortales. La unidad objetivo recibe directamente 2 puntos de daño, asignados a miniaturas sin realizar tiradas de salvación."
   },
@@ -22,5 +22,17 @@
     "name": "Fuego Sostenido",
     "description": "Cada vez que se realiza un ataque con una de estas armas, si se obtiene un Impacto Crítico (6), obtiene los impactos adicionales indicados en la habilidad.",
     "ejemplo": "Si un arma realiza 3 ataques y tiene [Fuego Sostenido 2], y obtiene 2 Impactos Críticos (dos resultados de 6), genera 4 impactos adicionales en total (2 por cada 6 obtenido)."
+  },
+  {
+    "id": 5,
+    "name": "Ataques Extra",
+    "description": "Permite usar las armas a melee que tengan eta habilidad además del arma normal.",
+    "ejemplo": "Hacha del Omnissia ataca de forma normal, Servobrazo al tener ataques extra tambien podrá ser usada."
+  },
+  {
+    "id": 6,
+    "name": "Pistola",
+    "description": "Puede realizar la fase de disparo con la pistola equipada aunque este combatiendo cuerpo a cuerpo.",
+    "ejemplo": "Los marines espaciales se encuentran en cuerpo a cuerpo contra un tyranido, pero pueden disparar con sus pistolas normalmente durante la fase de disparo."
   }
 ]
