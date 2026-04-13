@@ -1,19 +1,48 @@
 import mecha from "../../datas/armies/mechanicusUnits.json";
 import destacamentos from "../../datas/armies/mechanicusFaction.json";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "../armies.css";
 
 export default function Mechanicus() {
   const doctrinasData = destacamentos.find((item) => item.doctrinas);
   const destacamentoData = destacamentos.find((item) => item.destacamentos);
+  const [listActive, setListActive] = useState(null);
+
+  const toggleList = () => {
+    setListActive(!listActive);
+  };
 
   return (
     <section className="armiesSection">
-      <Link to="/armies">
-        <div className="backArmieBtn">
-          <img src="/assets/icos/back.png" alt="back btn"></img>
+      <div className="navTopBar">
+        <Link to="/armies">
+          <div className="backArmieBtn">
+            <img src="/assets/icos/back.png" alt="back btn"></img>
+          </div>
+        </Link>
+
+        <div className="unitLinks">
+          <img
+            src="/assets/icos/mechanicus.png"
+            alt="mechanicus banner"
+            className="factionBanner"
+            onClick={toggleList}
+          ></img>
+
+          <div className={`unitsList ${listActive ? "active" : ""}`}>
+            <ul>
+              {mecha.map((unit) => (
+                <li key={unit.id}>
+                  <a href={`#${unit.id}`} className="unitLink">
+                    {unit.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </Link>
+      </div>
 
       <div className="armiesHeader">
         <h1>{mecha[0].faction}</h1>
@@ -47,13 +76,29 @@ export default function Mechanicus() {
               <p>{destacamento.description4}</p>
               <div className="mejoraSection">
                 <h3>Mejoras</h3>
-                <h4 dangerouslySetInnerHTML={{ __html: destacamento.mejoratitle1 }} />
+                <h4
+                  dangerouslySetInnerHTML={{
+                    __html: destacamento.mejoratitle1,
+                  }}
+                />
                 <p>{destacamento.mejoradescription1}</p>
-                <h4 dangerouslySetInnerHTML={{ __html: destacamento.mejoratitle2 }} />
+                <h4
+                  dangerouslySetInnerHTML={{
+                    __html: destacamento.mejoratitle2,
+                  }}
+                />
                 <p>{destacamento.mejoradescription2}</p>
-                <h4 dangerouslySetInnerHTML={{ __html: destacamento.mejoratitle3 }} />
+                <h4
+                  dangerouslySetInnerHTML={{
+                    __html: destacamento.mejoratitle3,
+                  }}
+                />
                 <p>{destacamento.mejoradescription3}</p>
-                <h4 dangerouslySetInnerHTML={{ __html: destacamento.mejoratitle4 }} />
+                <h4
+                  dangerouslySetInnerHTML={{
+                    __html: destacamento.mejoratitle4,
+                  }}
+                />
                 <p>{destacamento.mejoradescription4}</p>
               </div>
             </div>
@@ -62,7 +107,7 @@ export default function Mechanicus() {
       )}
 
       {mecha.map((army) => (
-        <table key={army.id} className="datasheetTable">
+        <table key={army.id} id={army.id} className="datasheetTable">
           <thead>
             {/* Nombre + Facción */}
             <tr className="unitHeader">

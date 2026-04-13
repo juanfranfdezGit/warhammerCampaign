@@ -3,7 +3,7 @@
     "id": "admech-01",
     "name": "Magos-Alpha Ferrum-27Σ",
     "image": "/assets/units/skitariiCapt.jpg",
-    "faction": "Mechanicus",
+    "faction": "Adeptus Mechanicus",
     "movimiento": 6,
     "resistencia": 3,
     "salvacion": 4,

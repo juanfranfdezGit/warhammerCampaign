@@ -13,9 +13,6 @@
 }
 
 .backArmieBtn {
-  position: fixed;
-  left: 1rem;
-  top: 1rem;
   width: 60px;
   height: 60px;
   background: white;
@@ -24,6 +21,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
+  padding-bottom: 0.8rem;
 }
 
 .backArmieBtn img {
@@ -33,8 +31,9 @@
 
 .armiesHeader {
   position: absolute;
-  top: 2rem;
-  left: 6rem;
+  top: 8rem;
+  left: 2rem;
+  font-size: 2rem;
 }
 
 .armiesSection {
@@ -45,6 +44,7 @@
   position: absolute;
   justify-content: start;
   overflow: scroll;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -146,8 +146,7 @@
 }
 
 .doctrinasSection {
-  margin-top: 8rem;
-  padding: 4rem 2rem;
+  padding: 19rem 2rem 4rem;
   background: #111;
 }
 
@@ -183,7 +182,6 @@
 .mejoraSection h3 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  
 }
 
 .mejoraSection h4 {
@@ -196,4 +194,68 @@
   color: #fcfcfc;
   display: flex;
   padding: 2px 4px;
+}
+
+.unitLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60px;
+  height: fit-content;
+  z-index: 10;
+}
+
+.factionBanner {
+  width: 120%;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  filter: invert(1) drop-shadow(0 0 4px #111);
+  position: relative;
+}
+
+.unitsList {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 7rem;
+  left: 8rem;
+  width: 60vw;
+  background: #fcfcfc;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #111;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    pointer-events 0.3s ease;
+  z-index: 10;
+}
+
+.unitsList ul {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.unitsList.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.navTopBar {
+  display: flex;
+  gap: 2rem;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  width: 100vw;
+  height: 18vh;
+  padding: 2rem;
+  z-index: 10;
 }
