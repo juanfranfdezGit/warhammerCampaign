@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Pesada",
+    "description": "Cada vez que se realiza un ataque con una de estas armas, si la unidad del modelo atacante no se ha movido este turno, añade 1 a la tirada para impactar.",
+    "ejemplo": "Una unidad con un arma [Pesada] dispara. Si no se ha movido este turno, al resolver los ataques suma +1 a todas sus tiradas para impactar."
+  },
+  {
+    "id": 2,
+    "name": "Asalto",
+    "description": "Si una unidad que avanzó este turno contiene miniaturas equipadas con armas de asalto, puede disparar en la fase de disparo de este turno. Solo pueden disparar las unidades equipadas con armas con esta habilidad.",
+    "ejemplo": "Una unidad avanza en la fase de movimiento. En la fase de disparo puede disparar normalmente con sus armas [Asalto], aunque haya avanzado este turno."
+  },
+  {
+    "id": 3,
+    "name": "Heridas Mortales",
+    "description": "Tras aplicar el daño normal de los ataques ya sean salvados o no, 1 a 1 vamos repartiendo las heridas mortales que no podran ser salvadas. Las heridas mortales se aplican según se indique.",
+    "ejemplo": "Un ataque inflige 2 heridas mortales. La unidad objetivo recibe directamente 2 puntos de daño, asignados a miniaturas sin realizar tiradas de salvación."
+  },
+  {
+    "id": 4,
+    "name": "Fuego Sostenido",
+    "description": "Cada vez que se realiza un ataque con una de estas armas, si se obtiene un Impacto Crítico (6), obtiene los impactos adicionales indicados en la habilidad.",
+    "ejemplo": "Si un arma realiza 3 ataques y tiene [Fuego Sostenido 2], y obtiene 2 Impactos Críticos (dos resultados de 6), genera 4 impactos adicionales en total (2 por cada 6 obtenido)."
+  }
+]

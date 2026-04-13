@@ -17,7 +17,7 @@ export default function Mechanicus() {
     <section className="armiesSection">
       <div className="navTopBar">
         <Link to="/armies">
-          <div className="backArmieBtn">
+          <div className="backArmieBtn armiePage">
             <img src="/assets/icos/back.png" alt="back btn"></img>
           </div>
         </Link>
@@ -42,6 +42,12 @@ export default function Mechanicus() {
             </ul>
           </div>
         </div>
+
+        <Link to="/help">
+          <div className="helpArmieBtn">
+            <img src="/assets/icos/help.png" alt="help btn"></img>
+          </div>
+        </Link>
       </div>
 
       <div className="armiesHeader">

@@ -5,15 +5,11 @@ export default function ArmiesList() {
   return (
     <>
       <div className="armiesList">
-        <Link to="/armies">
+        <Link to="/">
           <div className="backArmieBtn">
             <img src="/assets/icos/back.png" alt="back btn"></img>
           </div>
         </Link>
-
-        <div className="armiesHeader">
-          <h1>Hojas de Datos</h1>
-        </div>
 
         <ul>
           <Link to="marines">

@@ -8,12 +8,15 @@ import Mechanicus from "./armies/factions/mechanicus";
 import Marines from "./armies/factions/marines";
 import Sororitas from "./armies/factions/sororitas";
 import Tyran from "./armies/factions/tyranid";
+import Help from "./armies/help";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+
+        <Route path="/help" element={<Help />} />
 
         <Route path="/campaigns/latido" element={<LatidoCampaign />}>
           <Route path="history" element={<LatidoLore />} />
