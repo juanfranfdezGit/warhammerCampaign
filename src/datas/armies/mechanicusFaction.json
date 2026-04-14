@@ -39,5 +39,20 @@
         "mejoradescription4": "Solo para miniaturas del ADEPTUS MECHANICUS. Las armas a distancia equipadas por el portador tienen las habilidades [ANTI-INFANTERÍA 2+] y [ANTI-MONSTRUO 4+]."
       }
     ]
+  },
+  {
+    "id": 3,
+    "estratagemas": [
+      {
+        "id": 1,
+        "ico": "/assets/icos/mechaStra01.png",
+        "value": "2CP",
+        "name": "Halo Nefasto",
+        "description1": "Al exponer brevemente los componentes más corrosivos o irradiados de su ser, los guerreros de un Cuerpo de Zona Radiactiva pueden exhalar niebla isotópica, mermando la fuerza de aquellos que no son inmunes a sus efectos.",
+        "when": "Fase de combate, justo después de que una unidad enemiga haya seleccionado sus objetivos.",
+        "target": "Una unidad ADEPTUS MECHANICUS (excluyendo vehículos) que haya sido seleccionada como objetivo de uno o más ataques de esa unidad enemiga. Si esa unidad es de LÍNEA DE BATALLA, puedes seleccionar también una unidad SKITARII a 6'' de ella.",
+        "effect": "Hasta el final del turno resta 1 a la tirada de Heridas."
+      }
+    ]
   }
 ]

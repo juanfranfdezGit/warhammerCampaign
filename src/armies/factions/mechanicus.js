@@ -7,6 +7,7 @@ import "../armies.css";
 export default function Mechanicus() {
   const doctrinasData = destacamentos.find((item) => item.doctrinas);
   const destacamentoData = destacamentos.find((item) => item.destacamentos);
+  const estratagemaData = destacamentos.find((item) => item.estratagemas);
   const [listActive, setListActive] = useState(null);
 
   const toggleList = () => {
@@ -106,6 +107,36 @@ export default function Mechanicus() {
                   }}
                 />
                 <p>{destacamento.mejoradescription4}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {estratagemaData && (
+        <div className="doctrinasSection estratagemasSection">
+          <h2>Estratagemas</h2>
+
+          {estratagemaData.estratagemas.map((estratagema) => (
+            <div key={estratagema.id} className="estratagemaGrid">
+              <div className="estratagemaSide">
+                <div className="estratagemaImgContainer">
+                  <img
+                    src={estratagema.ico}
+                    alt={estratagema.name}
+                    className="estratagemaImg"
+                  />
+                </div>
+                <div className="estratagemaValueContainer">
+                  <p className="estratagemaValue">{estratagema.value}</p>
+                </div>
+              </div>
+              <div className="estragemaInfo">
+                <h3>{estratagema.name}</h3>
+                <p>{estratagema.description}</p>
+                <p>{estratagema.when}</p>
+                <p>{estratagema.target}</p>
+                <p>{estratagema.effect}</p>
               </div>
             </div>
           ))}
