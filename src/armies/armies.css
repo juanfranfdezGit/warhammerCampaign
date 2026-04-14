@@ -353,7 +353,6 @@
   font-size: 2rem;
   color: #22796c;
   margin-bottom: 0.5rem;
-  border-bottom: 8px solid #22796c;
   position: relative;
   left: -2rem;
   padding-left: 2rem;
@@ -370,9 +369,7 @@
 }
 
 .estratagemaGrid.estratagema-2 h3 {
-  margin-top: -2rem;
   color: #d8ca00;
-  border-bottom: 8px solid #d8ca00;
 }
 
 .estratagemaGrid.estratagema-2 .estratagemaSide {
@@ -392,9 +389,7 @@
 }
 
 .estratagemaGrid.estratagema-3 h3 {
-  margin-top: -2rem;
   color: #1048c0;
-  border-bottom: 8px solid #1048c0;
 }
 
 .estratagemaGrid.estratagema-3 .estratagemaSide {
@@ -414,9 +409,7 @@
 }
 
 .estratagemaGrid.estratagema-4 h3 {
-  margin-top: -2rem;
   color: #9e0d0d;
-  border-bottom: 8px solid #9e0d0d;
 }
 
 .estratagemaGrid.estratagema-4 .estratagemaSide {
@@ -437,7 +430,6 @@
 
 .estratagemaGrid.estratagema-5 h3 {
   color: #a410df;
-  border-bottom: 8px solid #a410df;
 }
 
 .estratagemaGrid.estratagema-5 .estratagemaSide {

@@ -15,6 +15,8 @@
         "id": 2,
         "name": "Fase de Movimiento",
         "description": "En esta fase, las unidades pueden moverse por el campo de batalla.",
-        "description2": "Durante esta fase, las unidades pueden realizar acciones de movimiento, como avanzar o retirarse. El movimiento se calcular usando 2D6"
+        "description2": "Durante esta fase, las unidades pueden realizar acciones de movimiento, como avanzar o retirarse. El movimiento se calcular usando 2D6",
+        "description3title": "Retirada Desesperada",
+        "description3": "Si quiere escapar una unidad desmoralizada o que tenga que saltar enemigos debe realizar un D6 por cada miniatura, si saca 1 o 2 pierde una unidad."
     }
 ]
