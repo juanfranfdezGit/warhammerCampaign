@@ -82,6 +82,26 @@
         "when": "* Tu fase de Disparo.",
         "target": "* Un ADEPTUS MECHANICUS que no haya disparado. Si este es LINEA DE BATALLA, puede seleccionar un SKITARII a menos de 6'' también.",
         "effect": "* Si el objetico de disparo se encuentra en la zona de despliegue enemiga, puedes repetir la tirada de impacto."
+      },
+      {
+        "id": 5,
+        "ico": "/assets/icos/mechaStra05.png",
+        "value": "1CP",
+        "name": "Dosis Letal",
+        "description1": "Celdas de energía triples santificadas, bidones de combustible y proyectiles sólidos han pasado una década en el templo de forja más irradiado para certificar su letalidad.",
+        "when": "* Durante tu fase de disparo.",
+        "target": "* Una unidad ADEPTUS MECHANICUS que no haya disparado.",
+        "effect": "* Hasta el final del turno, las armas a distancia tienen HERIDAS DEVASTADORAS."
+      },
+      {
+        "id": 6,
+        "ico": "/assets/icos/mechaStra06.png",
+        "value": "2CP",
+        "name": "Imperativo Baluarte",
+        "description1": "Con un pulso de sabiduría cargada de fuerza, los microactuadores se fijan en posiciones de defensa, las células de energía de reserva se activan y los santos cruzados del Omnissiah se ven investidos con una sensación de invulnerabilidad sagrada.",
+        "when": "* Cuando tu oponente haya seleccionado un objetivo de disparo.",
+        "target": "* Hasta dos unidades SKITARII a menos de 6''",
+        "effect": "* Hasta el final de la fase, las miniaturas de esas unidades tienen una salvación invulnerable de 4+."
       }
     ]
   }

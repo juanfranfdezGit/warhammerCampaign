@@ -324,8 +324,7 @@
   width: 100%;
   height: 100%;
   transform: rotate(-45deg);
-  filter: invert(38%) sepia(32%) saturate(600%) hue-rotate(130deg)
-    brightness(85%) contrast(90%);
+  filter: invert(1);
 }
 
 .estratagemaValueContainer {
@@ -346,8 +345,6 @@
   position: relative;
   top: 7px;
   transform: rotate(-45deg);
-  filter: invert(38%) sepia(32%) saturate(600%) hue-rotate(130deg)
-    brightness(85%) contrast(90%);
   font-size: 1.6rem !important;
   font-weight: bold;
 }
@@ -390,14 +387,6 @@
   border-color: #d8ca00;
 }
 
-.estratagemaGrid.estratagema-2 .estratagemaImg {
-  filter: invert(1);
-}
-
-.estratagemaGrid.estratagema-2 .estratagemaValue {
-  filter: invert(0);
-}
-
 .estratagemaGrid.estratagema-3 {
   margin-top: 6rem;
 }
@@ -418,14 +407,6 @@
 
 .estratagemaGrid.estratagema-3 .estratagemaImgContainer {
   border-color: #1048c0;
-}
-
-.estratagemaGrid.estratagema-3 .estratagemaImg {
-  filter: invert(1);
-}
-
-.estratagemaGrid.estratagema-3 .estratagemaValue {
-  filter: invert(0);
 }
 
 .estratagemaGrid.estratagema-4 {
@@ -450,10 +431,32 @@
   border-color: #9e0d0d;
 }
 
-.estratagemaGrid.estratagema-4 .estratagemaImg {
-  filter: invert(1);
+.estratagemaGrid.estratagema-5 {
+  margin-top: 6rem;
 }
 
-.estratagemaGrid.estratagema-4 .estratagemaValue {
-  filter: invert(0);
+.estratagemaGrid.estratagema-5 h3 {
+  color: #a410df;
+  border-bottom: 8px solid #a410df;
+}
+
+.estratagemaGrid.estratagema-5 .estratagemaSide {
+  background: #a410df;
+}
+
+.estratagemaGrid.estratagema-5 .estratagemaValueContainer {
+  border-color: #a410df;
+}
+
+.estratagemaGrid.estratagema-5 .estratagemaImgContainer {
+  border-color: #a410df;
+}
+
+
+.estratagemaGrid.estratagema-6 {
+  margin-top: 7rem;
+}
+
+.estratagemaGrid.estratagema-6 h3 {
+  margin-top: -35px;
 }

@@ -14,7 +14,7 @@
   {
     "id": 3,
     "name": "Heridas Mortales / Heridas Devastadoras",
-    "description": "Tras aplicar el daño normal de los ataques ya sean salvados o no, 1 a 1 vamos repartiendo las heridas mortales que no podran ser salvadas. Las heridas mortales se aplican según se indique.",
+    "description": "Tras aplicar el daño normal de los ataques ya sean salvados o no, 1 a 1 vamos repartiendo las heridas mortales que no podran ser salvadas. Será herida devastadora con un 6.",
     "ejemplo": "Un ataque inflige 2 heridas mortales. La unidad objetivo recibe directamente 2 puntos de daño, asignados a miniaturas sin realizar tiradas de salvación."
   },
   {
