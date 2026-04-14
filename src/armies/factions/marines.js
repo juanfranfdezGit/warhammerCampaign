@@ -149,7 +149,7 @@ export default function Marines() {
       )}
 
       {imperial.map((army) => (
-        <table key={army.id} className="datasheetTable">
+        <table key={army.id} id={army.id} className="datasheetTable">
           <thead>
             {/* Nombre + Facción */}
             <tr className="unitHeader">
