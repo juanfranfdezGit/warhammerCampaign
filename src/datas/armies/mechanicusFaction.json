@@ -49,9 +49,39 @@
         "value": "2CP",
         "name": "Halo Nefasto",
         "description1": "Al exponer brevemente los componentes más corrosivos o irradiados de su ser, los guerreros de un Cuerpo de Zona Radiactiva pueden exhalar niebla isotópica, mermando la fuerza de aquellos que no son inmunes a sus efectos.",
-        "when": "Fase de combate, justo después de que una unidad enemiga haya seleccionado sus objetivos.",
-        "target": "Una unidad ADEPTUS MECHANICUS (excluyendo vehículos) que haya sido seleccionada como objetivo de uno o más ataques de esa unidad enemiga. Si esa unidad es de LÍNEA DE BATALLA, puedes seleccionar también una unidad SKITARII a 6'' de ella.",
-        "effect": "Hasta el final del turno resta 1 a la tirada de Heridas."
+        "when": "* Fase de combate, justo después de que una unidad enemiga haya seleccionado sus objetivos.",
+        "target": "* Una unidad ADEPTUS MECHANICUS (excluyendo vehículos) que haya sido seleccionada como objetivo de uno o más ataques de esa unidad enemiga. Si esa unidad es de LÍNEA DE BATALLA, puedes seleccionar también una unidad SKITARII a 6'' de ella.",
+        "effect": "* Hasta el final del turno resta 1 a la tirada de Heridas."
+      },
+      {
+        "id": 2,
+        "ico": "/assets/icos/mechaStra02.png",
+        "value": "1CP",
+        "name": "Orden de Exterminio",
+        "description1": "Mientras los Tecnosacerdotes ordenan la purga de una zona del campo de batalla, se intensifican los bombardeos radiactivos con la esperanza de convertirla en un páramo.",
+        "when": "* Durante tu fase de mando.",
+        "target": "* Una miniatura de Tecnosacerdote y un marcador de objetivo a 24'' de dicha miniatura.",
+        "effect": "* Tira un D6 por cada unidad enemiga dentro del alcance de ese marcador de objetivo. Con de 4 o más, esa unidad sufre 1 herida mortal y debe realizar una prueba de Moral."
+      },
+      {
+        "id": 3,
+        "ico": "/assets/icos/mechaStra03.png",
+        "value": "1CP",
+        "name": "Imperativo Agresor",
+        "description1": "Los Skitarii sienten la presión de una mano invisible sobre sus mentes mientras el Dios Máquina los impulsa hacia adelante. Los servomotores son llevados al límite de su resistencia estructural mientras los haces de fibra se llenan con la energía ilimitada de la Fuerza Motriz e impulsan a los fieles en una cruzada imparable.",
+        "when": "* Tu fase de Movimiento.",
+        "target": "* Hasta dos unidades SKITARII a menos de 6'' que no se haya movido en esta fase.",
+        "effect": "* Añade 6'' al movimiento de esa unidad hasta el final de la fase."
+      },
+      {
+        "id": 4,
+        "ico": "/assets/icos/mechaStra04.png",
+        "value": "1CP",
+        "name": "Purga Precalibrada",
+        "description1": "Empleando datos de puntería recopilados por un enjambre de servocráneos desplegados sobre las líneas de batalla enemigas, los fieles del Dios Máquina purgan al enemigo que tropieza entre posiciones asoladas por la radiación.",
+        "when": "* Tu fase de Disparo.",
+        "target": "* Un ADEPTUS MECHANICUS que no haya disparado. Si este es LINEA DE BATALLA, puede seleccionar un SKITARII a menos de 6'' también.",
+        "effect": "* Si el objetico de disparo se encuentra en la zona de despliegue enemiga, puedes repetir la tirada de impacto."
       }
     ]
   }

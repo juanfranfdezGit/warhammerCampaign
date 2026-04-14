@@ -118,7 +118,10 @@ export default function Mechanicus() {
           <h2>Estratagemas</h2>
 
           {estratagemaData.estratagemas.map((estratagema) => (
-            <div key={estratagema.id} className="estratagemaGrid">
+            <div
+              key={estratagema.id}
+              className={`estratagemaGrid estratagema-${estratagema.id}`}
+            >
               <div className="estratagemaSide">
                 <div className="estratagemaImgContainer">
                   <img
@@ -133,7 +136,7 @@ export default function Mechanicus() {
               </div>
               <div className="estragemaInfo">
                 <h3>{estratagema.name}</h3>
-                <p>{estratagema.description}</p>
+                <p>{estratagema.description1}</p>
                 <p>{estratagema.when}</p>
                 <p>{estratagema.target}</p>
                 <p>{estratagema.effect}</p>
