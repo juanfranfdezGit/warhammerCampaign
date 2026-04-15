@@ -1,58 +1,112 @@
 [
   {
     "id": "admech-01",
-    "name": "Magos-Alpha Ferrum-27Σ",
-    "image": "/assets/units/skitariiCapt.jpg",
-    "faction": "Adeptus Mechanicus",
-    "movimiento": 6,
-    "resistencia": 3,
-    "salvacion": 4,
-    "salvacion invulnerable": 5,
-    "herida": 1,
-    "leadership": 7,
-    "control": 2,
-    "keywords": ["Infantería", "Vanguard", "Skitarii"],
+    "name": "Belisarius Cawl",
+    "faction": "Mechanicus",
+    "movimiento": 8,
+    "resistencia": 8,
+    "salvacion": 2,
+    "salvacion invulnerable": 4,
+    "herida": 10,
+    "leadership": 6,
+    "control": 3,
+    "keywords": [
+      "Monstruo",
+      "Heroe Epico",
+      "Personaje",
+      "Tecno Sacerdote",
+      "Belisarius Cawl",
+      "Culto Mecanicus",
+      "Imperium"
+    ],
     "abilities": [
       {
         "id": "mechanicus-ability-01",
-        "name": "Conexión de datos mejorada",
-        "description": "Cada vez que selecciones la unidad del portador como objetivo de una Estratagema, tira un D6: con un 5+, ganas 1 PC."
+        "name": "Canticos del Omnissia",
+        "description": "Al comienzo de tu fase de Mando, selecciona una de las habilidades de la sección Cánticos del Omnissiah:"
+      },
+      {
+        "id": "mechanicus-ability-01-01",
+        "name": "* Invocacion de Venganza Mecanica",
+        "description": "Selecciona una unidad enemiga. Hasta el comienzo de tu siguiente fase de Mando cada vez que un ADEPTUS MECHANICUS realice un ataque a esa unidad puede repetir la tirada para Impactar."
+      },
+      {
+        "id": "mechanicus-ability-01-02",
+        "name": "* Mantra de Disciplina",
+        "description": "Belisarius obtiene LINEA DE BATALLA. Mientras una unidad ADEPTUS MECHANICUS amiga esté a 6'', suma 1 al Control Objetivo y suma 1 a tus tiradas de Moral."
+      },
+      {
+        "id": "mechanicus-ability-01-03",
+        "name": "* Salmo del Sudario",
+        "description": "Mientras un ADEPTUS MECHANICUS amiga esté a 6'' , esa unidad tiene SIGILO."
       },
       {
         "id": "mechanicus-ability-02",
-        "name": "Omnispex",
-        "description": "Las armas a distancia equipadas por los modelos en la unidad del portador tienen la habilidad [IGNORA LA COBERTURA]."
+        "name": "Guardaespaldas Mechanicus",
+        "description": "Obtienes OPERATIVO SOLITARIO si estas a menos de 3'' de un ADEPTUS MECHANICUS."
+      },
+      {
+        "id": "mechanicus-ability-03",
+        "name": "Mecanismos de Autorreparación",
+        "description": "Al comienzo de tu fase de Mando, este modelo recupera hasta D3 heridas perdidas."
       }
     ],
-    "weapons": [
+    "rangedWeapons": [
       {
         "number": 1,
-        "ataques": 1,
-        "name": "Pistola Mechanicus",
-        "range": 12,
-        "impacto": 4,
-        "fuerza": 6,
+        "ataques": 3,
+        "name": "Atomizador Solar",
+        "range": 18,
+        "impacto": 2,
+        "fuerza": 14,
+        "penetración": 4,
+        "daño": "D6",
+        "abilities": ["Melta 3"]
+      }
+    ],
+    "meleeWeapons": [
+      {
+        "number": 1,
+        "ataques": 4,
+        "name": "Flagelo del Arco",
+        "range": "melee",
+        "impacto": 2,
+        "fuerza": 5,
         "penetración": 1,
         "daño": 1,
-        "abilities": ["heridas devastadoras", "pistola"]
+        "abilities": [
+          "Anti Vehículo 4+",
+          "Heridas Devastadoras",
+          "Ataques Extra"
+        ]
       },
       {
         "number": 1,
-        "ataques": 2,
-        "name": "Cuerpo a cuerpo Alpha",
+        "ataques": 4,
+        "name": "Hacha Omnissiana de Cawl",
         "range": "melee",
-        "impacto": 4,
-        "fuerza": 5,
-        "penetración": -1,
-        "daño": 1,
+        "impacto": 2,
+        "fuerza": 8,
+        "penetración": 2,
+        "daño": 2,
         "abilities": []
+      },
+      {
+        "number": 1,
+        "ataques": "2 D6",
+        "name": "Colmena de Mecadendrita",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Ataques Extra"]
       }
     ]
   },
   {
     "id": "admech-02",
-    "name": "Skitarii Vanguards",
-    "image": "/assets/units/skitarii.webp",
+    "name": "Vanguardia Skitarii",
     "faction": "Mechanicus",
     "movimiento": 6,
     "resistencia": 4,
@@ -61,19 +115,26 @@
     "herida": 1,
     "leadership": 6,
     "control": 1,
+    "keywords": [
+      "Infantería",
+      "Linea de Batalla",
+      "Skitarii",
+      "Vanguard",
+      "Imperium"
+    ],
     "abilities": [
       {
         "id": "mechanicus-ability-01",
-        "name": "Conexión de datos mejorada",
-        "description": "Cada vez que selecciones la unidad del portador como objetivo de una Estratagema, tira un D6: con un 5+, ganas 1 PC."
+        "name": "Saturación Radiactiva",
+        "description": "Quita 1 Control de Objetivo a enemigos a menos de 3''."
       },
       {
         "id": "mechanicus-ability-02",
         "name": "Omnispex",
-        "description": "Las armas a distancia equipadas por los modelos en la unidad del portador tienen la habilidad [IGNORA LA COBERTURA]."
+        "description": "Cuando selecciones a esta unidad para una estratagema tira un D6, con 5 ganas 1CP."
       }
     ],
-    "weapons": [
+    "rangedWeapons": [
       {
         "number": 5,
         "ataques": 3,
@@ -92,7 +153,7 @@
         "range": 30,
         "impacto": 4,
         "fuerza": 8,
-        "penetración": -1,
+        "penetración": 1,
         "daño": "D3",
         "abilities": [
           "Anti Vehículo 4+",
@@ -134,6 +195,30 @@
         "abilities": ["Pesada", "Precisión"]
       },
       {
+        "number": 1,
+        "ataques": 1,
+        "name": "Pistola Mechanicus",
+        "range": 12,
+        "impacto": 4,
+        "fuerza": 6,
+        "penetración": 1,
+        "daño": 1,
+        "abilities": ["Pistola", "Heridas Devastadoras"]
+      }
+    ],
+    "meleeWeapons": [
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Cuerpo a cuerpo Alfa",
+        "range": "melee",
+        "impacto": 4,
+        "fuerza": 5,
+        "penetración": 1,
+        "daño": 1,
+        "abilities": []
+      },
+      {
         "number": 9,
         "ataques": 1,
         "name": "Cuerpo a cuerpo",
@@ -148,8 +233,7 @@
   },
   {
     "id": "admech-03",
-    "name": "Tech Priest Dominus",
-    "image": "/assets/units/priestD.jpg",
+    "name": "Tecno-Sacerdote Dominus",
     "faction": "Mechanicus",
     "movimiento": 6,
     "resistencia": 4,
@@ -158,20 +242,28 @@
     "herida": 4,
     "leadership": 7,
     "control": 1,
-    "keywords": ["Infantería", "Culto Mecanicus", "Tecno Sacerdote", "Heroe"],
+    "keywords": [
+      "Infantería",
+      "Culto Mecanicus",
+      "Tecno Sacerdote",
+      "Personaje",
+      "Culto Mecanicus",
+      "Dominus",
+      "Imperium"
+    ],
     "abilities": [
       {
         "id": "mechanicus-ability-01",
         "name": "Señor del Culto Mecanico",
-        "description": "Cuando esta unidad comanda una unidad, esta unidad obtiene [SIN DOLOR] 5+; En caso de tener la keyword Electro Sacerdote obtendra [SIN DOLOR] 4+."
+        "description": "Cuando esta unidad comanda obtienes SIN DOLOR 5, si son Electro Sacerdote SIN DOLOR 4."
       },
       {
         "id": "mechanicus-ability-02",
         "name": "Pico de datos",
-        "description": "Al comienzo de la fase de Combate, puedes seleccionar una unidad de VEHÍCULO enemiga dentro del Alcance de Enfrentamiento de esta unidad y tirar un D6: con un 4+, esa unidad enemiga sufre D6 heridas mortales y, hasta el final de la fase, la característica cuerpo a cuerpo de esa unidad enemiga empeora en 1."
+        "description": "Al comienzo de la Fase de Combate, selecciona un vehículo y tira un D6, con 4 esa unidad sufre D6 HERIDAS MORTALES y reduce en 1 la fuerza de sus armas."
       }
     ],
-    "weapons": [
+    "rangedWeapons": [
       {
         "number": 1,
         "ataques": 3,
@@ -190,10 +282,12 @@
         "range": 18,
         "impacto": 3,
         "fuerza": 5,
-        "penetración": -1,
+        "penetración": 1,
         "daño": 2,
         "abilities": ["Ignorar Cobertura", "Pistola"]
-      },
+      }
+    ],
+    "meleeWeapons": [
       {
         "number": 1,
         "ataques": 4,
@@ -201,7 +295,7 @@
         "range": "melee",
         "impacto": 3,
         "fuerza": 6,
-        "penetración": -2,
+        "penetración": 2,
         "daño": 2,
         "abilities": []
       }
@@ -209,111 +303,73 @@
   },
   {
     "id": "admech-04",
-    "name": "Belisarius Cawl",
-    "image": "/assets/units/belisarius.jpg",
+    "name": "Tecno-Sacerdote Ingeniero",
     "faction": "Mechanicus",
-    "movimiento": 8,
-    "resistencia": 8,
-    "salvacion": 2,
-    "salvacion invulnerable": 4,
-    "herida": 10,
-    "leadership": 6,
-    "control": 3,
+    "movimiento": 6,
+    "resistencia": 4,
+    "salvacion": 3,
+    "salvacion invulnerable": 5,
+    "herida": 3,
+    "leadership": 7,
+    "control": 1,
     "keywords": [
-      "Monstruo",
-      "Heroe Epico",
+      "Infantería",
       "Tecno Sacerdote",
-      "Belisarius Cawl",
-      "Culto Mecanicus",
-      "Señor de la Guerra",
-      "Linea de Batalla*"
+      "Personaje",
+      "Ingeniero",
+      "Imperium"
     ],
     "abilities": [
       {
         "id": "mechanicus-ability-01",
-        "name": "Canticos del Omnissia",
-        "description": "Al comienzo de tu fase de Mando, selecciona una de las habilidades de la sección Cánticos del Omnissiah; "
-      },
-      {
-        "id": "mechanicus-ability-01-01",
-        "name": "Invocacion de Venganza Mecanica",
-        "description": "Al comienzo de tu fase de Mando, selecciona una unidad del ejército de tu oponente. Hasta el comienzo de tu siguiente fase de Mando, esa unidad enemiga es tu objetivo de Venganza Mecánica. Cada vez que una miniatura de una unidad ADEPTUS MECHANICUS amiga realice un ataque que tenga como objetivo tu objetivo de Venganza Mecánica, puedes repetir la tirada para Impactar."
-      },
-      {
-        "id": "mechanicus-ability-01-02",
-        "name": "Mantra de Disciplina",
-        "description": "*Linea de Bastalla y Coraje Binharico (Aura). Mientras una unidad ADEPTUS MECHANICUS amiga esté a 6 o menos de esta miniatura, suma 1 al atributo Control Objetivo de las miniaturas de esa unidad y cada vez que realices una tirada de Conmoción de Batalla o de Liderazgo para esa unidad, suma 1 a esa tirada."
-      },
-      {
-        "id": "mechanicus-ability-01-03",
-        "name": "Salmo del Sudario",
-        "description": "Mientras una unidad ADEPTUS MECHANICUS amiga esté a 6 de este modelo, esa unidad tiene la habilidad Sigilo."
+        "name": "Ingeniero",
+        "description": "A menos de 3'' de un vehículo obtiene OPERATIVO SOLITARIO."
       },
       {
         "id": "mechanicus-ability-02",
-        "name": "Guardaespaldas Mechanicus",
-        "description": "Mientras este modelo se encuentre a 3 de una o más unidades ADEPTUS MECHANICUS amigas, este modelo tiene la habilidad Operativo solitario."
+        "name": "Bendición del Omnissiah",
+        "description": "En tu fase de mando puedes curar D3 heridas a un vehículo a menos de 3'' y le añade Salvación Invulnerable 4."
       },
       {
         "id": "mechanicus-ability-03",
-        "name": "Mecanismos de Autorreparación",
-        "description": "Al comienzo de tu fase de Mando, este modelo recupera hasta D3 heridas perdidas."
+        "name": "Venganza del Omnissiah",
+        "description": "Si un vehículo es destruido a menos de 12'' hasta el final de turno Hacha de Ingeniero obtiene 6 ataques."
       }
     ],
-    "destacemento": [
+    "rangedWeapons": [
       {
-        "id": "mechanicus-destacamento-01",
-        "name": "Bombardeo Radiactivo",
-        "description": "Al comienzo de la primera ronda de batalla, por cada unidad enemiga dentro de la zona de despliegue de tu oponente, este debe decidir si dicha unidad se cubrirá o se mantendrá firme. Luego, tira un dado de seis caras (D6) por cada una de esas unidades enemigas y aplica el resultado correspondiente: Unidad Firme: Con un resultado de 3 o más, esa unidad sufre D3 heridas mortales. Unidad Cubriendo: Hasta el final de la ronda de batalla, esa unidad queda desmoralizada y, con un resultado de 5 o más, sufre D3 heridas mortales. Al comienzo de tu fase de mando durante la segunda, tercera, cuarta y quinta ronda de batalla, tira un dado de seis caras (D6) por cada unidad enemiga dentro de la zona de despliegue de tu oponente. Con un resultado de 3 o más, esa unidad sufre 1 herida mortal y debe realizar una prueba de Desmoralización."
+        "number": 1,
+        "ataques": 1,
+        "name": "Pistola Mechanicus",
+        "range": 12,
+        "impacto": 3,
+        "fuerza": 6,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["heridas devastadoras", "Pistola"]
       }
     ],
-    "weapons": [
+    "meleeWeapons": [
       {
         "number": 1,
         "ataques": 3,
-        "name": "Atomizador Solar",
-        "range": 18,
-        "impacto": 2,
-        "fuerza": 14,
-        "penetración": -4,
-        "daño": "D6",
-        "abilities": ["Melta 3"]
-      },
-      {
-        "number": 1,
-        "ataques": 4,
-        "name": "Flagelo del Arco",
+        "name": "Hacha de Ingeniero",
         "range": "melee",
-        "impacto": 2,
-        "fuerza": 5,
-        "penetración": -1,
-        "daño": 1,
-        "abilities": [
-          "Anti Vehículo 4+",
-          "Heridas Devastadoras",
-          "Ataques Extra"
-        ]
-      },
-      {
-        "number": 1,
-        "ataques": 4,
-        "name": "Hacha Omnissiana de Cawl",
-        "range": "melee",
-        "impacto": 2,
-        "fuerza": 8,
-        "penetración": -2,
+        "impacto": 4,
+        "fuerza": 6,
+        "penetración": 2,
         "daño": 2,
         "abilities": []
       },
       {
         "number": 1,
-        "ataques": "2 D6",
-        "name": "Colmena de Mecadendrita",
+        "ataques": 1,
+        "name": "Servo-Brazo",
         "range": "melee",
-        "impacto": 3,
-        "fuerza": 4,
-        "penetración": 0,
-        "daño": 1,
+        "impacto": 4,
+        "fuerza": 6,
+        "penetración": 2,
+        "daño": 2,
         "abilities": ["Ataques Extra"]
       }
     ]

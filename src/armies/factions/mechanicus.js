@@ -152,23 +152,18 @@ export default function Mechanicus() {
             {/* Nombre + Facción */}
             <tr className="unitHeader">
               <th colSpan="6">
-                <img
-                  src={army.image}
-                  alt={army.name}
-                  className="datasheetImg"
-                ></img>
-                <p>{army.name}</p>
+                <h3>{army.name}</h3>
               </th>
             </tr>
 
             {/* Stats */}
             <tr className="statsHeader">
-              <th>Mov.</th>
-              <th>Res.</th>
-              <th>Salv.</th>
-              <th>Her.</th>
-              <th>Lid.</th>
-              <th>Cont.</th>
+              <th>M.</th>
+              <th>R.</th>
+              <th>S.</th>
+              <th>H.</th>
+              <th>L.</th>
+              <th>C.</th>
             </tr>
           </thead>
 
@@ -185,6 +180,131 @@ export default function Mechanicus() {
               <td>{army.control}</td>
             </tr>
 
+            {/* Armas */}
+            {army.rangedWeapons?.length > 0 && (
+              <>
+                <tr className="sectionTitle">
+                  <td colSpan="6">Armas a Distancia</td>
+                </tr>
+                <tr>
+                  <td colSpan="6">
+                    <ul className="weaponsList">
+                      {army.rangedWeapons.map((weapon, index) => (
+                        <li key={index} className="weaponItem flex column">
+                          <table className="weaponsTable">
+                            {/* 🔥 Nombre ocupando todo */}
+                            <thead>
+                              <tr className="weaponNameRow">
+                                <th colSpan="8">{weapon.name}</th>
+                              </tr>
+
+                              {/* Cabecera */}
+                              <tr className="statsWeapons">
+                                <th>N.</th>
+                                <th>R.</th>
+                                <th>A.</th>
+                                <th>I.</th>
+                                <th>F.</th>
+                                <th>P.</th>
+                                <th>D.</th>
+                              </tr>
+                            </thead>
+
+                            {/* Stats */}
+                            <tbody>
+                              <tr className="statsWeapons">
+                                <td>{weapon.number}</td>
+                                <td>{weapon.range}"</td>
+                                <td>{weapon.ataques}</td>
+                                <td>{weapon.impacto}+</td>
+                                <td>{weapon.fuerza}</td>
+                                <td>{weapon.penetración}</td>
+                                <td>{weapon.daño}</td>
+                              </tr>
+
+                              {weapon.abilities.length > 0 && (
+                                <tr>
+                                  <td colSpan="8">
+                                    {weapon.abilities.map((ability, idx) => (
+                                      <span key={idx} className="weaponHab">
+                                        {ability}
+                                      </span>
+                                    ))}
+                                  </td>
+                                </tr>
+                              )}
+                            </tbody>
+                          </table>
+                        </li>
+                      ))}
+                    </ul>
+                  </td>
+                </tr>
+              </>
+            )}
+
+            {army.meleeWeapons?.length > 0 && (
+              <>
+                <tr className="sectionTitle">
+                  <td colSpan="6">Armas Cuerpo a Cuerpo</td>
+                </tr>
+                <tr>
+                  <td colSpan="6">
+                    <ul className="weaponsList">
+                      {army.meleeWeapons.map((weapon, index) => (
+                        <li key={index} className="weaponItem flex column">
+                          <table className="weaponsTable">
+                            {/* 🔥 Nombre ocupando todo */}
+                            <thead>
+                              <tr className="weaponNameRow">
+                                <th colSpan="8">{weapon.name}</th>
+                              </tr>
+
+                              {/* Cabecera */}
+                              <tr className="statsWeapons">
+                                <th>N.</th>
+                                <th>R.</th>
+                                <th>A.</th>
+                                <th>I.</th>
+                                <th>F.</th>
+                                <th>P.</th>
+                                <th>D.</th>
+                              </tr>
+                            </thead>
+
+                            {/* Stats */}
+                            <tbody>
+                              <tr className="statsWeapons">
+                                <td>{weapon.number}</td>
+                                <td>{weapon.range}"</td>
+                                <td>{weapon.ataques}</td>
+                                <td>{weapon.impacto}+</td>
+                                <td>{weapon.fuerza}</td>
+                                <td>{weapon.penetración}</td>
+                                <td>{weapon.daño}</td>
+                              </tr>
+
+                              {weapon.abilities.length > 0 && (
+                                <tr>
+                                  <td colSpan="8">
+                                    {weapon.abilities.map((ability, idx) => (
+                                      <span key={idx} className="weaponHab">
+                                        {ability}
+                                      </span>
+                                    ))}
+                                  </td>
+                                </tr>
+                              )}
+                            </tbody>
+                          </table>
+                        </li>
+                      ))}
+                    </ul>
+                  </td>
+                </tr>
+              </>
+            )}
+
             {/* Habilidades */}
             {army.abilities?.length > 0 && (
               <>
@@ -195,36 +315,9 @@ export default function Mechanicus() {
                   <td colSpan="6">
                     <ul className="abilitiesList">
                       {army.abilities.map((ability) => (
-                        <li key={ability.id}>
-                          <strong>{ability.name}:</strong> {ability.description}
-                        </li>
-                      ))}
-                    </ul>
-                  </td>
-                </tr>
-              </>
-            )}
-
-            {/* Armas */}
-            {army.weapons?.length > 0 && (
-              <>
-                <tr className="sectionTitle">
-                  <td colSpan="6">Armas</td>
-                </tr>
-                <tr>
-                  <td colSpan="6">
-                    <ul className="weaponsList">
-                      {army.weapons.map((weapon, index) => (
-                        <li key={index} className="weaponItem flex column">
-                          <h4>{weapon.name}:</h4>
-                          <p>Utilizando: {weapon.number}</p>
-                          <p>Alcance: {weapon.range}</p>
-                          <p>Ataques: {weapon.ataques}</p>
-                          <p>Impacto: {weapon.impacto}</p>
-                          <p>Fuerza: {weapon.fuerza}</p>
-                          <p>Penetración: {weapon.penetración}</p>
-                          <p>Daño: {weapon.daño}</p>
-                          <p>{weapon.abilities}</p>
+                        <li className="unitHab" key={ability.id}>
+                          <h3>{ability.name}:</h3>
+                          <p>{ability.description}</p>
                         </li>
                       ))}
                     </ul>
