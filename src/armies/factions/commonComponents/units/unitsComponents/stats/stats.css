@@ -1,0 +1,22 @@
+.statsHeader th {
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.statsRow td {
+  text-align: center;
+  padding: 0.8rem;
+  border: 4px solid #a00202;
+  background: #fcfcfc;
+  color: #111;
+}
+
+.inv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a00202;
+  border-radius: 50%;
+  padding: 6px 2px;
+  color: #fcfcfc;
+}

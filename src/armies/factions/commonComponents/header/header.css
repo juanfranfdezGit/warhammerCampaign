@@ -1,0 +1,12 @@
+.navTopBar {
+  display: flex;
+  gap: 2rem;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  width: 100vw;
+  height: 18vh;
+  padding: 2rem;
+  z-index: 10;
+}

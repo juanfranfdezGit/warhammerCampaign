@@ -1,0 +1,56 @@
+.unitLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 60px;
+  height: fit-content;
+  z-index: 10;
+}
+
+.factionBanner {
+  width: 120%;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  filter: invert(1) drop-shadow(0 0 4px #111);
+  position: relative;
+}
+
+.unitsList {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 7rem;
+  width: 44vw;
+  background: #fcfcfc;
+  border-radius: 12px;
+  padding: 1rem;
+  color: #111;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    pointer-events 0.3s ease;
+  z-index: 10;
+}
+
+.unitsList ul {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.unitsList ul li {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.unitsList.active {
+  opacity: 1;
+  pointer-events: auto;
+}

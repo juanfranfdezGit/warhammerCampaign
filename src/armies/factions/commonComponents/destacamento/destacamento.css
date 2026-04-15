@@ -1,0 +1,23 @@
+.mejoraSection {
+  background: #fcfcfc;
+  color: darkred;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.mejoraSection h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.mejoraSection h4 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.mejoraSection span {
+  background: darkred;
+  color: #fcfcfc;
+  display: flex;
+  padding: 2px 4px;
+}

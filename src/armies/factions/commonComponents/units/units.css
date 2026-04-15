@@ -1,0 +1,7 @@
+.datasheetTable {
+  width: 100vw;
+  border-collapse: collapse;
+  background: #111;
+  color: #eee;
+  scroll-margin-top: 120px;
+}

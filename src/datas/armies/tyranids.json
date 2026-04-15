@@ -7,9 +7,9 @@
     "movimiento": 8,
     "resistencia": 10,
     "salvacion": 2,
-    "salvacion invulnerable": 4,
+    "salvacionInv": 4,
     "herida": 10,
-    "leadership": 7,
+    "liderazgo": 7,
     "control": 3,
     "keywords": ["Monstruo", "Heroe", "Psiquico", "Sinapsis"],
     "abilities": [

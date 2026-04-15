@@ -1,0 +1,91 @@
+.sectionTitle {
+  position: relative;
+  top: 20px;
+}
+
+.sectionTitle td {
+  background: #a00202;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1rem;
+  padding-left: 20vw;
+  text-transform: uppercase;
+}
+
+.sectionTitle img {
+  position: absolute;
+  filter: invert(1);
+  width: 40px;
+  top: 8px;
+  left: 20px;
+}
+
+.abilitiesList,
+.weaponsList {
+  margin: 0;
+  padding-left: 1rem;
+  padding: 1rem;
+}
+
+.abilitiesList li {
+  margin-bottom: 1rem;
+}
+
+.weaponItem {
+  align-items: flex-start;
+  gap: 0.2rem;
+  position: relative;
+  top: 30px;
+}
+
+.weaponItem h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.weaponsTable {
+  background: #fcfcfc;
+  width: 90vw;
+  color: #111;
+  margin-bottom: 2rem;
+}
+
+.weaponsTable th,
+td {
+  padding: 8px;
+}
+
+.statsWeapons td,
+.statsWeapons th {
+  text-align: center;
+  border: 1px solid #111;
+}
+
+.weaponNameRow {
+  text-align: left;
+  background: #a00202;
+  color: #fcfcfc;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.weaponHab {
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #a00202;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+
+.weaponStats {
+  width: 40vw;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.weaponImg {
+  margin-top: 2rem;
+  width: 50vw;
+  height: 150px;
+}

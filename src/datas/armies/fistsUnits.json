@@ -1,0 +1,441 @@
+[
+  {
+    "id": "imperial-fist-01",
+    "name": "Tor Garadon",
+    "image": "/assets/units/garadon.jpg",
+    "faction": "Puños Imperiales",
+    "movimiento": 5,
+    "resistencia": 6,
+    "salvacion": 3,
+    "salvacionInv": 4,
+    "herida": 6,
+    "liderazgo": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Personaje", "Heroe Epico", "Gravis", "Capitan"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Matriz Signum",
+        "description": "Mientras este modelo lidera una unidad, las armas a distancia equipadas por los modelos en esa unidad tienen la habilidad [IGNORA LA COBERTURA]."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "Capitán de Asedio",
+        "description": "Cada vez que este modelo realiza un ataque que tiene como objetivo un monstruo, vehiculo o fortificacion mejora la fuerza, penetracion de armadura y daño en 2"
+      }
+    ],
+    "rangedWeapons": [
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Cañon de gravedad artesanal",
+        "range": 18,
+        "impacto": 2,
+        "fuerza": 5,
+        "penetración": 1,
+        "daño": 2,
+        "image": "/assets/rangedWeapons/gravedadArt.png",
+        "abilities": ["Antivehiculo +2"]
+      }
+    ],
+    "meleeWeapons": [
+      {
+        "number": 1,
+        "ataques": 5,
+        "name": "Mano del Desafio",
+        "range": "melee",
+        "impacto": 2,
+        "fuerza": 12,
+        "penetración": -2,
+        "daño": 2,
+        "image": "/assets/rangedWeapons/puñoGaradon.png",
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-02",
+    "name": "Escuadra Infernus",
+    "image": "/assets/units/infernus.webp",
+    "faction": "Imperium",
+    "movimiento": 6,
+    "resistencia": 4,
+    "salvacion": 3,
+    "herida": 2,
+    "liderazgo": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Granadas", "Tacticas"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Terror Incendiario",
+        "description": "En tu fase de Disparo, después de que esta unidad haya disparado, puedes seleccionar una unidad de INFANTERÍA enemiga alcanzada por uno o más de esos ataques realizados con un piroblaster. Esa unidad enemiga debe realizar una prueba de Choque de Batalla, restando 1 a dicha prueba."
+      }
+    ],
+    "rangedWeapons": [
+      {
+        "number": 5,
+        "ataques": "D6",
+        "name": "Lanzallamas",
+        "range": 12,
+        "impacto": 0,
+        "fuerza": 5,
+        "penetración": 0,
+        "daño": 1,
+        "image": "/assets/rangedWeapons/lanzallamas.png",
+        "abilities": ["Ignora Cobertura", "Rafaga"]
+      },
+      {
+        "number": 5,
+        "ataques": 1,
+        "name": "Pistola Bolter",
+        "range": 12,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "image": "/assets/rangedWeapons/pistolaBolt.webp",
+        "abilities": ["Pistola"]
+      }
+    ],
+    "meleeWeapons": [
+      {
+        "number": 5,
+        "ataques": 3,
+        "name": "Arma Cuerpo a Cuerpo",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "image": "/assets/rangedWeapons/navajas.png",
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-03",
+    "name": "Sargento Infernus",
+    "image": "/assets/units/infernusSgt.jpg",
+    "faction": "Imperium",
+    "movimiento": 6,
+    "resistencia": 4,
+    "salvacion": 3,
+    "herida": 2,
+    "liderazgo": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Granadas", "Tacticas"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Terror Incendiario",
+        "description": "En tu fase de Disparo, después de que esta unidad haya disparado, puedes seleccionar una unidad de INFANTERÍA enemiga alcanzada por uno o más de esos ataques realizados con un piroblaster. Esa unidad enemiga debe realizar una prueba de Choque de Batalla, restando 1 a dicha prueba."
+      }
+    ],
+    "rangedWeapons": [
+      {
+        "number": 1,
+        "ataques": "D6",
+        "name": "Lanzallamas",
+        "range": 12,
+        "impacto": 0,
+        "fuerza": 5,
+        "penetración": 0,
+        "daño": 1,
+        "image": "/assets/rangedWeapons/lanzallamas.png",
+        "abilities": ["Ignora Cobertura", "Rafaga"]
+      },
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Pistola Bolter",
+        "range": 12,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "image": "/assets/rangedWeapons/pistolaBolt.webp",
+        "abilities": ["Pistola"]
+      }
+    ],
+    "meleeWeapons": [
+      {
+        "number": 1,
+        "ataques": 3,
+        "name": "Arma Cuerpo a Cuerpo",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "image": "/assets/rangedWeapons/navajas.png",
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-04",
+    "name": "Capitán Templario Negro",
+    "image": "/assets/units/capitanTemp.jfif",
+    "faction": "Imperium",
+    "movimiento": 5,
+    "resistencia": 5,
+    "salvacion": 2,
+    "salvacionInv": 4,
+    "herida": 6,
+    "liderazgo": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Personaje", "Exterminador"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Ritos de Batalla",
+        "description": "Una vez por ronda de batalla, una unidad de tu ejército con esta habilidad puede usarla cuando su unidad es objetivo de una Estratagema. Si lo es, reduce el coste de PC de ese uso de la Estratagema en 1 PC."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "La Espada del Imperio",
+        "description": "Puedes repetir las tiradas de Carga realizadas para la unidad de esta miniatura."
+      }
+    ],
+    "rangedWeapons": [
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Bolter Tormenta",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "image": "/assets/rangedWeapons/bolterTormenta.webp",
+        "abilities": ["Fuego Rapido 2"]
+      }
+    ],
+    "meleeWeapons": [
+      {
+        "number": 1,
+        "ataques": 6,
+        "name": "Arma Reliquia",
+        "range": "melee",
+        "impacto": 2,
+        "fuerza": 5,
+        "penetración": -2,
+        "daño": 2,
+        "image": "/assets/rangedWeapons/reliquia.jpg",
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-05",
+    "name": "Bibliotecario",
+    "image": "/assets/units/bibli.png",
+    "faction": "Imperium",
+    "movimiento": 5,
+    "resistencia": 5,
+    "salvacion": 2,
+    "salvacionInv": 4,
+    "herida": 5,
+    "liderazgo": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Personaje", "Exterminador", "Psiquico"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Capucha Psíquica",
+        "description": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen la habilidad Sin Dolor 4+ contra Ataques Psíquicos."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "Velo del Tiempo",
+        "description": "Mientras esta miniatura lidera una unidad, las armas equipadas por las miniaturas de esa unidad tienen la habilidad [GOLPE SOSTENIDO 1]."
+      }
+    ],
+    "rangedWeapons": [
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Bolter Tormenta",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Fuego Rapido 2"]
+      },
+      {
+        "number": 1,
+        "ataques": "D6",
+        "name": "Fuego Brujo",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 5,
+        "penetración": -1,
+        "daño": "D3",
+        "abilities": []
+      },
+      {
+        "number": 1,
+        "ataques": "D6",
+        "name": "Fuego Brujo Sobrecarga",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 6,
+        "penetración": -2,
+        "daño": "D3",
+        "abilities": ["Heridas devastadoras", "Riesgo"]
+      }
+    ],
+    "meleeWeapons": [
+      {
+        "number": 1,
+        "ataques": 4,
+        "name": "Arma de Fuerza",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 6,
+        "penetración": -1,
+        "daño": "D3",
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-06",
+    "name": "Escuadra de Exterminadores",
+    "image": "/assets/units/exterminadores.jpg",
+    "faction": "Imperium",
+    "movimiento": 5,
+    "resistencia": 5,
+    "salvacion": 2,
+    "salvacionInv": 4,
+    "herida": 3,
+    "liderazgo": 6,
+    "control": 1,
+    "keywords": ["Infantería", "Exterminador", "Psiquico"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Teletransporte a Homer",
+        "description": "Al comienzo de la batalla, puedes colocar una ficha de Teletransporte a Homer para esta unidad en cualquier lugar del campo de batalla que no esté en la zona de despliegue de tu oponente. Si lo haces, una vez por batalla, puedes seleccionar esta unidad como objetivo con la Estratagema de Incursión Rápida por 0 PC, pero al resolverla, debes colocar esta unidad a 3 o menos de esa ficha y no a 9 o menos de ninguna miniatura enemiga. Esa ficha se retira entonces."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "Furia del Primero",
+        "description": "Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo tu Juramento del Momento, suma 1 a la tirada para Impactar."
+      }
+    ],
+    "rangedWeapons": [
+      {
+        "number": 4,
+        "ataques": 2,
+        "name": "Bolter Tormenta",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Fuego Rapido 2"]
+      },
+      {
+        "number": 1,
+        "ataques": 6,
+        "name": "Cañon de Asalto",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 6,
+        "penetración": 0,
+        "daño": 1,
+        "abilities": ["Heridas Devastadoras"]
+      }
+    ],
+    "meleeWeapons": [
+      {
+        "number": 4,
+        "ataques": 3,
+        "name": "Puño de energía",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 8,
+        "penetración": -2,
+        "daño": 2,
+        "abilities": []
+      },
+      {
+        "number": 1,
+        "ataques": 4,
+        "name": "Arma de Energia",
+        "range": "melee",
+        "impacto": 3,
+        "fuerza": 5,
+        "penetración": -2,
+        "daño": 1,
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "id": "imperial-fist-07",
+    "name": "Capellan en moto",
+    "image": "/assets/units/capellan.jpg",
+    "faction": "Imperium",
+    "movimiento": 12,
+    "resistencia": 5,
+    "salvacion": 3,
+    "salvacionInv": 4,
+    "herida": 5,
+    "liderazgo": 5,
+    "control": 1,
+    "keywords": ["Montada", "Personaje", "Capellan"],
+    "abilities": [
+      {
+        "id": "imperial-fist-ability-01",
+        "name": "Letania de Odio",
+        "description": "Mientras este modelo esté liderando una unidad, cada vez que un modelo de esa unidad realice un ataque cuerpo a cuerpo, suma 1 a la tirada de Heridas."
+      },
+      {
+        "id": "imperial-fist-ability-02",
+        "name": "Cataclismo de Fuego",
+        "description": "Cada vez que se selecciona la unidad de esta miniatura para disparar, puedes seleccionar una unidad enemiga a 30 cm o menos de ella y visible para ella. Hasta el final de la fase, las armas a distancia equipadas por las miniaturas de la unidad de esta miniatura tienen la habilidad [HERIDAS DEVASTADORAS] al apuntar a esa unidad enemiga."
+      }
+    ],
+    "rangedWeapons": [
+      {
+        "number": 1,
+        "ataques": 1,
+        "name": "Pistola Bolter Absoltor",
+        "range": 18,
+        "impacto": 3,
+        "fuerza": 5,
+        "penetración": -1,
+        "daño": 2,
+        "abilities": ["Pistola"]
+      },
+      {
+        "number": 1,
+        "ataques": 2,
+        "name": "Rifle Bolter Doble",
+        "range": 24,
+        "impacto": 3,
+        "fuerza": 4,
+        "penetración": -1,
+        "daño": 1,
+        "abilities": ["Acoplada"]
+      }
+    ],
+    "meleeWeapons": [
+      {
+        "number": 1,
+        "ataques": 5,
+        "name": "Crozius Arcanum",
+        "range": "melee",
+        "impacto": 2,
+        "fuerza": 6,
+        "penetración": -1,
+        "daño": 2,
+        "abilities": []
+      }
+    ]
+  }
+]

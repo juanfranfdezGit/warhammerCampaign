@@ -5,7 +5,7 @@ import LatidoLore from "./campaigns/ElLatidodelaMáquina-Diosa/lore";
 import LatidoMap from "./campaigns/ElLatidodelaMáquina-Diosa/map";
 import ArmiesList from "./armies/armiesList";
 import Mechanicus from "./armies/factions/mechanicus";
-import Marines from "./armies/factions/marines";
+import ImperialFists from "./armies/factions/imperialFists";
 import Sororitas from "./armies/factions/sororitas";
 import Tyran from "./armies/factions/tyranid";
 import Help from "./armies/help";
@@ -25,7 +25,7 @@ function App() {
 
         <Route path="/armies" element={<ArmiesList />} />
         <Route path="/armies/mechanicus" element={<Mechanicus />} />
-        <Route path="/armies/marines" element={<Marines />} />
+        <Route path="/armies/imperialFist" element={<ImperialFists />} />
         <Route path="/armies/sororitas" element={<Sororitas />} />
         <Route path="/armies/tyranids" element={<Tyran />} />
       </Routes>

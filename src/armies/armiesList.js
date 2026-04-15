@@ -12,7 +12,7 @@ export default function ArmiesList() {
         </Link>
 
         <ul>
-          <Link to="marines">
+          <Link to="imperialFist">
             <div className="linkContainer flex column armiesListDiv">
               <div className="flex">
                 <img
