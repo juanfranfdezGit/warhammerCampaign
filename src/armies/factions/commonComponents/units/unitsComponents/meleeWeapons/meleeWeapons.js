@@ -3,7 +3,7 @@ export default function MeleeWeapons({ meleeWeapons }) {
     <>
       <tr className="sectionTitle">
         <td colSpan="6">
-          <img src="/assets/icos/battle.png" />
+          <img src="/assets/icos/battle.png" alt="melee ico" />
           Armas Cuerpo a Cuerpo
         </td>
       </tr>
