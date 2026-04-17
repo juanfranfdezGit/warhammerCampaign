@@ -3,6 +3,8 @@ import { useState } from "react";
 
 import mechanicus from "../../../../../../datas/armies/mechanicusUnits.json";
 import imperialFist from "../../../../../../datas/armies/fistsUnits.json";
+import sororitas from "../../../../../../datas/armies/sororitas.json"
+import tyranids from "../../../../../../datas/armies/tyranids.json"
 
 export default function UnitList() {
   const faction = window.location.pathname.split("/").pop();
@@ -15,11 +17,15 @@ export default function UnitList() {
   const factionLogos = {
     mechanicus: "/assets/icos/mechanicus.png",
     imperialFist: "/assets/icos/fistStra03.png",
+    sororitas: "/assets/icos/sororitas.png",
+    tyranids: "/assets/icos/tyranid.png"
   };
 
   const armies = {
     mechanicus,
     imperialFist,
+    sororitas,
+    tyranids
   };
 
   const units = armies[faction] || [];

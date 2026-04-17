@@ -12,7 +12,7 @@ export default function ArmiesList() {
         </Link>
 
         <ul>
-          <Link to="imperialFist">
+          <Link to="/armies/imperialFist">
             <div className="linkContainer flex column armiesListDiv">
               <div className="flex">
                 <img
@@ -24,7 +24,7 @@ export default function ArmiesList() {
               </div>
             </div>
           </Link>
-          <Link to="mechanicus">
+          <Link to="/armies/mechanicus">
             <div className="linkContainer flex column armiesListDiv">
               <div className="flex">
                 <img
@@ -36,7 +36,7 @@ export default function ArmiesList() {
               </div>
             </div>
           </Link>
-          <Link to="sororitas">
+          <Link to="/armies/sororitas">
             <div className="linkContainer flex column armiesListDiv">
               <div className="flex">
                 <img
@@ -48,7 +48,7 @@ export default function ArmiesList() {
               </div>
             </div>
           </Link>
-          <Link to="tyranids">
+          <Link to="/armies/tyranids">
             <div className="linkContainer flex column armiesListDiv">
               <div className="flex">
                 <img

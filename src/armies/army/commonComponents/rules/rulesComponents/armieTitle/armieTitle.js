@@ -10,6 +10,12 @@ export default function ArmieTitle() {
     imperialFist: {
       name: "Imperial Fists",
     },
+    sororitas: {
+      name: "Adeptus Sororitas",
+    },
+    tyranids: {
+      name: "Colmena Tyranida"
+    }
   };
 
   const title = factions[faction]?.name || "Desconocido";

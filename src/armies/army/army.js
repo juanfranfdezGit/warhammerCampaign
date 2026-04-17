@@ -5,7 +5,7 @@ import Destacamento from "./commonComponents/destacamento/destacamento";
 import Estratagemas from "./commonComponents/estratagema/estratagemas";
 import Units from "./commonComponents/units/units";
 
-export default function ImperialFists() {
+export default function Army() {
   return (
     <section className="armiesSection">
       <Header />
