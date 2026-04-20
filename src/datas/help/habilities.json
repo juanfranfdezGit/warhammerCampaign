@@ -34,5 +34,17 @@
     "name": "Pistola",
     "description": "Puede realizar la fase de disparo con la pistola equipada aunque este combatiendo cuerpo a cuerpo.",
     "ejemplo": "Los marines espaciales se encuentran en cuerpo a cuerpo contra un tyranido, pero pueden disparar con sus pistolas normalmente durante la fase de disparo."
+  },
+  {
+    "id": 7,
+    "name": "Anti-X",
+    "description": "Cuando una unidad ataca a otra con la keyword que aparece en el nombre, todos los ataques por encima de los indicado serán Heridas Mortales.",
+    "ejemplo": "Dreadnough Brutalis dispara a la infantería con anti-infantería 4, todos las tiradas por encima de 4 no podrán salvarse, es decir serán heridas mortales."
+  },
+  {
+    "id": 8,
+    "name": "Ráfaga",
+    "description": "Cada vez que esta arma ataca, todos los ataques impactan automáticament.",
+    "ejemplo": "Batallón infernus dispara sobre los tyranidos impactando todo gracias a la habilidad, los tyranidos deben tirar para salvarse."
   }
 ]
