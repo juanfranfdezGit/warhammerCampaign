@@ -8,7 +8,7 @@ export default function ArmieTitle() {
       name: "Adeptus Mechanicus",
     },
     imperialFist: {
-      name: "Imperial Fists",
+      name: "Puños Imperiales",
     },
     sororitas: {
       name: "Adeptus Sororitas",

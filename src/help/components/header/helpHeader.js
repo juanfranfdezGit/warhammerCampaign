@@ -9,8 +9,6 @@ export default function HelpHeader() {
           <img src="/assets/icos/back.png" alt="back btn"></img>
         </div>
       </Link>
-
-      <h1>Ayudas</h1>
       
       <Link to="/armies">
         <div className="armyBtn">

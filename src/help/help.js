@@ -8,6 +8,8 @@ export default function Help() {
     <section className="helpSection">
       <HelpHeader />
 
+      <h1>Guía de Juego</h1>
+
       <ul>
         <h2>Fases del Juego</h2>
         {Fases.map((fase) => (
