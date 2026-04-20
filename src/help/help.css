@@ -6,7 +6,7 @@
   background: #111;
   width: 100vw;
   color: #fcfcfc;
-  padding: 1rem 2rem;
+  padding: 9rem 2rem 1rem;
 }
 
 .helpSection h1 {
@@ -33,29 +33,14 @@
   margin-bottom: 4px;
 }
 
+.helpSection ul h3.phase {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
 .helpSection ul li {
   font-size: 1.2rem;
   letter-spacing: 1px;
-}
-
-.backArmieBtn {
-  width: 60px;
-  height: 60px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  padding-bottom: 0.8rem;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-}
-
-.backArmieBtn img {
-  width: 100%;
-  height: 100%;
 }
 
 .ejs {
@@ -66,8 +51,14 @@
 }
 
 .fase h4 {
-  margin: 1rem 0;
+  margin: 2.4rem 0 1rem;
   font-size: 2rem;
   background: rgb(255, 36, 36);
   padding: 4px 8px;
+}
+
+.helpHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./home";
-import LatidoCampaign from "./campaigns/ElLatidodelaMáquina-Diosa";
-import LatidoLore from "./campaigns/ElLatidodelaMáquina-Diosa/lore";
-import LatidoMap from "./campaigns/ElLatidodelaMáquina-Diosa/map";
 import ArmiesList from "./armies/armiesList";
-import Help from "./armies/help";
+import Help from "./help/help";
 import Army from "./armies/army/army";
+import CampaignList from "./campaigns/campaignList";
+import CampaignLore from "./campaigns/campaigns/components/lore/campaignLore";
+import CampaignMap from "./campaigns/campaigns/components/map/campaignMap";
+import Campaign from "./campaigns/campaigns/components/campaigns/campaign"
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
 
         <Route path="/help" element={<Help />} />
 
-        <Route path="/campaigns/latido" element={<LatidoCampaign />}>
-          <Route path="history" element={<LatidoLore />} />
-          <Route path="map" element={<LatidoMap />} />
-        </Route>
+        <Route path="/campaigns" element={<CampaignList />} />
+        <Route path="/campaigns/:campaign" element={<Campaign />} />
+        <Route path="/campaigns/:campaign/lore" element={<CampaignLore />} />
+        <Route path="/campaigns/:campaign/map" element={<CampaignMap />} />
 
         <Route path="/armies" element={<ArmiesList />} />
         <Route path="/armies/:army" element={<Army />} />

@@ -2,7 +2,6 @@
   {
     "id": "adsor-01",
     "name": "Batallon de Hermanas de Batalla - Hermana Superiora",
-    "image": "/assets/units/battlesistersSup.webp",
     "faction": "Adepta Sororitas",
     "movimiento": 6,
     "resistencia": 3,
@@ -24,7 +23,7 @@
         "description": "Al final de tu fase de Mando, si esta unidad está dentro del alcance de un marcador de objetivo que controlas, ese marcador de objetivo permanece bajo tu control, incluso si no tienes modelos dentro de su alcance, hasta que tu adversario lo controle al comienzo o al final de cualquier turno."
       }
     ],
-    "weapons": [
+    "rangedWeapons": [
       {
         "number": 1,
         "ataques": 1,
@@ -51,7 +50,9 @@
         "penetración": 0,
         "daño": 1,
         "abilities": ["pistola"]
-      },
+      }
+    ],
+    "meleeWeapons": [
       {
         "number": 1,
         "ataques": 2,
@@ -66,9 +67,8 @@
     ]
   },
   {
-    "id": "adsor-01",
+    "id": "adsor-02",
     "name": "Batallon de Hermanas de Batalla",
-    "image": "/assets/units/battlesisters.jpg",
     "faction": "Adepta Sororitas",
     "movimiento": 6,
     "resistencia": 3,
@@ -90,7 +90,7 @@
         "description": "Al final de tu fase de Mando, si esta unidad está dentro del alcance de un marcador de objetivo que controlas, ese marcador de objetivo permanece bajo tu control, incluso si no tienes modelos dentro de su alcance, hasta que tu adversario lo controle al comienzo o al final de cualquier turno."
       }
     ],
-    "weapons": [
+    "rangedWeapons": [
       {
         "number": 7,
         "ataques": 1,
@@ -134,7 +134,9 @@
         "penetración": 0,
         "daño": 1,
         "abilities": ["pistola"]
-      },
+      }
+    ],
+    "meleeWeapons": [
       {
         "number": 1,
         "ataques": 1,
@@ -151,7 +153,6 @@
   {
     "id": "adsor-03",
     "name": "Imagifier",
-    "image": "/assets/units/imagifier.webp",
     "faction": "Adepta Sororitas",
     "movimiento": 6,
     "resistencia": 3,
@@ -173,7 +174,7 @@
         "description": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen una Tirada de Salvación de 2+ y una Tirada de Salvación Invulnerable de 4+."
       }
     ],
-    "weapons": [
+    "rangedWeapons": [
       {
         "number": 1,
         "ataques": 1,
@@ -195,7 +196,9 @@
         "penetración": 0,
         "daño": 1,
         "abilities": ["pistola"]
-      },
+      }
+    ],
+    "meleeWeapons": [
       {
         "number": 1,
         "ataques": 1,

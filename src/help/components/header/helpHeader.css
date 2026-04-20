@@ -1,0 +1,32 @@
+.helpHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 1rem 2rem;
+  position: fixed;
+  gap: 1.8rem;
+  background: #111;
+  top: 0;
+}
+
+.helpHeader h1 {
+  position: relative;
+  top: 10px;
+  left: 8px;
+}
+
+.homeBtn,
+.armyBtn {
+  width: 80px;
+}
+
+.homeBtn {
+  width: 60px;
+}
+
+.homeBtn img,
+.armyBtn img {
+  width: 100%;
+  filter: invert(1);
+}

@@ -1,6 +1,8 @@
 import "./units.css";
 import mechanicusData from "../../../../datas/armies/mechanicusUnits.json";
 import fistsData from "../../../../datas/armies/fistsUnits.json";
+import sororitasData from "../../../../datas/armies/sororitas.json";
+import tyranidsData from "../../../../datas/armies/tyranids.json";
 
 import UnitHeader from "./unitsComponents/unitHeader/unitHeader";
 import Stats from "./unitsComponents/stats/stats";
@@ -14,6 +16,8 @@ export default function Units() {
   const factions = {
     mechanicus: mechanicusData,
     imperialFist: fistsData,
+    sororitas: sororitasData,
+    tyranids: tyranidsData,
   };
 
   const units = factions[faction] || [];
@@ -37,9 +41,9 @@ export default function Units() {
               control={army.control}
             />
 
-           <RangeWeapons rangedWeapons={army.rangedWeapons} />
+            <RangeWeapons rangedWeapons={army.rangedWeapons} />
 
-           <MeleeWeapons meleeWeapons={army.meleeWeapons} />
+            <MeleeWeapons meleeWeapons={army.meleeWeapons} />
 
             <Habilities habilities={army.abilities} />
           </tbody>

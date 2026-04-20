@@ -24,7 +24,7 @@
         "description": "Mientras una unidad TIRÁNIDOS amiga esté a 15 cm o menos de esta miniatura, las armas a distancia equipadas por las miniaturas de esa unidad tienen las habilidades [ASALTO] y [GOLPE LETAL]."
       }
     ],
-    "weapons": [
+    "rangedWeapons": [
       {
         "number": 1,
         "ataques": "D3",
@@ -36,7 +36,9 @@
         "daño": 3,
         "abilities": ["Rafaga"],
         "image": "/assets/weapons/pulso.png"
-      },
+      }
+    ],
+    "meleeWeapons": [
       {
         "number": 1,
         "ataques": 6,

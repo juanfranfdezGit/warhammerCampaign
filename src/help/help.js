@@ -1,24 +1,18 @@
 import Habilidades from "../datas/help/habilities.json";
 import Fases from "../datas/help/gamePhases.json";
 import "./help.css";
-import { Link } from "react-router-dom";
+import HelpHeader from "./components/header/helpHeader";
 
 export default function Help() {
   return (
     <section className="helpSection">
-      <Link to="/armies">
-        <div className="backArmieBtn">
-          <img src="/assets/icos/back.png" alt="back btn"></img>
-        </div>
-      </Link>
-
-      <h1>Ayudas</h1>
+      <HelpHeader />
 
       <ul>
         <h2>Fases del Juego</h2>
         {Fases.map((fase) => (
           <li key={fase.id} className="fase">
-            <h3>{fase.name}</h3>
+            <h3 className="phase">{fase.name}</h3>
             <p>{fase.description}</p>
             {fase.description2title && <h4>{fase.description2title}</h4>}
             <p>{fase.description2}</p>

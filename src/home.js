@@ -7,53 +7,19 @@ function Home() {
       <img src="/assets/icos/logo.png" alt="Logo" className="logo" />
       <ul className="campaignsLinks">
         <li>
-          <Link to="/campaigns/latido">
+          <Link to="/campaigns">
             <div className="linkContainer flex column">
-              <h2 className="campaignTitle">El Latido de la Maquina-Diosa</h2>
-              <div className="flex">
-                <img
-                  className="campaignFaction"
-                  alt="mechanicus logo"
-                  src="/assets/icos/mechanicus.png"
-                />
-                <img
-                  className="campaignFaction"
-                  alt="imperial fist logo"
-                  src="/assets/icos/imperialFist.png"
-                />
-                <img
-                  className="campaignFaction"
-                  alt="tyranid logo"
-                  src="/assets/icos/tyranid.png"
-                />
-              </div>
+              <h2 className="campaignTitle">Lore Campañas</h2>
             </div>
           </Link>
           <Link to="/armies">
             <div className="linkContainer flex column">
-              <h2 className="campaignTitle">Ejercitos</h2>
-              <div className="flex">
-                <img
-                  className="campaignFaction"
-                  alt="mechanicus logo"
-                  src="/assets/icos/mechanicus.png"
-                />
-                <img
-                  className="campaignFaction"
-                  alt="sororitas logo"
-                  src="/assets/icos/sororitas.png"
-                />
-                <img
-                  className="campaignFaction"
-                  alt="imperial fist logo"
-                  src="/assets/icos/imperialFist.png"
-                />
-                <img
-                  className="campaignFaction"
-                  alt="tyranid logo"
-                  src="/assets/icos/tyranid.png"
-                />
-              </div>
+              <h2 className="campaignTitle">Información de Ejercitos</h2>
+            </div>
+          </Link>
+          <Link to="/help">
+            <div className="linkContainer flex column">
+              <h2 className="campaignTitle">Guía de Juego</h2>
             </div>
           </Link>
         </li>
