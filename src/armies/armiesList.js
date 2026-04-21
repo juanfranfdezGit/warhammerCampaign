@@ -7,7 +7,7 @@ export default function ArmiesList() {
       <div className="armiesList">
         <Link to="/">
           <div className="backArmieBtn">
-            <img src="/assets/icos/back.png" alt="back btn"></img>
+            <img src="/assets/icos/back.png" alt="back btn" />
           </div>
         </Link>
 
