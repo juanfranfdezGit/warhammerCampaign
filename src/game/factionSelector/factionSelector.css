@@ -10,7 +10,9 @@
   flex-direction: column;
   gap: 12px;
   margin-bottom: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  max-height: 75vh;
+  overflow: scroll;
 }
 
 .faction-option {
@@ -59,12 +61,4 @@
   border: solid #000;
   border-width: 0 4px 4px 0;
   transform: rotate(45deg);
-}
-
-.selectBtn {
-  padding: 8px 1rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  position: fixed;
-  bottom: 2rem;
 }

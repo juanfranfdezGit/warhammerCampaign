@@ -4,6 +4,7 @@
     "name": "Tor Garadon",
     "image": "/assets/units/garadon.jpg",
     "faction": "Puños Imperiales",
+    "key": "fists",
     "movimiento": 5,
     "resistencia": 6,
     "salvacion": 3,
@@ -56,6 +57,7 @@
   {
     "id": "imperial-fist-02",
     "name": "Escuadra Infernus",
+    "key": "fists",
     "image": "/assets/units/infernus.webp",
     "faction": "Imperium",
     "movimiento": 6,
@@ -116,6 +118,7 @@
   {
     "id": "imperial-fist-03",
     "name": "Sargento Infernus",
+    "key": "fists",
     "image": "/assets/units/infernusSgt.jpg",
     "faction": "Imperium",
     "movimiento": 6,
@@ -175,6 +178,7 @@
   },
   {
     "id": "imperial-fist-04",
+    "key": "fists",
     "name": "Capitán Templario Negro",
     "image": "/assets/units/capitanTemp.jfif",
     "faction": "Imperium",
@@ -229,6 +233,7 @@
   },
   {
     "id": "imperial-fist-05",
+    "key": "fists",
     "name": "Bibliotecario",
     "image": "/assets/units/bibli.png",
     "faction": "Imperium",
@@ -303,6 +308,7 @@
   },
   {
     "id": "imperial-fist-06",
+    "key": "fists",
     "name": "Escuadra de Exterminadores",
     "image": "/assets/units/exterminadores.jpg",
     "faction": "Imperium",
@@ -377,6 +383,7 @@
   },
   {
     "id": "imperial-fist-07",
+    "key": "fists",
     "name": "Capellan en moto",
     "image": "/assets/units/capellan.jpg",
     "faction": "Imperium",

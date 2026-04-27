@@ -1,19 +1,22 @@
 import "./factionSelector.css";
 import factionsData from "../../datas/games/gamesFactions.json";
 
-export default function FactionSelector({
-  selectedFactions,
-  onChange,
-  onNextStep,
-}) {
+export default function FactionSelector({ selectedFactions, onChange }) {
   const selectedIds = selectedFactions || [];
 
-  const toggleFaction = (id) => {
-    const isSelected = selectedIds.includes(id);
+  const toggleFaction = (faction) => {
+    const isSelected = selectedIds.includes(faction.id);
 
     const updated = isSelected
-      ? selectedIds.filter((x) => x !== id)
-      : [...selectedIds, id];
+      ? selectedIds.filter((x) => x !== faction.id)
+      : [
+          ...selectedIds,
+          {
+            id: faction.id,
+            key: faction.key, 
+            name: faction.name,
+          },
+        ];
 
     onChange(updated);
   };
@@ -24,14 +27,14 @@ export default function FactionSelector({
 
       <div className="faction-multiselect">
         {factionsData.map((faction) => {
-          const isSelected = selectedIds.includes(faction.id);
+          const isSelected = selectedIds.some((x) => x.id === faction.id);
 
           return (
             <label key={faction.id} className="faction-option">
               <input
                 type="checkbox"
                 checked={isSelected}
-                onChange={() => toggleFaction(faction.id)}
+                onChange={() => toggleFaction(faction)}
               />
 
               <span className="checkmark" />
@@ -41,14 +44,6 @@ export default function FactionSelector({
           );
         })}
       </div>
-
-      <button
-        onClick={onNextStep}
-        disabled={selectedIds.length === 0}
-        className="selectBtn"
-      >
-        Continuar
-      </button>
     </div>
   );
 }

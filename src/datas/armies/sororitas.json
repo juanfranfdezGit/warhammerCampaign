@@ -3,6 +3,7 @@
     "id": "adsor-01",
     "name": "Batallon de Hermanas de Batalla - Hermana Superiora",
     "faction": "Adepta Sororitas",
+    "key": "sororitas",
     "movimiento": 6,
     "resistencia": 3,
     "salvacion": 3,
@@ -70,6 +71,7 @@
     "id": "adsor-02",
     "name": "Batallon de Hermanas de Batalla",
     "faction": "Adepta Sororitas",
+    "key": "sororitas",
     "movimiento": 6,
     "resistencia": 3,
     "salvacion": 3,
@@ -82,12 +84,12 @@
       {
         "id": "sororita-ability-01",
         "name": "Querubin",
-        "description": "Una vez por batalla, después de que esta unidad realice un Acto de Fe, obtienes 1 dado de Milagro. Nota: Coloca una ficha de Querubín junto a la unidad y retírala una vez que se haya usado esta habilidad."
+        "description": "Una vez por batalla..."
       },
       {
         "id": "sororita-ability-02",
         "name": "Defensoras de la Fe",
-        "description": "Al final de tu fase de Mando, si esta unidad está dentro del alcance de un marcador de objetivo que controlas, ese marcador de objetivo permanece bajo tu control, incluso si no tienes modelos dentro de su alcance, hasta que tu adversario lo controle al comienzo o al final de cualquier turno."
+        "description": "Al final de tu fase de Mando..."
       }
     ],
     "rangedWeapons": [
@@ -112,28 +114,6 @@
         "penetración": -4,
         "daño": "D6",
         "abilities": ["Pesada", "Melta 2"]
-      },
-      {
-        "number": 1,
-        "ataques": 3,
-        "name": "Bolter Pesado",
-        "range": 36,
-        "impacto": 4,
-        "fuerza": 5,
-        "penetración": -1,
-        "daño": 2,
-        "abilities": ["Fuego Sostenido 1"]
-      },
-      {
-        "number": 9,
-        "ataques": 1,
-        "name": "Pistola Bolter",
-        "range": 12,
-        "impacto": 3,
-        "fuerza": 4,
-        "penetración": 0,
-        "daño": 1,
-        "abilities": ["pistola"]
       }
     ],
     "meleeWeapons": [
@@ -154,6 +134,7 @@
     "id": "adsor-03",
     "name": "Imagifier",
     "faction": "Adepta Sororitas",
+    "key": "sororitas",
     "movimiento": 6,
     "resistencia": 3,
     "salvacion": 3,
@@ -166,12 +147,12 @@
       {
         "id": "sororita-ability-01",
         "name": "Letanía de Hazañas",
-        "description": "Cada vez que ganes un dado de Milagro como resultado de la destrucción de una unidad o miniatura de ADEPTA SORORITAS de tu ejército, si dicha unidad o miniatura fue destruida a 12 o menos de esta miniatura, puedes repetir el resultado de ese dado de Milagro antes de añadirlo a tu reserva "
+        "description": "Cada vez que ganes un dado de Milagro..."
       },
       {
         "id": "sororita-ability-02",
         "name": "Puente de los Mártires Santos",
-        "description": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen una Tirada de Salvación de 2+ y una Tirada de Salvación Invulnerable de 4+."
+        "description": "Mientras esta miniatura lidera una unidad..."
       }
     ],
     "rangedWeapons": [
@@ -185,17 +166,6 @@
         "penetración": 0,
         "daño": 1,
         "abilities": ["Fuego Rapido 1"]
-      },
-      {
-        "number": 9,
-        "ataques": 1,
-        "name": "Pistola Bolter",
-        "range": 12,
-        "impacto": 3,
-        "fuerza": 4,
-        "penetración": 0,
-        "daño": 1,
-        "abilities": ["pistola"]
       }
     ],
     "meleeWeapons": [

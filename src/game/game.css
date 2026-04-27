@@ -13,3 +13,21 @@
   background-position: center;
   background-size: cover;
 }
+
+.setupBtnBack,
+.setupBtnNext {
+  position: fixed;
+  bottom: 1rem;
+
+  padding: 8px 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.setupBtnBack {
+  left: 5rem;
+}
+
+.setupBtnNext {
+  right: 3rem;
+}

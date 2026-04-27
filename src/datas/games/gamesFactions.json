@@ -1,5 +1,5 @@
 [
-  { "id": 1, "name": "Puños Imperiales" },
-  { "id": 2, "name": "Adeptus Mechanicus" },
-  { "id": 3, "name": "Adeptus Sororitas" }
+  { "id": 1, "name": "Puños Imperiales", "key": "fists" },
+  { "id": 2, "name": "Adeptus Mechanicus", "key": "mechanicus" },
+  { "id": 3, "name": "Adeptus Sororitas", "key": "sororitas" }
 ]
