@@ -1,0 +1,15 @@
+.gameStep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: red;
+}
+
+.gameStep.select {
+  background: url(/public/assets/backs/back03.jpg);
+  background-position: center;
+  background-size: cover;
+}

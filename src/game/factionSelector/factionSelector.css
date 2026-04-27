@@ -1,0 +1,70 @@
+.gameStep-title {
+  font-size: 2.4rem;
+  color: #fcfcfc;
+  filter: drop-shadow(0 0 12px #111);
+  margin-bottom: 1rem;
+}
+
+.faction-multiselect {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.faction-option {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  background: #111;
+  color: #fcfcfc;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 0.2s;
+  max-width: 90vw;
+}
+
+.faction-option:hover {
+  background: #1a1a1a;
+}
+
+.faction-option input {
+  display: none;
+}
+
+.checkmark {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #666;
+  border-radius: 4px;
+  position: relative;
+}
+
+.faction-option input:checked + .checkmark {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
+.faction-option input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 1px;
+  width: 7px;
+  height: 18px;
+  border: solid #000;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+
+.selectBtn {
+  padding: 8px 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 2rem;
+}

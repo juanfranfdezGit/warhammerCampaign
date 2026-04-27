@@ -7,6 +7,7 @@ import CampaignList from "./campaigns/campaignList";
 import CampaignLore from "./campaigns/campaigns/components/lore/campaignLore";
 import CampaignMap from "./campaigns/campaigns/components/map/campaignMap";
 import Campaign from "./campaigns/campaigns/components/campaigns/campaign"
+import Game from "./game/game";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
 
         <Route path="/armies" element={<ArmiesList />} />
         <Route path="/armies/:army" element={<Army />} />
+        
+        <Route path="/game" element={<Game />} />
       </Routes>
     </>
   );

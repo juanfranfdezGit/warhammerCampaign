@@ -22,6 +22,11 @@ function Home() {
               <h2 className="campaignTitle">Guía de Juego</h2>
             </div>
           </Link>
+          <Link to="/game">
+            <div className="linkContainer flex column">
+              <h2 className="campaignTitle">Partidas en Juego</h2>
+            </div>
+          </Link>
         </li>
       </ul>
     </div>
