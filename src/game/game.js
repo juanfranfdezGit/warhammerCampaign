@@ -7,14 +7,14 @@ import UnitsSelector from "./unitSelector/unitSelector";
 
 export default function Game() {
   const steps = ["faction", "type", "units", "summary"];
+  const [overLimit, setOverLimit] = useState(false);
 
   const [stepIndex, setStepIndex] = useState(0);
 
   const [config, setConfig] = useState({
-    type: [],
+    type: null,
     faction: [],
     units: [],
-    points: 1000,
   });
 
   const currentStep = steps[stepIndex];
@@ -28,15 +28,19 @@ export default function Game() {
   };
 
   const isNextDisabled = () => {
+    const faction = config.faction || [];
+    const type = config.type || [];
+    const units = config.units || [];
+
     switch (currentStep) {
       case "faction":
-        return config.faction.length === 0;
+        return faction.length === 0;
 
       case "type":
-        return config.type.length === 0;
+        return type.length === 0;
 
       case "units":
-        return config.units.length === 0;
+        return config.units.length === 0 || overLimit;
 
       default:
         return false;
@@ -72,7 +76,9 @@ export default function Game() {
           <UnitsSelector
             factions={config.faction}
             selectedUnits={config.units}
+            selectedTypes={config.type}
             onChange={(units) => setConfig((prev) => ({ ...prev, units }))}
+            onOverLimit={setOverLimit}
           />
         );
 

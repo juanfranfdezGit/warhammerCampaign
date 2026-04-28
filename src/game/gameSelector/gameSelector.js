@@ -4,12 +4,7 @@ export default function GameSelector({ selectedTypes, onChange, onNextStep }) {
   const selectedIds = selectedTypes || [];
 
   const toggleType = (id) => {
-    const isSelected = selectedIds.includes(id);
-
-    const updated = isSelected
-      ? selectedIds.filter((x) => x !== id)
-      : [...selectedIds, id];
-
+    const updated = selectedIds.includes(id) ? [] : [id];
     onChange(updated);
   };
 
