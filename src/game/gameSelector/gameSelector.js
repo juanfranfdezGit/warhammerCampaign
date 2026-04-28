@@ -9,7 +9,7 @@ export default function GameSelector({ selectedTypes, onChange, onNextStep }) {
   };
 
   return (
-    <div className="gameStep select">
+    <div className="gameStep select gameSelect">
       <label className="gameStep-title">Selecciona Partida</label>
 
       <div className="faction-multiselect">

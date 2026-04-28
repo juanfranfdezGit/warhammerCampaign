@@ -4,6 +4,7 @@
     "name": "Batallon de Hermanas de Batalla - Hermana Superiora",
     "faction": "Adepta Sororitas",
     "key": "sororitas",
+    "points": 15,
     "movimiento": 6,
     "resistencia": 3,
     "salvacion": 3,
@@ -71,6 +72,7 @@
     "id": "adsor-02",
     "name": "Batallon de Hermanas de Batalla",
     "faction": "Adepta Sororitas",
+    "points": 90,
     "key": "sororitas",
     "movimiento": 6,
     "resistencia": 3,
@@ -133,6 +135,7 @@
   {
     "id": "adsor-03",
     "name": "Imagifier",
+    "points": 65,
     "faction": "Adepta Sororitas",
     "key": "sororitas",
     "movimiento": 6,

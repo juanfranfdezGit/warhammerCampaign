@@ -72,7 +72,7 @@ export default function UnitsSelector({
   };
 
   return (
-    <div className="gameStep select">
+    <div className="gameStep select unitSelect">
       <label className="gameStep-title">Selecciona Unidades</label>
 
       <div className="game-points-summary">
