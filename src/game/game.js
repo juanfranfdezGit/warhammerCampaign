@@ -40,7 +40,7 @@ export default function Game() {
         return type.length === 0;
 
       case "units":
-        return config.units.length === 0 || overLimit;
+        return units.length === 0 || overLimit;
 
       default:
         return false;
