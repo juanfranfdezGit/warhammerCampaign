@@ -9,22 +9,22 @@ function Home() {
         <li>
           <Link to="/campaigns">
             <div className="linkContainer flex column">
-              <h2 className="campaignTitle">Lore Campañas</h2>
+              <h2 className="campaignTitle">Campañas</h2>
             </div>
           </Link>
           <Link to="/armies">
             <div className="linkContainer flex column">
-              <h2 className="campaignTitle">Información de Ejercitos</h2>
+              <h2 className="campaignTitle">Ejercitos</h2>
             </div>
           </Link>
           <Link to="/help">
             <div className="linkContainer flex column">
-              <h2 className="campaignTitle">Guía de Juego</h2>
+              <h2 className="campaignTitle">Guía</h2>
             </div>
           </Link>
           <Link to="/game">
             <div className="linkContainer flex column">
-              <h2 className="campaignTitle">Partidas en Juego</h2>
+              <h2 className="campaignTitle">Partidas</h2>
             </div>
           </Link>
         </li>
