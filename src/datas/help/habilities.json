@@ -18,6 +18,12 @@
     "ejemplo": "Un ataque inflige 2 heridas mortales. La unidad objetivo recibe directamente 2 puntos de daño, asignados a miniaturas sin realizar tiradas de salvación."
   },
   {
+    "id": 3.5,
+    "name": "Heridas Críticas",
+    "description": "Todas las tiradas para herir que saquen 6 son heridas críticas. Las heridas críticas siempre hieren.",
+    "ejemplo": "Si una unidad con poco ataque dispara contra una con mucha armadura, solo podría herirle si es crítica, es decir un 6."
+  },
+  {
     "id": 4,
     "name": "Fuego Sostenido",
     "description": "Cada vez que se realiza un ataque con una de estas armas, si se obtiene un Impacto Crítico (6), obtiene los impactos adicionales indicados en la habilidad.",
@@ -38,13 +44,13 @@
   {
     "id": 7,
     "name": "Anti-X",
-    "description": "Cuando una unidad ataca a otra con la keyword que aparece en el nombre, todos los ataques por encima de los indicado serán Heridas Mortales.",
-    "ejemplo": "Dreadnough Brutalis dispara a la infantería con anti-infantería 4, todos las tiradas por encima de 4 no podrán salvarse, es decir serán heridas mortales."
+    "description": "Cuando una unidad ataca a otra con la keyword que aparece en el nombre, todos los ataques por encima de lo indicado serán Heridas Críticas.",
+    "ejemplo": "Dreadnough Brutalis dispara a la infantería con anti-infantería 4, solo tendrá que sacar 4 o más para herir."
   },
   {
     "id": 8,
     "name": "Ráfaga",
-    "description": "Cada vez que esta arma ataca, todos los ataques impactan automáticament.",
+    "description": "Cada vez que esta arma ataca, todos los ataques impactan automáticamente.",
     "ejemplo": "Batallón infernus dispara sobre los tyranidos impactando todo gracias a la habilidad, los tyranidos deben tirar para salvarse."
   }
 ]

@@ -7,7 +7,7 @@
         "description2": "Ambos jugadores ganan 1CP. Luego activas las otras reglas que se resuelven en esta fase. * Solo podemos obtener 1CP por turno.",
         "description3title": "Moral de la Batalla",
         "description3": "Una fuerza comienza con todas las miniaturas. Al bajar a la mitad empiezan algunas reglas. Si una unidad es 1 miniatura la mitad es cuando la vida baja de la mitad.",
-        "description4": "Por cada unidad a la mitad realizamos una tirada de 2D6, si el resultado es menor a la mejor característica de liderazgo esta unidad queda desmoralizada.",
+        "description4": "Por cada unidad a la mitad realizamos una tirada de 2D6, si el resultado es mayor a la mejor característica de liderazgo esta unidad queda desmoralizada.",
         "description5": "Si la unidad esta desmoralizada no suma control de objetivo, para retirarse debe hacer una prueba de escape desesperado, además no podrás usar estratagemas con esa unidad.",
         "description6": "Si tienes unidades adjunta se suman las miniaturas para ver si está a la mitad."
     },
