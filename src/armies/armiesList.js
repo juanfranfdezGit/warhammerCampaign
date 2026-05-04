@@ -6,56 +6,36 @@ export default function ArmiesList() {
     <>
       <div className="armiesList">
         <Link to="/">
-          <div className="backArmieBtn">
+          <div className="backArmieBtn shadow">
             <img src="/assets/icos/back.png" alt="back btn" />
           </div>
         </Link>
 
         <ul>
           <Link to="/armies/imperialFist">
-            <div className="linkContainer flex column armiesListDiv">
+            <div className="linkContainer flex column armiesListDiv imperialFist">
               <div className="flex">
-                <img
-                  className="campaignFaction armiesListDiv"
-                  alt="mechanicus logo"
-                  src="/assets/icos/imperialFist.png"
-                />
                 <h3>Puños Imperiales</h3>
               </div>
             </div>
           </Link>
           <Link to="/armies/mechanicus">
-            <div className="linkContainer flex column armiesListDiv">
+            <div className="linkContainer flex column armiesListDiv mechanicus">
               <div className="flex">
-                <img
-                  className="campaignFaction armiesListDiv"
-                  alt="mechanicus logo"
-                  src="/assets/icos/mechanicus.png"
-                />
                 <h3>Adeptus Mechanicus</h3>
               </div>
             </div>
           </Link>
           <Link to="/armies/sororitas">
-            <div className="linkContainer flex column armiesListDiv">
+            <div className="linkContainer flex column armiesListDiv sororitas">
               <div className="flex">
-                <img
-                  className="campaignFaction armiesListDiv"
-                  alt="mechanicus logo"
-                  src="/assets/icos/sororitas.png"
-                />
                 <h3>Adepta Sororitas</h3>
               </div>
             </div>
           </Link>
           <Link to="/armies/tyranids">
-            <div className="linkContainer flex column armiesListDiv">
+            <div className="linkContainer flex column armiesListDiv tyranids">
               <div className="flex">
-                <img
-                  className="campaignFaction armiesListDiv"
-                  alt="mechanicus logo"
-                  src="/assets/icos/tyranid.png"
-                />
                 <h3>Tyranidos</h3>
               </div>
             </div>

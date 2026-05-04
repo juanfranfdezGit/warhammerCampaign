@@ -1,6 +1,6 @@
 .armiesList {
-  background: url(/public/assets/backs/back02.webp) no-repeat center center
-    fixed;
+  background: url(/public/assets/backs/back06.png) no-repeat top center fixed;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -9,6 +9,10 @@
 }
 
 .armiesList ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 7rem;
 }
 
@@ -47,6 +51,47 @@
   width: 70px;
 }
 
+.backArmieBtn.shadow {
+  filter: drop-shadow(0 0 8px #6784c0);
+}
+
 .backArmieBtn img {
   width: 100%;
+}
+
+.imperialFist,
+.mechanicus,
+.sororitas,
+.tyranids {
+  height: 140px;
+  font-size: 1.3rem;
+  box-shadow: 0 0 8px #6784c0;
+}
+
+.imperialFist {
+  background: url(../../public/assets/backs/backFist.png);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 5px #ccb36e;
+}
+
+.mechanicus {
+  background: url(../../public/assets/backs/backMech.png);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 5px #e9a463;
+}
+
+.sororitas {
+  background: url(../../public/assets/backs/backSoro.png);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 5px #a78b32;
+}
+
+.tyranids {
+  background: url(../../public/assets/backs/backTyr.png);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 5px #fcfcfc;
 }
