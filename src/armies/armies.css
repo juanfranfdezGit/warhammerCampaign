@@ -65,6 +65,7 @@
 .tyranids {
   height: 140px;
   font-size: 1.3rem;
+  box-shadow: 0 0 8px #111;
 }
 
 .imperialFist {
