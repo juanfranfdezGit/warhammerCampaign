@@ -13,32 +13,16 @@ export default function ArmiesList() {
 
         <ul>
           <Link to="/armies/imperialFist">
-            <div className="linkContainer flex column armiesListDiv imperialFist">
-              <div className="flex">
-                <h3>Puños Imperiales</h3>
-              </div>
-            </div>
+            <div className="linkContainer flex column armiesListDiv imperialFist"></div>
           </Link>
           <Link to="/armies/mechanicus">
-            <div className="linkContainer flex column armiesListDiv mechanicus">
-              <div className="flex">
-                <h3>Adeptus Mechanicus</h3>
-              </div>
-            </div>
+            <div className="linkContainer flex column armiesListDiv mechanicus"></div>
           </Link>
           <Link to="/armies/sororitas">
-            <div className="linkContainer flex column armiesListDiv sororitas">
-              <div className="flex">
-                <h3>Adepta Sororitas</h3>
-              </div>
-            </div>
+            <div className="linkContainer flex column armiesListDiv sororitas"></div>
           </Link>
           <Link to="/armies/tyranids">
-            <div className="linkContainer flex column armiesListDiv tyranids">
-              <div className="flex">
-                <h3>Tyranidos</h3>
-              </div>
-            </div>
+            <div className="linkContainer flex column armiesListDiv tyranids"></div>
           </Link>
         </ul>
       </div>
