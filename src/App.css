@@ -11,10 +11,10 @@
 }
 
 .logo {
-  width: 300px;
-  filter: drop-shadow(0 0 20px #523500);
+  width: 220px;
+  filter: drop-shadow(0 0 20px #806a42);
   position: absolute;
-  top: 6vh;
+  top: 1vh;
 }
 
 .linkContainer {
