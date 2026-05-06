@@ -1,8 +1,8 @@
 .mejoraSection {
   background: #fcfcfc;
   color: darkred;
-  padding: 1rem;
-  margin-top: 4rem;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
 }
 
 .mejoraSection h3 {
@@ -20,4 +20,8 @@
   color: #fcfcfc;
   display: flex;
   padding: 2px 4px;
+}
+
+.destacamentoDetalle {
+  padding: 2rem;
 }

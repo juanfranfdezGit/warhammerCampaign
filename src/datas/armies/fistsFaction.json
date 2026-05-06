@@ -16,13 +16,12 @@
       {
         "id": 1,
         "name": "Fuerza de Tarea Gladius",
-        "description": "Al principio de tu fase de mando puedes declarar una de las siguientes doctrinas, sus efecto se aplican a todos los ADEPTUS ASTARTES.",
-        "doc1title": "Doctrina Devastadora",
-        "doc1": "Esta unidad puede disparar tras avanzar.",
-        "doc2title": "Doctrina Táctica",
-        "doc2": "Esta unidad puede disparar y declarar una carga en un turno en el que haya retrocedido.",
-        "doc3title": "Doctrina de Asalto",
-        "doc3": "Esta unidad puede declarar una carga en un turno en el que haya avanzado.",
+        "descriptions": [
+          "Al principio de tu fase de mando puedes declarar una de las siguientes doctrinas, sus efecto se aplican a todos los ADEPTUS ASTARTES.",
+          "Doctrina Devastadora: Esta unidad puede disparar tras avanzar.",
+          "Doctrina Táctica: Esta unidad puede disparar y declarar una carga en un turno en el que haya retrocedido.",
+          "Doctrina de Asalto: Esta unidad puede declarar una carga en un turno en el que haya avanzado."
+        ],
         "mejoratitle": "Mejoras",
         "mejoratitle1": "Armadura de Artífice <span>10pts</span>",
         "mejoradescription1": "Solo para miniaturas ADEPTUS ASTARTES. El portador tiene salvación 2 y la habilidad [IGNORAR DOLOR 5].",
@@ -31,92 +30,148 @@
         "mejoratitle3": "Adepto del Codex <span>20pts</span>",
         "mejoradescription3": "Solo para miniaturas de CAPITÁN. Al comienzo de tu fase de mando, si el portador está en el campo de batalla, en lugar de seleccionar una Doctrina de Combate para tu ejército, puedes seleccionar la Doctrina Táctica. Si lo haces, hasta el comienzo de tu siguiente fase de mando, esa Doctrina de Combate estará activa solo para la unidad del portador, incluso si ya la has seleccionado para tu ejército en esta batalla.",
         "mejoratitle4": "Disciplina de Fuego <span>25pts</span>",
-        "mejoradescription4": "Solo para miniaturas de ADEPTUS ASTARTES. Mientras el portador lidera una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [GOLPE SOSTENIDO 1]. Además, mientras la unidad del portador está bajo los efectos de la Doctrina Devastadora, puedes repetir las tiradas de Avance realizadas para esa unidad."
+        "mejoradescription4": "Solo para miniaturas de ADEPTUS ASTARTES. Mientras el portador lidera una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [GOLPE SOSTENIDO 1]. Además, mientras la unidad del portador está bajo los efectos de la Doctrina Devastadora, puedes repetir las tiradas de Avance realizadas para esa unidad.",
+        "estratagemas": [
+          {
+            "id": 1,
+            "ico": "/assets/icos/fistStra01.png",
+            "value": "1CP",
+            "name": "Armadura del Desprecio.",
+            "description1": "La beligerancia de los Adeptus Astartes, combinada con su fisiología posthumana, los convierte en adversarios implacables.",
+            "when": "* Cuando el enemigo haya seleccionado un objetivo de ataque.",
+            "target": "* Una unidad APEDTUS ASTARTES seleccionada por ataques.",
+            "effect": "* Reduce en 1 la penetración de armadura de ataques enemigos."
+          },
+          {
+            "id": 2,
+            "ico": "/assets/icos/fistStra02.png",
+            "value": "2CP",
+            "name": "Solo en la muerte termina el deber.",
+            "description1": "La muerte inminente no impide que un Marine Espacial imparta su justicia final sobre los enemigos del Imperio.",
+            "when": "* Cuando el enemigo designe tu unidad en combate.",
+            "target": "* Una unidad ADEPTUS ASTARTES designada como objetivo en combate.",
+            "effect": "* Cuando una miniatura muere en combate, no será retirada del campo hasta haber realizado también un ataque."
+          },
+          {
+            "id": 3,
+            "ico": "/assets/icos/fistStra03.png",
+            "value": "1CP",
+            "name": "Honor al Capítulo.",
+            "description1": "Cada Capítulo ha forjado sus propias historias de heroísmo, y ninguno de sus hermanos de batalla permitiría que ese noble historial se viera empañado.",
+            "when": "* Fase de Combate.",
+            "target": "* Un ADEPTUS ASTARTES.",
+            "effect": "* Hasta el final de la fase tu unidad tiene la habilidad [LANZA]. Si tienes activa la doctrina de asalto, mejora en 1 la penetración de armadura."
+          },
+          {
+            "id": 4,
+            "ico": "/assets/icos/fistStra04.png",
+            "value": "1CP",
+            "name": "Estrategia Adaptativa.",
+            "description1": "Los principios del Codex Astartes permiten el uso poco ortodoxo de tácticas de combate y la aplicación de doctrinas estratégicas divergentes si ello conduce a la victoria.",
+            "when": "* Tu fase de Mando.",
+            "target": "* Una unidad ADEPTUS ASTARTES.",
+            "effect": "* Cambia la doctrina activa para la unidad seleccionada."
+          },
+          {
+            "id": 5,
+            "ico": "/assets/icos/fistStra05.png",
+            "value": "1CP",
+            "name": "Tormenta de Fuego.",
+            "description1": "La ira de los Marines Espaciales es implacable, y utilizan sus armas para sembrar la muerte entre sus enemigos, dondequiera que se escondan.",
+            "when": "* Durante tu fase de disparo.",
+            "target": "* Una unidad ADEPTUS ASTARTES que no haya disparado esta fase.",
+            "effect": "* Hasta el final de la fase, tus armas tienen [IGNORAR COBERTURA]. Si Doctrina Devastadora está activa además sumará 1 a la penetración de armadura."
+          },
+          {
+            "id": 6,
+            "ico": "/assets/icos/fistStra06.png",
+            "value": "2CP",
+            "name": "Tácticas de Escuadrón.",
+            "description1": "Los Marines Espaciales saben con precisión cuándo retroceder para dejar a sus enemigos desorientados, antes de contraatacar y expulsarlos del campo de batalla en desbandada.",
+            "when": "* Justo tras finalizar el movimiento de una unidad enemiga.",
+            "target": "* Una unidad ADEPTUS ASTARTES (excluyendo vehículos) a menos de 9'' de la unidad enemiga.",
+            "effect": "* Tu unidad puede moverse un D6, o 6'' si Doctrina Táctica está activa."
+          }
+        ]
       },
       {
         "id": 2,
-        "name": "Ultimo Muro",
-        "description": "Al principio de tu fase de mando puedes declarar una de las siguientes doctrinas, sus efecto se aplican a todos los ADEPTUS ASTARTES.",
-        "doc1title": "Doctrina Devastadora",
-        "doc1": "Esta unidad puede disparar tras avanzar.",
-        "doc2title": "Doctrina Táctica",
-        "doc2": "Esta unidad puede disparar y declarar una carga en un turno en el que haya retrocedido.",
-        "doc3title": "Doctrina de Asalto",
-        "doc3": "Esta unidad puede declarar una carga en un turno en el que haya avanzado.",
+        "name": "Fuerza de Asalto Tormenta de Fuego",
+        "descriptions": [
+          "Los Marines Espaciales son las tropas de choque más selectas del Emperador, capaces de atacar al enemigo antes de que pueda reaccionar. En sus rápidos asaltos mecanizados, los Marines Espaciales arrasan con el enemigo, destruyéndolo sin piedad en el combate cuerpo a cuerpo.",
+          "Las armas de largo alcance equipadas por las miniaturas ADEPTUS ASTARTES de tu ejército poseen la habilidad [ASALTO], y cada vez que un ataque realizado con dicha arma impacta a una unidad a 12'', se suma 1 a la característica de Fuerza de ese ataque."
+        ],
         "mejoratitle": "Mejoras",
-        "mejoratitle1": "Armadura de Artífice <span>10pts</span>",
-        "mejoradescription1": "Solo para miniaturas ADEPTUS ASTARTES. El portador tiene salvación 2 y la habilidad [IGNORAR DOLOR 5].",
-        "mejoratitle2": "Honor Vehemente <span>15pts</span>",
-        "mejoradescription2": "Solo para miniaturas ADEPTUS ASTARTES. Añade 1 a las características de Ataque y Fuerza de las armas cuerpo a cuerpo del portador. Mientras el portador esté bajo los efectos de la Doctrina de Asalto, añade 2 a las características de Ataque y Fuerza de sus armas cuerpo a cuerpo.",
-        "mejoratitle3": "Adepto del Codex <span>20pts</span>",
-        "mejoradescription3": "Solo para miniaturas de CAPITÁN. Al comienzo de tu fase de mando, si el portador está en el campo de batalla, en lugar de seleccionar una Doctrina de Combate para tu ejército, puedes seleccionar la Doctrina Táctica. Si lo haces, hasta el comienzo de tu siguiente fase de mando, esa Doctrina de Combate estará activa solo para la unidad del portador, incluso si ya la has seleccionado para tu ejército en esta batalla.",
-        "mejoratitle4": "Disciplina de Fuego <span>25pts</span>",
-        "mejoradescription4": "Solo para miniaturas de ADEPTUS ASTARTES. Mientras el portador lidera una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [GOLPE SOSTENIDO 1]. Además, mientras la unidad del portador está bajo los efectos de la Doctrina Devastadora, puedes repetir las tiradas de Avance realizadas para esa unidad."
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "estratagemas": [
-      {
-        "id": 1,
-        "ico": "/assets/icos/fistStra01.png",
-        "value": "1CP",
-        "name": "Armadura del Desprecio.",
-        "description1": "La beligerancia de los Adeptus Astartes, combinada con su fisiología posthumana, los convierte en adversarios implacables.",
-        "when": "* Cuando el enemigo haya seleccionado un objetivo de ataque.",
-        "target": "* Una unidad APEDTUS ASTARTES seleccionada por ataques.",
-        "effect": "* Reduce en 1 la penetración de armadura de ataques enemigos."
-      },
-      {
-        "id": 2,
-        "ico": "/assets/icos/fistStra02.png",
-        "value": "2CP",
-        "name": "Solo en la muerte termina el deber.",
-        "description1": " La muerte inminente no impide que un Marine Espacial imparta su justicia final sobre los enemigos del Imperio.",
-        "when": "* Cuando el enemigo designe tu unidad en combate.",
-        "target": "* Una unidad ADEPTUS ASTARTES designada como objetivo en combate.",
-        "effect": "* Cuando una miniatura muere en combate, no será retirada del campo hasta haber realizado también un ataque."
-      },
-      {
-        "id": 3,
-        "ico": "/assets/icos/fistStra03.png",
-        "value": "1CP",
-        "name": "Honor al Capítulo.",
-        "description1": "Cada Capítulo ha forjado sus propias historias de heroísmo, y ninguno de sus hermanos de batalla permitiría que ese noble historial se viera empañado.",
-        "when": "* Fase de Combate.",
-        "target": "* Un ADEPTUS ASTARTES.",
-        "effect": "* Hasta el final de la fase tu unidad tiene la habilidad [LANZA]. Si tienes activa la doctrina de asalto, mejora en 1 la penetración de armadura."
-      },
-      {
-        "id": 4,
-        "ico": "/assets/icos/fistStra04.png",
-        "value": "1CP",
-        "name": "Estrategia Adaptativa.",
-        "description1": "Los principios del Codex Astartes permiten el uso poco ortodoxo de tácticas de combate y la aplicación de doctrinas estratégicas divergentes si ello conduce a la victoria.",
-        "when": "* Tu fase de Mando.",
-        "target": "* Una unidad ADEPTUS ASTARTES.",
-        "effect": "* Cambia la doctrina activa para la unidad seleccionada."
-      },
-      {
-        "id": 5,
-        "ico": "/assets/icos/fistStra05.png",
-        "value": "1CP",
-        "name": "Tormenta de Fuego.",
-        "description1": "La ira de los Marines Espaciales es implacable, y utilizan sus armas para sembrar la muerte entre sus enemigos, dondequiera que se escondan.",
-        "when": "* Durante tu fase de disparo.",
-        "target": "* Una unidad ADEPTUS ASTARTES que no haya disparado esta fase.",
-        "effect": "* Hasta el final de la fase, tus armas tienen [IGNORAR COBERTURA]. Si Doctrina Devastadora está activa además sumará 1 a la penetración de armadura."
-      },
-      {
-        "id": 6,
-        "ico": "/assets/icos/fistStra06.png",
-        "value": "2CP",
-        "name": "Tácticas de Escuadrón.",
-        "description1": "Los Marines Espaciales saben con precisión cuándo retroceder para dejar a sus enemigos desorientados, antes de contraatacar y expulsarlos del campo de batalla en desbandada.",
-        "when": "* Justo tras finalizar el movimiento de una unidad enemiga.",
-        "target": "* Una unidad ADEPTUS ASTARTES (excluyendo vehículos) a menos de 9'' de la unidad enemiga.",
-        "effect": "* Tu unidad puede moverse un D6, o 6'' si Doctrina Táctica está activa."
+        "mejoratitle1": "Campeón de la Humanidad <span>10pts</span>",
+        "mejoradescription1": "Solo miniatura TACTICUS. Mientras el portador lidera una unidad, las miniaturas de dicha unidad pueden ignorar cualquier modificador a sus características y/o a cualquier tirada o prueba realizada para ellas (excepto los modificadores a las tiradas de salvación).",
+        "mejoratitle2": "Artefacto Templado en la Guerra <span>25pts</span>",
+        "mejoradescription2": "Solo miniatura de INFANTERÍA ADEPTUS ASTARTES. Añade 3 a la característica de Fuerza de las armas cuerpo a cuerpo del portador.",
+        "mejoratitle3": "Forjado en la Batalla <span>15pts</span>",
+        "mejoradescription3": "Solo para miniaturas de ADEPTUS ASTARTES. Mientras el portador lidera una unidad, una vez por turno, tras realizar una tirada para impactar o una tirada de salvación para una miniatura de esa unidad, puedes cambiar el resultado de dicha tirada a un 6 sin modificar.",
+        "mejoratitle4": "Manto de Adamantita <span>20pts</span>",
+        "mejoradescription4": "Solo para miniaturas de ADEPTUS ASTARTES. Cada vez que se asigna un ataque al portador, resta 1 a la característica de Daño de dicho ataque. Si ese ataque se realizó con un arma de fusión o de torrente, cambia la característica de Daño de ese ataque a 1.",
+        "estratagemas": [
+          {
+            "id": 1,
+            "ico": "/assets/icos/fistStra01.png",
+            "value": "1CP",
+            "name": "Armadura del Desprecio.",
+            "description1": "La beligerancia de los Adeptus Astartes, combinada con su fisiología posthumana, los convierte en adversarios implacables.",
+            "when": "* Cuando el enemigo haya seleccionado un objetivo de ataque.",
+            "target": "* Una unidad APEDTUS ASTARTES seleccionada por ataques.",
+            "effect": "* Reduce en 1 la penetración de armadura de ataques enemigos."
+          },
+          {
+            "id": 2,
+            "ico": "/assets/icos/fistStra02.png",
+            "value": "1CP",
+            "name": "Crisol de la Batalla.",
+            "description1": "Solo donde puede enfrentarse al enemigo cara a cara puede un Marine Espacial ser puesto a prueba de verdad.",
+            "when": "* Tu fase de disparo o combate.",
+            "target": "* Una unidad ADEPTUS ASTARTES que no haya sido designada como objetivo en esta fase.",
+            "effect": "* Hasta el final de la fase, cada vez que una miniatura de tu unidad realice un ataque dirigido al objetivo elegible más cercano a 6'', añade 1 a la tirada de Herida."
+          },
+          {
+            "id": 3,
+            "ico": "/assets/icos/fistStra07.png",
+            "value": "1CP",
+            "name": "Embarque Rápido.",
+            "description1": "No se puede perder tiempo castigando a los enemigos del Emperador. Muchos merecen la muerte, y una vez vencido un enemigo, otro no tardará en caer.",
+            "when": "* Fin de la Fase de Combate.",
+            "target": "* Una unidad de transporte vacía y una unidad de infantería a menos de 6''.",
+            "effect": "* Tu unidad embarca en el transporte. No podrá embarcar una unidad que esta en combate cuerpo a cuerpo o que acaba de desembarcar."
+          },
+          {
+            "id": 4,
+            "ico": "/assets/icos/fistStra08.png",
+            "value": "2CP",
+            "name": "Protocolos de Inmolación.",
+            "description1": "Una salva tras otra de prometio ardiente, desatada en oleadas sincronizadas, reducirá a casi cualquier enemigo a cenizas humeantes.",
+            "when": "* Durante tu fase de disparo.",
+            "target": "* Una unidad ADEPTUS ASTARTES que no haya disparado.",
+            "effect": "* Hasta el final de la fase, las armas Ráfaga equipadas por las miniaturas de esa unidad tienen la habilidad [HERIDAS DEVASTADORAS]."
+          },
+          {
+            "id": 5,
+            "ico": "/assets/icos/fistStra05.png",
+            "value": "1CP",
+            "name": "Ataque de Fuego.",
+            "description1": "Armados con datos de puntería proporcionados por los espectros augures de su transporte, los guerreros irrumpen desde las rampas de asalto con armas que disparan en patrones de erradicación implacables.",
+            "when": "* Durante tu fase de disparo.",
+            "target": "* Una unidad ADEPTUS ASTARTES que acabe de desembarcar y no haya disparado.",
+            "effect": "* Hasta el final de la fase, cada vez que una miniatura de tu unidad realice un ataque a distancia que tenga como objetivo al objetivo elegible más cercano a 12'', añade 1 a la tirada para impactar. Si una o más miniaturas enemigas son destruidas como resultado de alguno de esos ataques, selecciona una de esas miniaturas destruidas; la unidad de esa miniatura destruida debe realizar una prueba de Desmoralización."
+          },
+          {
+            "id": 6,
+            "ico": "/assets/icos/fistStra06.png",
+            "value": "1CP",
+            "name": "Venganza Ardiente.",
+            "description1": "Abrir fuego contra guerreros de una Fuerza de Asalto Tormenta de Fuego equivale a invitar a la propia destrucción inmediata.",
+            "when": "* Justo al terminar los disparos de una unidad enemiga.",
+            "target": "* Un transporte atacado este turno.",
+            "effect": "* Una unidad embarcada en ese TRANSPORTE puede desembarcar como si fuera tu fase de Movimiento y, a continuación, disparar como si fuera tu fase de Disparo, pero debe apuntar únicamente a esa unidad enemiga y solo puede hacerlo si dicha unidad enemiga es un objetivo válido."
+          }
+        ]
       }
     ]
   }

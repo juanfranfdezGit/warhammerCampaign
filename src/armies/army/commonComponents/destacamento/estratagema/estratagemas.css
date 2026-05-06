@@ -1,5 +1,9 @@
 .doctrinasSection.estratagemasSection {
   padding-top: 5rem;
+  padding-bottom: 8rem;
+  margin-bottom: -10vh;
+  margin-top: 3rem;
+  width: 100vw;
 }
 
 .estratagemaGrid {
@@ -16,7 +20,6 @@
   justify-content: flex-start;
   position: relative;
   align-items: center;
-  gap: 3rem;
   background: var(--color);
   top: 1rem;
 }

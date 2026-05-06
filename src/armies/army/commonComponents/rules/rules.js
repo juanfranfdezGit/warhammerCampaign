@@ -1,4 +1,3 @@
-import "./rules.css";
 import ArmieRules from "./rulesComponents/armieRules/armieRules";
 import ArmieTitle from "./rulesComponents/armieTitle/armieTitle";
 

@@ -8,6 +8,7 @@ import sororitasData from "../../../../datas/armies/sororitasFaction.json";
 
 import DestacamentoSelector from "./destacamentoSelector/destacamentoSelector";
 import DestacamentoDetalle from "./destacamentoInfo/destacamentoInfo";
+import Estratagemas from "./estratagema/estratagemas";
 
 export default function Destacamento() {
   const [selectedDestacamento, setSelectedDestacamento] = useState(null);
@@ -37,6 +38,10 @@ export default function Destacamento() {
           />
 
           <DestacamentoDetalle destacamento={selectedDestacamento} />
+
+          {selectedDestacamento?.estratagemas && (
+            <Estratagemas estratagemas={selectedDestacamento.estratagemas} />
+          )}
         </div>
       )}
     </section>

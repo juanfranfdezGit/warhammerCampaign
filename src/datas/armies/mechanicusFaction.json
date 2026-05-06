@@ -24,10 +24,12 @@
       {
         "id": 1,
         "name": "Bombardeo Radiactivo",
-        "description1": "Al comienzo de la primera ronda de batalla, por cada unidad enemiga dentro de la zona de despliegue de tu oponente, este debe decidir si dicha unidad se cubrirá o se mantendrá firme. Luego, tira un dado de seis caras (D6) por cada una de esas unidades enemigas y aplica el resultado correspondiente:",
-        "description2": "* Unidad Firme: Con un resultado de 3 o más, esa unidad sufre D3 heridas mortales.",
-        "description3": "* Unidad Cubriendo: Hasta el final de la ronda de batalla, esa unidad queda desmoralizada y, con un resultado de 5 o más, sufre D3 heridas mortales.",
-        "description4": "Al comienzo de tu fase de mando durante la segunda, tercera, cuarta y quinta ronda de batalla, tira un dado de seis caras (D6) por cada unidad enemiga dentro de la zona de despliegue de tu oponente. Con un resultado de 3 o más, esa unidad sufre 1 herida mortal y debe realizar una prueba de Desmoralización.",
+        "descriptions": [
+          "Al comienzo de la primera ronda de batalla, por cada unidad enemiga dentro de la zona de despliegue de tu oponente, este debe decidir si dicha unidad se cubrirá o se mantendrá firme. Luego, tira un dado de seis caras (D6) por cada una de esas unidades enemigas y aplica el resultado correspondiente:",
+          "* Unidad Firme: Con un resultado de 3 o más, esa unidad sufre D3 heridas mortales.",
+          "* Unidad Cubriendo: Hasta el final de la ronda de batalla, esa unidad queda desmoralizada y, con un resultado de 5 o más, sufre D3 heridas mortales.",
+          "Al comienzo de tu fase de mando durante la segunda, tercera, cuarta y quinta ronda de batalla, tira un dado de seis caras (D6) por cada unidad enemiga dentro de la zona de despliegue de tu oponente. Con un resultado de 3 o más, esa unidad sufre 1 herida mortal y debe realizar una prueba de Desmoralización."
+        ],
         "mejoratitle": "Mejoras",
         "mejoratitle1": "Saturación Radial <span>25pts</span>",
         "mejoradescription1": "Solo para miniaturas del ADEPTUS MECHANICUS. A partir de la segunda ronda de batalla, al resolver el efecto de Lluvia Radiactiva de la regla Destacamento de Bombardeo Radiactivo, si el portador está en el campo de batalla, tira un D6 por cada unidad enemiga a 6'' de la zona de despliegue de tu oponente, además de las que estén dentro de su zona de despliegue.",
@@ -36,72 +38,69 @@
         "mejoratitle3": "Erradicador Inigualable <span>20pts</span>",
         "mejoradescription3": "Solo para miniaturas del ADEPTUS MECHANICUS. Mientras el portador lidera una unidad, las armas de largo alcance equipadas por las miniaturas de esa unidad tienen [IMPACTOS SOSTENIDOS] 1].",
         "mejoratitle4": "Denuncia Autoclava <span>15pts</span>",
-        "mejoradescription4": "Solo para miniaturas del ADEPTUS MECHANICUS. Las armas a distancia equipadas por el portador tienen las habilidades [ANTI-INFANTERÍA 2+] y [ANTI-MONSTRUO 4+]."
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "estratagemas": [
-      {
-        "id": 1,
-        "ico": "/assets/icos/mechaStra01.png",
-        "value": "2CP",
-        "name": "Halo Nefasto",
-        "description1": "Al exponer brevemente los componentes más corrosivos o irradiados de su ser, los guerreros de un Cuerpo de Zona Radiactiva pueden exhalar niebla isotópica, mermando la fuerza de aquellos que no son inmunes a sus efectos.",
-        "when": "* Fase de combate, justo después de que una unidad enemiga haya seleccionado sus objetivos.",
-        "target": "* Una unidad ADEPTUS MECHANICUS (excluyendo vehículos) que haya sido seleccionada como objetivo de uno o más ataques de esa unidad enemiga. Si esa unidad es de LÍNEA DE BATALLA, puedes seleccionar también una unidad SKITARII a 6'' de ella.",
-        "effect": "* Hasta el final del turno resta 1 a la tirada de Heridas."
-      },
-      {
-        "id": 2,
-        "ico": "/assets/icos/mechaStra02.png",
-        "value": "1CP",
-        "name": "Orden de Exterminio",
-        "description1": "Mientras los Tecnosacerdotes ordenan la purga de una zona del campo de batalla, se intensifican los bombardeos radiactivos con la esperanza de convertirla en un páramo.",
-        "when": "* Durante tu fase de mando.",
-        "target": "* Una miniatura de Tecnosacerdote y un marcador de objetivo a 24'' de dicha miniatura.",
-        "effect": "* Tira un D6 por cada unidad enemiga dentro del alcance de ese marcador de objetivo. Con de 4 o más, esa unidad sufre 1 herida mortal y debe realizar una prueba de Moral."
-      },
-      {
-        "id": 3,
-        "ico": "/assets/icos/mechaStra03.png",
-        "value": "1CP",
-        "name": "Imperativo Agresor",
-        "description1": "Los Skitarii sienten la presión de una mano invisible sobre sus mentes mientras el Dios Máquina los impulsa hacia adelante. Los servomotores son llevados al límite de su resistencia estructural mientras los haces de fibra se llenan con la energía ilimitada de la Fuerza Motriz e impulsan a los fieles en una cruzada imparable.",
-        "when": "* Tu fase de Movimiento.",
-        "target": "* Hasta dos unidades SKITARII a menos de 6'' que no se haya movido en esta fase.",
-        "effect": "* Añade 6'' al movimiento de esa unidad hasta el final de la fase."
-      },
-      {
-        "id": 4,
-        "ico": "/assets/icos/mechaStra04.png",
-        "value": "1CP",
-        "name": "Purga Precalibrada",
-        "description1": "Empleando datos de puntería recopilados por un enjambre de servocráneos desplegados sobre las líneas de batalla enemigas, los fieles del Dios Máquina purgan al enemigo que tropieza entre posiciones asoladas por la radiación.",
-        "when": "* Tu fase de Disparo.",
-        "target": "* Un ADEPTUS MECHANICUS que no haya disparado. Si este es LINEA DE BATALLA, puede seleccionar un SKITARII a menos de 6'' también.",
-        "effect": "* Si el objetico de disparo se encuentra en la zona de despliegue enemiga, puedes repetir la tirada de impacto."
-      },
-      {
-        "id": 5,
-        "ico": "/assets/icos/mechaStra05.png",
-        "value": "1CP",
-        "name": "Dosis Letal",
-        "description1": "Celdas de energía triples santificadas, bidones de combustible y proyectiles sólidos han pasado una década en el templo de forja más irradiado para certificar su letalidad.",
-        "when": "* Durante tu fase de disparo.",
-        "target": "* Una unidad ADEPTUS MECHANICUS que no haya disparado.",
-        "effect": "* Hasta el final del turno, las armas a distancia tienen HERIDAS DEVASTADORAS."
-      },
-      {
-        "id": 6,
-        "ico": "/assets/icos/mechaStra06.png",
-        "value": "2CP",
-        "name": "Imperativo Baluarte",
-        "description1": "Con un pulso de sabiduría cargada de fuerza, los microactuadores se fijan en posiciones de defensa, las células de energía de reserva se activan y los santos cruzados del Omnissiah se ven investidos con una sensación de invulnerabilidad sagrada.",
-        "when": "* Cuando tu oponente haya seleccionado un objetivo de disparo.",
-        "target": "* Hasta dos unidades SKITARII a menos de 6''",
-        "effect": "* Hasta el final de la fase, las miniaturas de esas unidades tienen una salvación invulnerable de 4+."
+        "mejoradescription4": "Solo para miniaturas del ADEPTUS MECHANICUS. Las armas a distancia equipadas por el portador tienen las habilidades [ANTI-INFANTERÍA 2+] y [ANTI-MONSTRUO 4+].",
+        "estratagemas": [
+          {
+            "id": 1,
+            "ico": "/assets/icos/mechaStra01.png",
+            "value": "2CP",
+            "name": "Halo Nefasto",
+            "description1": "Al exponer brevemente los componentes más corrosivos o irradiados de su ser, los guerreros de un Cuerpo de Zona Radiactiva pueden exhalar niebla isotópica, mermando la fuerza de aquellos que no son inmunes a sus efectos.",
+            "when": "* Fase de combate, justo después de que una unidad enemiga haya seleccionado sus objetivos.",
+            "target": "* Una unidad ADEPTUS MECHANICUS (excluyendo vehículos) que haya sido seleccionada como objetivo de uno o más ataques de esa unidad enemiga. Si esa unidad es de LÍNEA DE BATALLA, puedes seleccionar también una unidad SKITARII a 6'' de ella.",
+            "effect": "* Hasta el final del turno resta 1 a la tirada de Heridas."
+          },
+          {
+            "id": 2,
+            "ico": "/assets/icos/mechaStra02.png",
+            "value": "1CP",
+            "name": "Orden de Exterminio",
+            "description1": "Mientras los Tecnosacerdotes ordenan la purga de una zona del campo de batalla, se intensifican los bombardeos radiactivos con la esperanza de convertirla en un páramo.",
+            "when": "* Durante tu fase de mando.",
+            "target": "* Una miniatura de Tecnosacerdote y un marcador de objetivo a 24'' de dicha miniatura.",
+            "effect": "* Tira un D6 por cada unidad enemiga dentro del alcance de ese marcador de objetivo. Con de 4 o más, esa unidad sufre 1 herida mortal y debe realizar una prueba de Moral."
+          },
+          {
+            "id": 3,
+            "ico": "/assets/icos/mechaStra03.png",
+            "value": "1CP",
+            "name": "Imperativo Agresor",
+            "description1": "Los Skitarii sienten la presión de una mano invisible sobre sus mentes mientras el Dios Máquina los impulsa hacia adelante. Los servomotores son llevados al límite de su resistencia estructural mientras los haces de fibra se llenan con la energía ilimitada de la Fuerza Motriz e impulsan a los fieles en una cruzada imparable.",
+            "when": "* Tu fase de Movimiento.",
+            "target": "* Hasta dos unidades SKITARII a menos de 6'' que no se haya movido en esta fase.",
+            "effect": "* Añade 6'' al movimiento de esa unidad hasta el final de la fase."
+          },
+          {
+            "id": 4,
+            "ico": "/assets/icos/mechaStra04.png",
+            "value": "1CP",
+            "name": "Purga Precalibrada",
+            "description1": "Empleando datos de puntería recopilados por un enjambre de servocráneos desplegados sobre las líneas de batalla enemigas, los fieles del Dios Máquina purgan al enemigo que tropieza entre posiciones asoladas por la radiación.",
+            "when": "* Tu fase de Disparo.",
+            "target": "* Un ADEPTUS MECHANICUS que no haya disparado. Si este es LINEA DE BATALLA, puede seleccionar un SKITARII a menos de 6'' también.",
+            "effect": "* Si el objetico de disparo se encuentra en la zona de despliegue enemiga, puedes repetir la tirada de impacto."
+          },
+          {
+            "id": 5,
+            "ico": "/assets/icos/mechaStra05.png",
+            "value": "1CP",
+            "name": "Dosis Letal",
+            "description1": "Celdas de energía triples santificadas, bidones de combustible y proyectiles sólidos han pasado una década en el templo de forja más irradiado para certificar su letalidad.",
+            "when": "* Durante tu fase de disparo.",
+            "target": "* Una unidad ADEPTUS MECHANICUS que no haya disparado.",
+            "effect": "* Hasta el final del turno, las armas a distancia tienen HERIDAS DEVASTADORAS."
+          },
+          {
+            "id": 6,
+            "ico": "/assets/icos/mechaStra06.png",
+            "value": "2CP",
+            "name": "Imperativo Baluarte",
+            "description1": "Con un pulso de sabiduría cargada de fuerza, los microactuadores se fijan en posiciones de defensa, las células de energía de reserva se activan y los santos cruzados del Omnissiah se ven investidos con una sensación de invulnerabilidad sagrada.",
+            "when": "* Cuando tu oponente haya seleccionado un objetivo de disparo.",
+            "target": "* Hasta dos unidades SKITARII a menos de 6''",
+            "effect": "* Hasta el final de la fase, las miniaturas de esas unidades tienen una salvación invulnerable de 4+."
+          }
+        ]
       }
     ]
   }

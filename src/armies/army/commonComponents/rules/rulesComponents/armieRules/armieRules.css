@@ -5,8 +5,13 @@
 
 .doctrinasSection.destacamentosSection {
   margin-top: 0rem;
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   background: rgb(102, 0, 0);
+}
+
+.destacamentosSection h2 {
+  margin-left: 2rem;
+  font-size: 3rem !important;
 }
 
 .doctrinasSection h2 {

@@ -3,12 +3,11 @@ export default function DestacamentoDetalle({ destacamento }) {
 
   return (
     <div className="destacamentoDetalle">
-      <h3>{destacamento.name}</h3>
+      <h3 className="destTitle">{destacamento.name}</h3>
 
-      <p>{destacamento.description1}</p>
-      <p>{destacamento.description2}</p>
-      <p>{destacamento.description3}</p>
-      <p>{destacamento.description4}</p>
+      {destacamento.descriptions?.map((text, i) => (
+        <p key={i}>{text}</p>
+      ))}
 
       <div className="mejoraSection">
         <h3>Mejoras</h3>

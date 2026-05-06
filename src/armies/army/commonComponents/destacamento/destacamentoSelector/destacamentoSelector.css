@@ -2,17 +2,25 @@
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  margin-left: 2rem;
+  max-width: 85vw;
+  flex-wrap: wrap;
 }
 
 .destacamentoSelector button {
   padding: 8px 12px;
   cursor: pointer;
   border: none;
+  font-size: 1.1rem;
   background: #222;
   color: white;
 }
 
 .destacamentoSelector button.active {
-  background: #c9a441; /* rollo Warhammer 😄 */
+  background: #c9a441;
   color: black;
+}
+
+.destacamentoDetalle .destTitle {
+  font-size: 1.6rem;
 }
