@@ -32,6 +32,26 @@
         "mejoradescription3": "Solo para miniaturas de CAPITÁN. Al comienzo de tu fase de mando, si el portador está en el campo de batalla, en lugar de seleccionar una Doctrina de Combate para tu ejército, puedes seleccionar la Doctrina Táctica. Si lo haces, hasta el comienzo de tu siguiente fase de mando, esa Doctrina de Combate estará activa solo para la unidad del portador, incluso si ya la has seleccionado para tu ejército en esta batalla.",
         "mejoratitle4": "Disciplina de Fuego <span>25pts</span>",
         "mejoradescription4": "Solo para miniaturas de ADEPTUS ASTARTES. Mientras el portador lidera una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [GOLPE SOSTENIDO 1]. Además, mientras la unidad del portador está bajo los efectos de la Doctrina Devastadora, puedes repetir las tiradas de Avance realizadas para esa unidad."
+      },
+      {
+        "id": 2,
+        "name": "Ultimo Muro",
+        "description": "Al principio de tu fase de mando puedes declarar una de las siguientes doctrinas, sus efecto se aplican a todos los ADEPTUS ASTARTES.",
+        "doc1title": "Doctrina Devastadora",
+        "doc1": "Esta unidad puede disparar tras avanzar.",
+        "doc2title": "Doctrina Táctica",
+        "doc2": "Esta unidad puede disparar y declarar una carga en un turno en el que haya retrocedido.",
+        "doc3title": "Doctrina de Asalto",
+        "doc3": "Esta unidad puede declarar una carga en un turno en el que haya avanzado.",
+        "mejoratitle": "Mejoras",
+        "mejoratitle1": "Armadura de Artífice <span>10pts</span>",
+        "mejoradescription1": "Solo para miniaturas ADEPTUS ASTARTES. El portador tiene salvación 2 y la habilidad [IGNORAR DOLOR 5].",
+        "mejoratitle2": "Honor Vehemente <span>15pts</span>",
+        "mejoradescription2": "Solo para miniaturas ADEPTUS ASTARTES. Añade 1 a las características de Ataque y Fuerza de las armas cuerpo a cuerpo del portador. Mientras el portador esté bajo los efectos de la Doctrina de Asalto, añade 2 a las características de Ataque y Fuerza de sus armas cuerpo a cuerpo.",
+        "mejoratitle3": "Adepto del Codex <span>20pts</span>",
+        "mejoradescription3": "Solo para miniaturas de CAPITÁN. Al comienzo de tu fase de mando, si el portador está en el campo de batalla, en lugar de seleccionar una Doctrina de Combate para tu ejército, puedes seleccionar la Doctrina Táctica. Si lo haces, hasta el comienzo de tu siguiente fase de mando, esa Doctrina de Combate estará activa solo para la unidad del portador, incluso si ya la has seleccionado para tu ejército en esta batalla.",
+        "mejoratitle4": "Disciplina de Fuego <span>25pts</span>",
+        "mejoradescription4": "Solo para miniaturas de ADEPTUS ASTARTES. Mientras el portador lidera una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [GOLPE SOSTENIDO 1]. Además, mientras la unidad del portador está bajo los efectos de la Doctrina Devastadora, puedes repetir las tiradas de Avance realizadas para esa unidad."
       }
     ]
   },
