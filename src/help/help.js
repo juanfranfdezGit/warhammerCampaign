@@ -10,37 +10,32 @@ export default function Help() {
 
       <h1>Guía de Juego</h1>
 
-      <ul>
-        <h2>Fases del Juego</h2>
+      <section className="gamePhases" id="phases">
+        <h2>Fases de Juego</h2>
         {Fases.map((fase) => (
-          <li key={fase.id} className="fase">
-            <h3 className="phase">{fase.name}</h3>
-            <p>{fase.description}</p>
-            {fase.description2title && <h4>{fase.description2title}</h4>}
-            <p>{fase.description2}</p>
-            {fase.description3title && <h4>{fase.description3title}</h4>}
-            <p>{fase.description3}</p>
-            <br />
-            <p>{fase.description4}</p>
-            <br />
-            <p>{fase.description5}</p>
-            <br />
-            <p>{fase.description6}</p>
-            <br />
-          </li>
+          <div key={fase.id} className="fase">
+            <h3 className="phaseTitle">{fase.name}</h3>
+            {fase.descriptions.map((description, index) => (
+              <p className="phaseDescriptions" key={index}>
+                {description}
+              </p>
+            ))}
+          </div>
         ))}
-      </ul>
+      </section>
 
-      <ul>
+      <section id="habilities" className="habilities">
         <h2>Habilidades</h2>
-        {Habilidades.map((habilidad) => (
-          <li key={habilidad.id}>
-            <h3>{habilidad.name}</h3>
-            <p>{habilidad.description}</p>
-            <p className="ejs">{habilidad.ejemplo}</p>
-          </li>
-        ))}
-      </ul>
+        <ul>
+          {Habilidades.map((habilidad) => (
+            <li key={habilidad.id} id={habilidad.key}>
+              <h3>{habilidad.name}</h3>
+              <p>{habilidad.description}</p>
+              <p className="ejs">{habilidad.ejemplo}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
     </section>
   );
 }

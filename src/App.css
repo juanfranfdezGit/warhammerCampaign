@@ -1,8 +1,3 @@
-@font-face {
-  font-family: witch;
-  src: url(../public/assets/fonts/witch.ttf);
-}
-
 .home {
   background: url("../public/assets/backs/backHome.png") no-repeat center center
     fixed;
@@ -39,7 +34,7 @@
 .campaignsLinks {
   justify-content: flex-start;
   position: absolute;
-  top: 26vh;
+  top: 25vh;
   height: 73vh;
   overflow: scroll;
 }

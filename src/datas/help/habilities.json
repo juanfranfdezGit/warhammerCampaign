@@ -2,54 +2,63 @@
   {
     "id": 1,
     "name": "Pesada",
+    "key": "pesada",
     "description": "Cada vez que se realiza un ataque con una de estas armas, si la unidad del modelo atacante no se ha movido este turno, añade 1 a la tirada para impactar.",
     "ejemplo": "Una unidad con un arma [Pesada] dispara. Si no se ha movido este turno, al resolver los ataques suma +1 a todas sus tiradas para impactar."
   },
   {
     "id": 2,
     "name": "Asalto",
+    "key": "asalto",
     "description": "Si una unidad que avanzó este turno contiene miniaturas equipadas con armas de asalto, puede disparar en la fase de disparo de este turno. Solo pueden disparar las unidades equipadas con armas con esta habilidad.",
     "ejemplo": "Una unidad avanza en la fase de movimiento. En la fase de disparo puede disparar normalmente con sus armas [Asalto], aunque haya avanzado este turno."
   },
   {
     "id": 3,
     "name": "Heridas Mortales / Heridas Devastadoras",
+    "key": "heridasMortales",
     "description": "Tras aplicar el daño normal de los ataques ya sean salvados o no, 1 a 1 vamos repartiendo las heridas mortales que no podran ser salvadas. Será herida devastadora con un 6.",
     "ejemplo": "Un ataque inflige 2 heridas mortales. La unidad objetivo recibe directamente 2 puntos de daño, asignados a miniaturas sin realizar tiradas de salvación."
   },
   {
     "id": 3.5,
     "name": "Heridas Críticas",
+    "key": "heridasCriticas",
     "description": "Todas las tiradas para herir que saquen 6 son heridas críticas. Las heridas críticas siempre hieren.",
     "ejemplo": "Si una unidad con poco ataque dispara contra una con mucha armadura, solo podría herirle si es crítica, es decir un 6."
   },
   {
     "id": 4,
     "name": "Fuego Sostenido",
+    "key": "fuegoSostenido",
     "description": "Cada vez que se realiza un ataque con una de estas armas, si se obtiene un Impacto Crítico (6), obtiene los impactos adicionales indicados en la habilidad.",
     "ejemplo": "Si un arma realiza 3 ataques y tiene [Fuego Sostenido 2], y obtiene 2 Impactos Críticos (dos resultados de 6), genera 4 impactos adicionales en total (2 por cada 6 obtenido)."
   },
   {
     "id": 5,
     "name": "Ataques Extra",
+    "key": "ataquesExtra",
     "description": "Permite usar las armas a melee que tengan eta habilidad además del arma normal.",
     "ejemplo": "Hacha del Omnissia ataca de forma normal, Servobrazo al tener ataques extra tambien podrá ser usada."
   },
   {
     "id": 6,
     "name": "Pistola",
+    "key": "pistola",
     "description": "Puede realizar la fase de disparo con la pistola equipada aunque este combatiendo cuerpo a cuerpo.",
     "ejemplo": "Los marines espaciales se encuentran en cuerpo a cuerpo contra un tyranido, pero pueden disparar con sus pistolas normalmente durante la fase de disparo."
   },
   {
     "id": 7,
     "name": "Anti-X",
+    "key": "antiX",
     "description": "Cuando una unidad ataca a otra con la keyword que aparece en el nombre, todos los ataques por encima de lo indicado serán Heridas Críticas.",
     "ejemplo": "Dreadnough Brutalis dispara a la infantería con anti-infantería 4, solo tendrá que sacar 4 o más para herir."
   },
   {
     "id": 8,
     "name": "Ráfaga",
+    "key": "rafaga",
     "description": "Cada vez que esta arma ataca, todos los ataques impactan automáticamente.",
     "ejemplo": "Batallón infernus dispara sobre los tyranidos impactando todo gracias a la habilidad, los tyranidos deben tirar para salvarse."
   }
