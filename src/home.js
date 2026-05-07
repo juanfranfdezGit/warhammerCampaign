@@ -5,27 +5,25 @@ function Home() {
   return (
     <div className="home flex column">
       <img src="/assets/icos/logo.png" alt="Logo" className="logo" />
-      <ul className="campaignsLinks">
+      <ul className="campaignsLinks flex column">
         <li>
           <Link to="/campaigns">
-            <div className="linkContainer flex column">
-              <h2 className="campaignTitle">Campañas</h2>
-            </div>
+            <div className="linkContainer flex column campaign"></div>
           </Link>
+        </li>
+        <li>
           <Link to="/armies">
-            <div className="linkContainer flex column">
-              <h2 className="campaignTitle">Ejercitos</h2>
-            </div>
+            <div className="linkContainer flex column armies"></div>
           </Link>
+        </li>
+        <li>
           <Link to="/help">
-            <div className="linkContainer flex column">
-              <h2 className="campaignTitle">Guía</h2>
-            </div>
+            <div className="linkContainer flex column guides"></div>
           </Link>
+        </li>
+        <li>
           <Link to="/game">
-            <div className="linkContainer flex column">
-              <h2 className="campaignTitle">Partidas</h2>
-            </div>
+            <div className="linkContainer flex column games"></div>
           </Link>
         </li>
       </ul>
