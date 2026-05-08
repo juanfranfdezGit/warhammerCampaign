@@ -43,4 +43,10 @@
   position: fixed;
   right: 1rem;
   bottom: 1rem;
+  width: 70px;
+  height: 70px;
+}
+
+.toTopBtn img {
+  width: 100%;
 }

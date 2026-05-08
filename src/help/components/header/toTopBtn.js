@@ -8,7 +8,7 @@ export default function ToTopBtn() {
 
   return (
     <button className="toTopBtn" onClick={scrollToTop}>
-      <img src="/assets/icos/upArrow.png" alt="to top btn"></img>
+      <img src="/assets/icos/up.png" alt="to top btn"></img>
     </button>
   );
 }
