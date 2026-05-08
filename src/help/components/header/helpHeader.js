@@ -14,7 +14,13 @@ export default function HelpHeader() {
 
         <Link to="/armies">
           <div className="armyBtn">
-            <img src="/assets/icos/fistStra06.png" alt="units ico"></img>
+            <img src="/assets/icos/armyIco.png" alt="units ico"></img>
+          </div>
+        </Link>
+
+        <Link to="/games">
+          <div className="armyBtn">
+            <img src="/assets/icos/gamesIco.png" alt="units ico"></img>
           </div>
         </Link>
       </section>
